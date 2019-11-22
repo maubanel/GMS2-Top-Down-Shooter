@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch2 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">	
+				<optgroup label="Chapter 2 - Ship">
+						<option value="page01.html">Getting Ship in Room</option>
+					<option value="page02.html">Moving Ship with Keyboard</option>
+					<option value="page03.html">Add Gamepad</option>
+				</optgroup>
+				<optgroup label="Chapter 3 - Background">
+					<option value="../ch3/page01.html">Scrolling Water</option>
+					<option value="../ch3/page02.html">Scrolling Islands</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<option value="../ch4/page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../ch5/page01.html">Player Health<<</option>
+					<option value="../ch5/page02.html">Player Taking Damage</option>
+					<option value="../ch5/page03.html">Ghost Mode</option>
+					<option value="../ch5/page04.html">Audio</option>
+					<option value="../ch5/page05.html">Front End</option>
+					<option value="../ch5/page06.html">Lives</option>
+				</optgroup>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+							</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Getting Ship in Room</b>
+	
+	<p>
+		Lets start by imporing the player.  Right click on <tt><b>Sprite</b></tt> in the <tt><b>Resources</b></tt> tab and select <tt><b>Create Sprite</b></tt>.  Name the new sprite <tt><b>spr_player</b></tt> and then press <tt><b>Edit Image</b></tt>:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/CreateNewPlayerSprite.gif" alt="Create a new sprite and call it spr_player">
+
+	<p>
+		The player is 128 x 128 pixels large and there are two frames to its animation.  Both frames are included in a sprite sheet so we can't import the sprite directly.  We select <tt><b>Image | Import Strip Image</b></tt> from the top drop down menus.  Find the file in <tt><b>Included Files | TutorialResources | Sprites | spr_player_sprite_sheet.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_player_sprite_sheet.png">here</a>).
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ImportPlayerSpriteSheet.gif" alt="Import strip image spr_player_sprite_sheet.png">
+
+	<p>
+		This brings up the <tt><b>Convert to Frames</b></tt> menu.  In this we need to make some adjustments.  Change both the <tt><b>Frame Width</b></tt> and <tt><b>Frame Height</b></tt> to <tt><b>128</b></tt>.  There are two frames so ajust the <tt><b>Number of Frames</b></tt> to <tt><b>2</b></tt> and <tt><b>Frames per Row</b></tt> to <tt><b>2</b></tt>. Press the <tt><b>Convert</b></tt> button to import the new sprite.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ConvertPlayerShipToFrames.png" alt="Import a 128 by 128 sprite with 2 frames per row with 2 number of framers then press the convert button">
+		
+	<p>
+		Press play on the animation menu to see the speed of the animation.  It defaults to <tt><b>15 Frames per Second</b></tt> and you can adjust the playback speed. I prefer <tt><b>12</b></tt>.  We also want to center the sprite on the place so choose <tt><b>Middle Center</b></tt> for the <tt><b>Origin</b></tt> of the sprite.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/SpeedAndOriginPlayer.png" alt="Center origin and change framerate of playback to 12">
+		
+		
+	<p>
+		Create a new Game Object called <tt><b>obj_player</b></tt> and bind the <tt><b>spr_player</b></tt> you created above.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/CreatePlayerObject.png" alt="Create a new object called obj_player and assign the spr_player sprite">	
+
+	<p>
+		Edit the existing room and rename it to <tt><b>rm_lvl_1</b></tt> (you can right click on the name and select <tt><b>Rename</b></tt>). 
+	
+	<p>
+		Now if you look at the video the game is in portrait mode. Lets set the room dimensions to: 1000 x 1536. Go to the <tt><b>Properties</b></tt> tab in the <tt><B>Room Editor</B></tt> and expand it. Set the <tt><b>Width</b></tt> to <tt><b>1000</b></tt> and <tt><b>Height</b></tt> to <tt><b>1536</b></tt>.
+		
+	<p>
+		Drag and drop the <tt><b>obj_player</b></tt> into to the bottom of the room from the Resources menu.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ChangeDimensionsOfGameRoom.png" alt="Change name of room to rm_lvl_1 and adjust the size to 1000 by 1536">	
+	
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Play button icon"> <tt><b>Play Button</b></tt> and make sure that you see the plane in a dark background layer that should look like this:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/PlaneNoLogicInGame.png" alt="Plane animating on background">	
+
+	<p>
+		OK, now we don't want to place the player plane in the room. Since the player will die and have to reappear, we want to control the plane being added through scripting.
+
+	<p>
+		We need to have a Game Object that handles the common game issues from level to level. Create a new <b>empty</b> <tt><b>Game Object</b></tt> called <tt><b>obj_game_controller</b></tt>. Add it to the room.  Since we don't have a sprite on it there will be nothing shown in the game but it will still run the object's script events.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/AddGameControllerToRoom.png" alt="Create new object called obj_game_controller and add it to the room.">	
+		
+	<p>
+		<img style="vertical-align:middle" src="../images/Icon_LMB.png" alt="Left mouse button icon"> Double click on <tt><b>room_lvl_1</b></tt> and delete the <tt><b>obj_player</b></tt> from the room by right clicking on it and pressing the <tt><b>Delete</b></tt> button on your keyboard. 
+		
+	<p>
+		Then, rename the layer <tt><b>Instances</b></tt> to <tt><b>Instance_Player</b></tt>.  These layers are like <b>Photoshop</b> where the ones on top render first and the ones underneath render beneath it.  We want our player to be at the top of the layers.
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/RenameRoomInstance.gif" alt="Rename layer and make sure it is on top called Instance_Player">	
+		
+	<p>
+		Now create a new <tt><b>obj_game_controller: Create</b></tt> Event script and spawn the player in the bottom center of the game room:
+
+	<div class = "note">
+		<p>
+				Please Note: Notice that we can put the same script over multiple lines.  We don't want to go so wide that we can't read the entire line and miss important information.  We can split up a long line of script as necessary.  I am using a comma as a spot to separate the code.
+	</div>
+	<h3><tt><b>obj_game_controller: Create</b></tt> Event </h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/SpawnPlayerCreate.png" alt="Spawn player in obj_game_controller Create script">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Play button icon"> <tt><b>Play Button</b></tt> and make sure that you see the plane appears (only one, you should have deleted the old one) in the bottom center of the room.  Coming up we will be adding controls to move the ship with keyboard input.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ShipSpawnedInGame.png" alt="Run game and one plane shows up at bottom">	
+		
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="../page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

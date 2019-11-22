@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch5 - Page 4</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="page04.html">Audio</option>
+					<option value="page05.html">Front End</option>
+					<option value="page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<optgroup label="Chapter 5 - Game Components">
+					<option value="page01.html">Player Health</option>
+					<option value="page02.html">Player Taking Damage</option>
+					<option value="page03.html">Ghost Mode</option>
+					</optgroup>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Audio</b>
+
+	<p>
+		Pick some free music that you think might be appropriate for the game. I used The Spririt of Russion Love by Zinaida Troikai for mine from the free music archive. Look for an MP4 or OGG format.  Download a song that you have permission to use and right click on <tt><b>Sounds</b></tt> and select <tt><b>Create Sound</b></tt>.  Call it <tt><b>snd_theme_music</b></tt> and press the three periods (dots) next to the name to bring up an explorer menu to pick the music.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddNewSound.png" alt="Download and pick theme music for the game and create a sound resource called snd_theme_music">
+
+	<p>
+		Pick the music you have downloaded:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PIckSong.png" alt="Press three dots and select song you just downloaded">
+
+	<p>
+		Open <tt><b>obj_game_controller: Create</b></tt> event script and at the bottom check to make sure the song is not already playing, then play the song in an endless loop.
+
+	<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlayMusicGameControllerCreate.png" alt="Add to obj_game_controller a check to see if song is already playing and if not, then play song in an endless loop">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Play it and notice that the music should play and go on forever.
+	
+		<p>
+		<iframe src="https://www.youtube.com/embed/X_AAQ_tqqjE?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
+	<p>
+		Create another new sound resource and find the file in <tt><b>Included Files | TutorialResources | Sounds | snd_enemy_explode.wav</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sounds/snd_enemy_explode.wav">here</a>). Call this <tt><b>Resource Sound</b></tt> file <tt><b>snd_enemy_explode</b></tt>.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddEnemyExplodeSFX.png" alt="Add a snd_enemy_explode sound resource and load file from TutorialResources/Sounds folder">
+
+	<p>
+		Add the enemy explosion to <tt><b>obj_player_bullet: Collision | obj_enemy_parent</b></tt> event and add to the bottom:
+		<h3><tt><b>obj_player_bullet: Collision</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/EnemyExplodeSound.png" alt="Add logic to play sound on obj_bullet: Collision event at the bottom">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Play it and shoot enemies ot hear the sounds played!
+	
+		<p>
+		<iframe src="https://www.youtube.com/embed/6FB3P-nSH50?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
+	<p>
+		Repeat the process for <tt><b>snd_player_explode</b></tt>, <tt><b>snd_player_shoot</b></tt> and <tt><b>snd_enemy_shoot</b></tt> in in <tt><b>Included Files | TutorialResources | Sounds. If you can't find it check out <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sounds/">here</a>) and link audio files with the appropriate name. 
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/LastThreeSounds.png" alt="Repeat process for snd_player_shoot and snd_enemy_shoot">
+	
+	<p> 
+		Lets play all of these sounds in their appropriate places:
+
+		<h3><tt>obj_enemy_bullet: Collision | obj_player</tt></h3> 
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlaySoundPlayerExplode.png" alt="Add player dying when enemy bullet hits it">	
+
+	<h3><tt>obj_player: Step</tt></h3>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlayerSoundPlayerSHoot.png" alt="Add shooting sound to where player hits the space bar">	
+
+	<h3><tt>obj_enemy_target: Step</tt></h3>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlayerSoundEnemyTargetShoot.png" alt="Add shooting sound for enemy target">	
+
+	<h3><tt>obj_enemy_shoot: Step</tt></h3>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlayerSoundEnemyShootShoot.png" alt="Add shooting sound for enemy shoot">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Play it and listen to all the sounds.  
+
+	<p>
+		The audio gets repetitive really quickly.  Lets look at a way of tricking the ear to get more out of a single sound.  Lets alter the pitch with <b><a href="gms2tutorials:///ShowHelp?tag=audio_sound_pitch">audio_sound_pitch(index, pitch)</a></b>. The <tt><b>pitch</b></tt> is a value less than 1 is lower in pitch (0 would be none) and 2 would be an ocatve higher.
+
+	<p>
+		Lets alter the volume (gain) with <b><a href="gms2tutorials:///ShowHelp?tag=audio_sound_gain">audio_sound_gain(index, volume, time)</a></b>. The <tt><b>volume</b></tt> argument is between 0 (quiet) to 1 (full volume).  We will set the <tt><b>time</b></tt> argument to 0 as we don't want it to fade in or out we want it to apply right away.
+
+	<p>
+		Here is an example of what it looks like in <tt><b>obj_player: Step</b></tt>.  Repeat this for all other sounds played.
+
+	<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/RandomizeGainPitchAllSounds.png" alt="Add a pitch and gain random shift in shooting sound">	
+	
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Play it and the sounds should alter a bit during playback.
+
+	<p>
+		<iframe src="https://www.youtube.com/embed/yk5SL4asMjM?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
+	<p>
+		Next up we will look at creating a front end.
+
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page03.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page05.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch5 - Page 6</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<optgroup label="Chapter 5 - Game Components">
+					<option value="page01.html">Player Health</option>
+					<option value="page02.html">Player Taking Damage</option>
+					<option value="page03.html">Ghost Mode</option>
+					<option value="page04.html">Audio</option>
+					<option value="page05.html">Front End</option>
+					</optgroup>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Lives</b>
+	
+	<p>
+		Open the <tt><b>obj_game_controller: Create</b></tt>> event and add a new variable called <tt><b>player_1_lives</b></tt>.  There is a built in GameMaker variable that is global but there is only one.  We might want to add a second player to this game so we will create our own variable name for this. 
+		
+	<p>
+		Why don't we add this to the player object? The player object is destroyed at death then restarted.  If we kept the varibale there it would get reset.  It is best to keep track of global game settings in an object that we will not alter during game.
+		<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddP1LivesToGameController.png" alt="Add player_1_lives to game controller step event">
+
+	<p>
+		Add to the bottom of <tt><b>obj_game_controller: Draw GUI</b></tt> event and draw the lives to the screen:
+	<h3><tt><b>obj_game_controller: Draw GUI</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/DrawPlayerLivesGUI.png" alt="Draw lives on screen in game controller draw gui event">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="run button icon"> <tt><b>Play Button</b></tt>. Now we should see three planes representing our health being drawn on the HUD next to our health:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/LivesDrawnOnGUI.png" alt="Lives drawn on hud when playing game">
+	
+	<p>
+		Now that we have added lives, we need to subtract one each time the player dies.  We only want to subtract a life if there are lives left. We don't want to go to ghost mode if the player has no lives left.  Open up <tt><b>obj_player: Step</b></tt> event and go to the end where we check if health is less or equal to 0.  We add a dheck to see if there are any player lives left.
+		<h3><tt><b><tt><b>obj_player: Step</b></tt> Event</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddLivesCheckSubtractOneLife.png" alt="add to obj_player step event a subtraction of life each time it dies">
+
+	<p>
+		We need to now deal with a player who has run out of health but has no lives left after this one.  We would like to:
+		<ol>
+		<li>Subtract our final life (there is one life left)</li>
+		<li>Destroy the player object as the game is over</li>
+		<li>Restart the game, but we will call an alarm so it will restart in 2 seconds.  The alarm needs to be on <tt><b>obj_game_controller</b></tt> as the player alarm would be destroyed with the player</li>
+		</ol>
+
+	<p>
+		Go back to <tt><b>obj_player: Step</b></tt> event and add after the previous condition.
+		
+	<h3><tt><b><tt><b>obj_player: Step</b></tt> Event</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/EndOfGameAlarm.png" alt="Deal with game over condition when subtradting lives">
+		
+	<p>
+		Now open <tt><b>obj_game_controller</b></tt> and press the <tt><b>Add Event</b></tt> button to add a <tt><b>Alarm | Alarm0</b></tt> event and add a call to this simple game restart function:
+		<h3><tt><b>obj_game_controller: Alarm0</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/Alarm0RestartGame.png" alt="Alarm0 add game restart in obj_game_controller">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="run button icon"> <tt><b>Play Button</b></tt>. This is sped up below but represents the final flow of the game:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/FinalFlow.gif" alt="Play the game and die multiple times.  You should restart the game if you die a third time">
+
+	<p>
+		Undo our looping timeline and make a few doze interesting waves and finish the level.  Comment out the loop in <tt><b>obj_game_controller: Step</b></tt> event.
+		<h3><tt><b>obj_game_controller: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/CommentOutLoopHack.png" alt="Undo looping timeline in obj_game_controller step event.">
+	
+	<p>
+		That is it for this tutorial but there is so much more that you can do with this game.  First you can start by adding more waves.  Have fun!
+
+
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page05.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<!--<a href="page02.html" class="next">
+					<div id="button-next"></div>-->
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

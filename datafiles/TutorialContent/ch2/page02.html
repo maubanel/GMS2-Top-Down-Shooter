@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch2 - Page 2</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				
+				<optgroup label="Chapter 2 - Ship Movement">
+					<option value="page02.html">Moving Ship with Keyboard</option>
+					<option value="page03.html">Add Gamepad</option>
+				</optgroup>
+				<optgroup label="Chapter 3 - Background">
+					<option value="../ch3/page01.html">Scrolling Water</option>
+					<option value="../ch3/page02.html">Scrolling Islands</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<option value="../ch4/page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../ch5/page01.html">Player Health<<</option>
+					<option value="../ch5/page02.html">Player Taking Damage</option>
+					<option value="../ch5/page03.html">Ghost Mode</option>
+					<option value="../ch5/page04.html">Audio</option>
+					<option value="../ch5/page05.html">Front End</option>
+					<option value="../ch5/page06.html">Lives</option>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="page01.html">Getting Ship in Room</option>
+						</optgroup>
+						</optgroup>
+						</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Moving Ship with Keyboard</b>
+
+	<p>
+		Open <tt><b>obj_player</b></tt> and press the <tt><b>Add Event</b></tt> button and select a <tt><b>Create</b></tt> event.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/AddCreateEventToPlayer.png" alt="Add Create Event to obj_player">	
+
+	<p>
+		Previously we have set the timing based on pixels per frame.  One of the problems with this is that we can change the framerate in the room which then changes the physics.  
+		
+	<p>
+		The game can also slow down and speed up, what if our game gets so slow that it no longer runs at the 60 fps or 30 fps we have set in the room?  The game will stutter.  We will be using pixels per second and then using <b><a href="gms2tutorials:///ShowHelp?tag=delta_time">delta_time</a></b> to figure out how many microseconds have passed since last frame. This way the game won't pause it will continue to simulate even during a slow down. Also we can adjust the room framerate and the speed won't change.
+		
+	<p>
+		This will make it similar to how you would handle inputs in a Unity or Unreal game as well, where the both use an equivalent method (using milliseconds). This is an extra step that puts us in line with how other engines handle this issue.
+
+	<p> 
+		120 pixels per second would be the same as setting the value at 4 pixels per frame at 30 frames per second or 2 pixels per frame at 60 frames per second.
+	<h3><tt><b>obj_player: Create</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/PlayerSpeedPerFrame.png" alt="Add player_speed variable and set it to 120">	
+	
+	<p>
+		Press the <tt><b>Add Event</b></tt> button on <tt><b>obj_player</b></tt> and add a <tt><b>Step | Step</b></tt> event. Now we will look at <tt><b>keyboard_check(key)</b></tt> and will subtract the left key from the right key. Now if you remember <b><a href="gms2tutorials:///ShowHelp?tag=keyboard_check">keyboard_check(key) </a></b>returns a boolean which will be <tt><b>1</b></tt> if <tt><b>true</b></tt> and <tt><b>0</b></tt> if <tt><b>false</b></tt>. This means if right is pressed it will be 1-0. If left is pressed it will be 0-1. If both right and left are pressed it will be 1-1. So this gives us a range of -1 to 1 and a value of 0 if nothing or both are pressed (cancelling each other out).
+
+	<p>
+		Lets prove it. We will do that with another new function show_debug_message(string). It will print this message in the Debugger Output window.
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ControlsStepEventPlayerKeyboard.png" alt="Illustration of computer science variable as a box">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Does what prints in the output window make sense?
+	<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/KeyboardAxisPrinting.gif" alt="Add a step event to obj player and add debug info to press the horizontal and vertical axis of motion.">	
+
+	<p>
+		Now that we have a normalized value between -1 and 1, let's translate this into motion.  First we check to see if there is an input that would cause us to move the player.  We check to see <tt><b>if (x_axis != 0 || y_axis != 0)</b></tt>.  If it is true then one of the two values has an input that is not 0 and we need to move the player.
+
+	<p>
+		Now we need to figure out how to translate the <tt><b>player_speed</b></tt> variable from frames per second to frames since last tick.  We will use <b><a href="gms2tutorials:///ShowHelp?tag=delta_time">delta_time</a></b> to figure out how many microseconds have passed since last frame. 1 microsecond is 1,000,000th of a second.  So to turn this into a fractional number in seconds we need to divide <b>delta/time / 1,000,000</b>(commas for clarity you can't enter commas into the script).
+
+	<p>
+		So if we multiply <b>delta/time / 1,000,000</b> by <tt><b>player_speed</b></tt> we will get frames since last tick.  
+		
+	<p>
+		Let me give an example.  Lets say we have a framerate of 2 frames per second.  
+		delta_time would be 500,000.  So if we divide 500,000 / 1,000,000 we get a value of .5.  This means that it will have the value of speed which get us to our delta per frame.  Type into the bottom of the <tt><b>obj_player: Step</b></tt> event and delete the <tt><b>show_debug_message(string)</b></tt> from earlier:
+
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/MovePlayerSinceLastFrame.png" alt="Add first pass at player movement to the obj_player step event">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt> and press up down left and right.  Try diagonals.  Play careful attention to the speed and see if moving in diagonals is moving faster than moving laterally?
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/MovingShipWithKeyboardDiagWrong.gif" alt="Movement is implemented but diagonals move ship faster">	
+
+	<p>
+		We have an issue with diagonals. If we move up 1 unit vertically and 1 unit horizontally, we are moving more than by 1 pixel.  To figure out the length we can look we can apply <a href = "https://en.wikipedia.org/wiki/Pythagorean_theorem" target="#">Pythagorean theorem.</a>  It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. 
+		
+		<p>
+		So with H as Hypotenuse, we have:<br>
+			H <sup>2</sup> = A<sup>2</sup> + B<sup>2</sup><br>
+			or C= &#8730;(A<sup>2</sup> + B<sup>2</sup>)
+	<p>
+		if A & B are 1 then it is:<br>
+		H= &#8730;(1<sup>2</sup>  + 1<sup>2</sup>)  or<br>
+			C = &#8730;2<br>
+			C ~= 1.4142<br>
+
+	<p>
+		This means that the player is moving at greater than 1.4 pixels when moving diagonally.  We need to normalize this back to a total unit length of 1.  We can do this by dividing &#8730;2<br> by 2 and mulitplying this into the existing <tt><b>x_axis</b></tt> and <tt><b>y_axis</b></tt>. 
+
+	<p>
+		Open <tt><b>obj_player: Create</b></tt> event script and add to the bottom:
+
+	<div class="note">
+	<p>
+		Please note:  You do not need to copy the entire comment, it is there to illustate the solution.
+	</div>
+	<h3><tt><b>obj_player: Create</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/DiagonalVariableSet.png" alt="Comment of Pythagorem's theorem and diagonal variable">	
+
+	<p>
+		Open <tt><b>obj_player: Step</b></tt> event script and add after polling for the keyboard input but before moving the player the compenstation for diagonals:
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/CompensateForDiagonals.png" alt="Add alteration to adjust diagonal speed">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Now diagonals should move at the same speed as the rest of the ship.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/DiagonalSameSpeed.gif" alt="Run game and play now the diagonal speed is corrected">	
+
+	<p>
+		Right now the player can go outside the room/level.  We want to restrict the player to the playable boundaries of the game.  Here is what I am envisioning:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/RoomBoundariesForPlayArea.png" alt="Illustration of zone that the ship can move in">	
+
+	<p>
+		Open <tt><b>obj_player: Create</b></tt> event script and create 4 variables representing the top, bottom, left and right boundary of the game.
+	
+		<h3><tt><b>obj_player: Create</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/PlayBoundariesPlayerCreate.png" alt="Add four variables for 4 bounds">		
+
+	<p>
+		Now we go to the step event and we can <b><a href="gms2tutorials:///ShowHelp?tag=clamp">clamp(val, min, max)</a></b> our x and y position of the ship to the bounds we just created.  Place this after we move the player (so the player will move out of bounds then the clamp() function will force it back on screen). 
+		
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ClampValueToBounds.png" alt="Clamp ship position so it stays on screen">	
+
+
+		<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). The original arcade game used a joystick so I would like us to do the same.  Press the below <tt><b>Next</b></tt> button to add a joystick. If you don't have access to a joystick for your mac or PC you can skip to <a href="../ch3/page01.html">Scrolling Water</a>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ShipLimitedToBounds.gif" alt="Run game and make sure ship cannot leave screen">	
+		
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page03.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

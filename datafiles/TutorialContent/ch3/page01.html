@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch3 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				
+				<optgroup label="Chapter 3 - Background">
+					<option value="page01.html">Scrolling Water</option>
+					<option value="page02.html">Scrolling Islands</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="../CH4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../CH4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../CH4/page03.html">Shooting</option>
+					<option value="../CH4/page04.html">Shooting Enemies</option>
+					<option value="../CH4/page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../CH5/page01.html">Player Health<<</option>
+					<option value="../CH5/page02.html">Player Taking Damage</option>
+					<option value="../CH5/page03.html">Ghost Mode</option>
+					<option value="../CH5/page04.html">Audio</option>
+					<option value="../CH5/page05.html">Front End</option>
+					<option value="../CH5/page06.html">Lives</option>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../CH2/page01.html">Getting Ship in Room</option>
+						<option value="../CH2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../CH2/page03.html">Add Gamepad</option>
+						</optgroup>
+	
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Scrolling Water</b>
+	<p>
+		There are two ways I can think of to deal with the room (level). We could just make a very tall room and put all of our graphics and enemies in the room. We can move the plane up each frame so it scrolls through it. Sort of like this:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/LongLevelProto.png" alt="Illustration of a long level with all the islands and planes placed">	
+
+	<p>
+		The other option would be to have the room where the plane doesn't move but the background scrolls like on a conveyor belt. There is a staging area where islands and enemies are spawned then they move downwards on screen.  When islands fall off the bottom they get sent back to the staging area.  When the enemies go off the bottom they are destroyed.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/ConveyorBelt.png" alt="Illustration of three zone conveyor belt">	
+
+<p>
+	So we are going to load a 256 x 256 background tile for water (ocean).  This tile will match on all sides and we will fill the entire screen up with water.  After that we will add islands to fly over to give a better sense of motion.
+		
+<p>
+	<img style="vertical-align:middle" src="../images/Icon_RMB.png" alt="Right mouse button icon"> Right click on <tt><b>Sprites</b></tt> and select <tt><b>Create Sprite</b></tt>.  Name this new sprite <tt><b>spr_tile_water</b></tt>.  Press the <tt><b>Import</b></tt> button and download <tt><b>Included Files | TutorialResources | Sprites | spr_tile_water.png </b></tt>.  If you can't find it you can locate the file in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_tile_water.png">here</a>). 
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/ImportWaterSprite.gif" alt="Illustration of computer science variable as a box">	
+
+<p>	
+	Open room <tt><b>rm_lvl_1</b></tt> and click on the <tt><b>Background</b></tt> layer and make sure the <tt><b>Background Layer Properties</b></tt> tab is open.
+
+<p>
+	Please note that on instance layers that you can only drag Game Objects onto it. On Background layers you can only drag Sprites.
+
+<p>
+	This brings up a Background Properties menu below with the colour and selection box with No Sprite. Click on this and select <tt><b>spr_tile_water</b></tt>.
+
+<p>
+Press the <tt><b>Vertical Tile </b></tt> and <tt><b>Horizontal Tile </b></tt> check boxes. Look at what happens to the level:
+
+<h3><tt><b>rm_lvl_1</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/AddWaterToBackgroundTiling.gif" alt="Illustration of computer science variable as a box">	
+
+<p>
+	We will be scrolling water underneath us.  The islands will need to scroll at the same speed as the water.  We want to use the same value for both objects.  We could use a global variable name but there is a safer way. Since this variable doesn't change we can make it a constant.
+	
+<p>
+	We will be using <b><a href="gms2tutorials:///ShowHelp?keyword=variables">macros</a></b>.  We want to use a constant that is unmutable (cannot be changed).  What this means is that we don't want someone on the team to change this value.  When we use the keyword macro this makes the variable a constant.  This macro constant is global in scope and can be accessed anywhere by any object.
+	
+	<p>
+		Notice we <b>do not</b> use the assignment operator <tt><b>=</b></tt>.  It is a naming convention to use <b>ALL CAPS</b> when naming constants. Open <tt><b>obj_game_controller: Create</b></tt> event script and add to the bottom:
+
+<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/BackgroundScrollSpeedMacro.png" alt="Assign macro BACKGROUNDSCROLLSPEED in obj_game_controller create event">	
+
+<p>
+	Lets prove it is a constant.  Lets try resetting the macro to <tt><b>6</b></tt>.  Notice the game will not compile when you press run:
+	<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/CANTCHANGEMACRO.png" alt="Try to change BACKGROUNDSCROLLSPEED macro and get error message">	
+
+<p>
+	Lets double check that it resolves the constant to the value <tt><b>5</b></tt> we have set.  Delete the above entry and instead add a <tt><b>show_debug_message(string)</b></tt>.  Notice that it prints the message just like a normal variable:
+
+	<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/BackgroundSpeedDebug.png" alt="Illustration of computer science variable as a box">	
+
+<p>
+	Delete the <tt><b>show_debug_message(string)</b></tt> line.  Now lets scroll the background.  We are using <b><a href="gms2tutorials:///ShowHelp?tag=layer_vspeed">layer_vspeed(layer_id, vspd)</a></b>. The <tt><b>layer_id</b></tt> parameter is the name of the background layer in the room which defaults to <tt><b>Background</b></tt>.  The <tt><b>vspd</b></tt> is pixels per second with positive moving downwards and negative moving upwards.
+	<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/ScrollBackground.png" alt="Move background water using layer_vspeed">	
+
+<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt>.  Notice that the water now scrolls downwards making the plane feel like it is moving up the screen.  Next up we will add islands to the level.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/PlainWaterScrolling.gif" alt="Run game and water scrolls">	
+	
+
+<br>
+
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="../CH2/page03.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

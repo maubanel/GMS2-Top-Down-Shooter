@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch5 - Page 3</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="page03.html">Ghost Mode</option>
+					<option value="page04.html">Audio</option>
+					<option value="page05.html">Front End</option>
+					<option value="page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<optgroup label="Chapter 5 - Game Components">
+					<option value="page01.html">Player Health</option>
+					<option value="page02.html">Player Taking Damage</option>
+					</optgroup>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Ghost Mode</b>
+
+	<p>
+		Now we want the plane when it runs out of health to go into ghost mode which is:
+
+	<ol>
+	<li>Destroy player plane</li>
+	<li>Animate new transluscent ghost plane offscreen bottom center</li>
+	<li>Move ghost plane upwards</li>
+	<li>Do not take damage, do not take player control</li>
+	<li>After returning to starting point make player solid and give control back to gameplayer and give the plane 100% health again.</li>
+	</ol>
+
+	<p>
+		Now to do this we will need to create a finite state machine. What is a finite state machine? It is the logical state of any object. So a door can have 4 states. It can be closed, open (to more or less of a degree) or is in the act of opening or closing. Our <tt><b>obj_player</b></tt> will have two states: <b>Active In Game</b> and <b>Out of Life Ghost Mode</b>.
+
+	<p>
+		For a very simple state machine, Create a new object for each state. We already have a <b>obj_player</b> for the <b>Active In Game</b> state. Create a new <tt><b>Game Object</b></tt>, bind <tt><b>spr_player</b></tt> to it and call it <tt><b>obj_ghost_player</b></tt>:
+
+	<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ObjGhostPlayer.png" alt="Create new object with spr_player attached called obj_ghost_player">
+
+	<p>
+		We need to switch the <tt><b>obj_player</b></tt> game object to <tt><b>obj_ghost_player</b></tt> when player health is less or equal to zero. GameMaker provides a function to do this for us called <b><a href="gms2tutorials:///ShowHelp?tag=instance_change">instance_change(obj, perf)</a></b>.
+
+	<p> 
+		The <tt><b>obj</b></tt>  argument is the object you want to turn into and the <tt><b>perf</b></tt> parameter is whether to perform that new object's create and destroy events (true) or not (false).
+
+	<p>
+		We need to add to the <tt><b>obj_player: Step</b></tt> event script to switch the game object to ObjGhostPlayer. Add at the bottom the following change:
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/GhostModeFromPlayerWithoutHealth.png" alt="Switch to ghost player when player dies in obj_player step event">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Get shot on purpose and get your health to 0.  Woops, another run time error.  In this case it is the health bar that can't find the player object.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ErrorSwitchingToGhost.png" alt="game controller crashes when playing as hud can't access player health">
+
+	<p>
+		Open <tt><b>obj_game_controller: Draw | Draw GUI</b></tt> event and we need to remove the reference to <tt><b>obj_player.player_health</b></tt> from the <tt><b>draw_healthbar()</b></tt> function.  Lets instead create a local variable <tt><b>hud_health</b></tt> and then reference the player only if it exists in the room (otherwise health is 0):
+	<h3><tt><b>obj_game_controller: Draw GUI</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/CheckPlayerExistsDrawGui.png" alt="Add a loop that repeats 5 times and adds one to a variable">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Get shot on purpose and get your health to 0.  Woops, yet another run time error.  It is in both the shooting and targeting player when it is checking to see if it is above it.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/SecondRunTimeErrorInShootingTargetEnemy.png" alt="Run game again, now there is a run time error on the shooting and targeting players who can't find the player">
+
+	<p>
+		Open <tt><b>obj_enemy_target: Step </b></tt> event and we need to check if the player exists before firing a bullet:
+		<h3><tt><b>obj_enemy_target: Step</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/CheckIfPlayerExistsBeforeShootingAtItTarget.png" alt="In enemy target check that player exists before shooting">
+	
+	<p>
+		Repeat for <tt><b>obj_enemy_shoot: Step </b></tt> event and we need to check if the player exists before firing a bullet:
+		<h3><tt><b>obj_enemy_shoot: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/CheckIfPlayerExistsBeforeShootingAtItShoot.png" alt="In enemy shoot check that player exists before shooting">
+
+	<p>
+		Run the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="debug run button icon">  debug mode and look at what happens in the <tt><b>Instances</b></tt> window when the player runs out of health.  The player switches from <tt><b>obj_player</b></tt> to <tt><b>obj_ghost_player</b></tt>. And this new ghost player cannot be controlled which is what we want!
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ChangeFromPlayerToGhost.gif" alt="Play game and player switches and can't be controlled, this can only be seen in the debugger">
+
+	<p>
+		Add a <tt><b>Create</b></tt> event to <tt><b>obj_ghost_player</b></tt> and put the player in the center horizontally off screen vertically:
+		<h3><tt><b>obj_ghost_player: Create</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/SendPlayerOffScreenGhostPlayerCreate.png" alt="Add a create event and position center off bottom of screen">
+	
+	<p>
+		Look at <tt><b>obj_game_controller: Create</b></tt> event and look at where the game spawns the player at the beginning.  We want to move it to this same spot before switching from ghost back to game mode.
+		<h3><tt><b>obj_game_controller: Create</b></tt> Event</h3> 
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/XandYTarget.png" alt="Check out where we want to move plane back towards">
+	
+	<p>
+		Lets create two new variables to hold the target of where we want the ghost to move towards. Open <tt><b>obj_ghost_player: Create</b></tt> event script.
+		<h3><tt><b>obj_ghost_player: Create</b></tt> Event</h3>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ObjGhostPlayerCreateTarget.png" alt="Add two variables to indicate player's target to move toward">
+		
+	<p>
+		Lets add a speed of how fast to go back to starting point as well as making the sprite partially translucent. This is a common trick to let the player know that the player is invincible and not under player control.
+		<h3><tt><b>obj_ghost_player: Create</b></tt> Event</h3>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/SpeedTransulencyGhost.png" alt="Add speed to player to return to starting point">
+
+	<p>
+		Create a <tt><b>Step</b></tt> event on <tt><b>obj_ghost_player</b></tt> and we will use the 
+		<b><a href="gms2tutorials:///ShowHelp?tag=move_towards_point">move_towards_point(x, y, speed)</a></b> to get to our destination.  Add this to the script.
+	<h3><tt><b>obj_ghost_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/GhostMoveToStartingStep.png" alt="Add step event to obj_ghost_player then use move_towards_point() to go back to starting point">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Get shot on purpose and get your health to 0. Notice that the player object changes, goes offscreen and comes back on screen:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/GhostModeFirstPass.gif" alt="Play game and ghost now moves back to center of screen">
+
+	<p>
+		Now we need to switch back to game mode and back to <tt><b>obj_player</b></tt> once the player is close enough to its destination.  We use <tt><b>distance_to_point(x, y)</b></tt> to get the distance to target.  If it is less or equal to its speed then we switch back.  This requires a few steps:
+
+		<ol>
+		<li>set the <tt><b>image_alpha</b></tt> back to <tt><b>1</b></tt></li>
+		<li>Change the <tt><b>obj_ghost_player</b></tt > back to <tt><b>obj_player</b></tt></li>
+		<li>Put the player's health back to 100</li>
+		<li>Move to the targets x and y position</li>
+		<li>Since <tt><b>move_towards_point()</b></tt></li> uses speed we want to turn this off or the player will move without user input.
+		</ol>
+
+		<p>
+			Open <tt><b>obj_ghost_player: Step</b></tt> event and add to the bottom.
+		<h3><tt><b>obj_ghost_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/DistanceToPointCloseSwitchFromGhost.png" alt="Add a loop that repeats 5 times and adds one to a variable">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Get shot on purpose and get your health to 0. Now you switch back to playing the game after a certain amount of time:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlayerToGhostToPlayerMode.gif" alt="Run game, ghost mode works perfectly!">
+
+
+
+
+		
+		
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page02.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page04.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

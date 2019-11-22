@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch4 - Page 4</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="page04.html">Shooting Enemies</option>
+					<option value="page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../ch5/page01.html">Player Health</option>
+					<option value="../ch5/page02.html">Player Taking Damage</option>
+					<option value="../ch5/page03.html">Ghost Mode</option>
+					<option value="../ch5/page04.html">Audio</option>
+					<option value="../ch5/page05.html">Front End</option>
+					<option value="../ch5/page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="page01.html">Setting up Three Enemy Types</option>
+					<option value="page02.html">Enemy Basic and Timelines</option>
+					<option value="page03.html">Shooting</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Shooting Enemies</b>
+
+<p>
+	Create a wave of the new planes. Open <tt><b>tl_lvl_1</b></tt>> and <tt><b>Add</b></tt> another <tt><b>Moment</b></tt> at <tt><b>220</b></tt> (or 4 seconds in) with a V wave of four enemy shooters. Add to the script:
+
+<h3><tt><b>tl_lvl_1: 220 Moment</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SecondWaveTL.png" alt="Add a second wave of enemy shooters at 220 frames into the game">
+
+<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  You should see a second wave follow close behind the first one.  Notice that the explosion works for this one as we have put all the code in the parent which it inherits from.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SecondWaveEnemyShooter.gif" alt="Second wave of shooting planes that don't shoot">
+
+<p>
+	Create a new <tt><b>Sprite</b></tt> and call it <tt><b>spr_enemy_bullet</b></tt>. Load <tt><b></b></tt>> by pressing the Import button and go to <tt><b>Included Files | TutorialResources | Sprites | spr_enemy_bullet.png </b></tt>.  Call it <tt><b>spr_enemy_bullet</b></tt>. If you can't find it you can locate the file in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_enemy_bullet.png">here</a>). Adjust the origin by selecting <tt><b>Top Center</b></tt>:
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SprEnemyBullet.png" alt="Add new sprite called spr_enemy_bullet and adjust the origin to top center">
+	
+<p>
+	Create a new <tt><b>Game Object </b></tt> and call it <tt><b>obj_enemy_bullet</b></tt>> and bind the above sprite to it:
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ObjEnemyBullet.png" alt="Create obj_enemy_bullet and assign spr_enemy_bullet">
+
+<p>
+	Add a <tt><b>Create</b></tt> event and make the bullet move downwards:
+<h3><tt><b>obj_enemy_bullet: Create</b></tt> Event</h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletCreate.png" alt="Create event for enemy bullet and script to make it move down screen">
+
+<p>
+	The one thing we have to be careful about inheriting parent scripts is to make sure that if you are adding another event to the child whose parent has the same event type that we need to make sure they both run (if we want them to).  Double click on <tt><b>obj_enemy_shoot</b></tt> and you will see a greyed out <tt><b>Create</b></tt> event and <tt><b>Step</b></tt> event.
+	<h3><tt><b>obj_enemy_shoot</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/InheritedCreateAndStep.png" alt="Greyed out step and create event">
+
+<p>
+	Our bullet is now set up. We will fire the bullet from the enemy plane that fires and we need to add a rate of fire. Lets create a new Create Event Script on obj_enemy_shoot and since we are overriding the parent's event, add <tt><b><b><a href="gms2tutorials:///ShowHelp?tag=event_inherited">event_inherited()</a></b></b></tt> which will run the parent's create event script:	
+
+	<h3><tt><b>obj_enemy_shoot: Create</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/EnemyCreateShootInherit.png" alt="Add a Create event to obj_enemy_shoot and event_inherited from parent">
+	
+	<h3><tt><b>obj_enemy_shoot: Create</b></tt> Event</h3>
+<p>
+	Add a <tt><b>rate_of_fire</b></tt> and <tt><b>cooldown</b></tt> to the shooting enemy just like we did in the player.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RateOfFireCreateEnemy.png" alt="Add a rate_of_fire and cooldown variable">
+	
+<p>
+	Add to <tt><b>obj_player_shoot</b></tt> and add an overriding <tt><b>Step | Step</b></tt> event script on and add shooting after running the parent's step event through <tt><b>event_inherited();</b></tt>.
+
+<h3><tt><b>obj_player_shoot: Step</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/StepEventEnemyShoot.png" alt="Add event_inherited(); to newly created obj_player_shoot step event">
+
+	<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  The enemy now shoots (although the bullet does no harm).
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ShootingEnemy.gif" alt="Play game and enemies shoot bullets.  They do no damage to the player right now.">
+
+<p>
+	We have a problem with these bullets, again they never disappear and they just keep going.  We don't want a memory leak so lets clean this up the same way we did player bullets.
+	
+<p>
+	Open <tt><b>obj_enemy_bullet</b></tt>. Create a new event <tt><b>Other | Outside Room</b></tt>script and destroy the bullet:
+
+<h3><tt><b>obj_enemy_bullet: Outside Room</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ShootingEnemy.gif" alt="Add outside room event to obj_enemy_bullet and destroy oneself">
+
+<p>
+	Run the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="run button icon">  debug mode and double check that all bullets and enemy planes are destroyed once they leave the room:
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RunDebugEverythingCleansUp.gif" alt="Add a loop that repeats 5 times and adds one to a variable">
+
+<p>
+	Next up we will complete the targeting enemy our final enemy type.
+
+
+
+
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page03.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page05.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

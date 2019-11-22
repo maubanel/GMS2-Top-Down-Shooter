@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter- Ch1 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				
+				<optgroup label="Chapter 1 - Getting Set-Up">
+					<option value="page01.html"><b>Getting Started</b></option>
+				</optgroup>
+					<optgroup label="Chapter 2 - Ship">
+						<option value="ch2/page01.html">Getting Ship in Room</option>
+					<option value="ch2/page02.html">Moving Ship with Keyboard</option>
+					<option value="ch2/page03.html">Add Gamepad</option>
+				</optgroup>
+				<optgroup label="Chapter 3 - Background">
+					<option value="ch3/page01.html">Scrolling Water</option>
+					<option value="ch3/page02.html">Scrolling Islands</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="ch4/page03.html">Shooting</option>
+					<option value="ch4/page04.html">Shooting Enemies</option>
+					<option value="ch4/page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="ch5/page01.html">Player Health</option>
+					<option value="ch5/page02.html">Player Taking Damage</option>
+					<option value="ch5/page03.html">Ghost Mode</option>
+					<option value="ch5/page04.html">Audio</option>
+					<option value="ch5/page05.html">Front End</option>
+					<option value="ch5/page06.html">Lives</option>
+				</optgroup>
+			</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Getting Started</b>
+	
+	<p>
+		This tutorial is a more advanced tutorial than <a href = "https://marketplace.yoyogames.com/assets/7423/space-rocks-gml" target="blank">Space Rocks</a> or <a href = "#" target="blank">First Look</a>. I have left the scripting in images so you can't cut and paste the text. When learning to script I think it is very important to type it in yourself and get used to making mistakes and develop an understanding of what you are typing does to the game engine. For that reason I have eliminated the ability to cut and paste scripts. 
+
+	<p>
+		We will be making a vastly simplified version of the original <b>1942</b> Arcade Game. If you are not familiar with the game take a look at this playthrough of the original video game. 
+		
+	<p>
+		<iframe src="https://www.youtube.com/embed/WB67Zu421Pk" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
+	<p>
+		We need to make sure we see the files that are incluced with this tutorial.  There are two folders called <tt><b>TutorialResources</b></tt> and two folders <tt><b>Sprites</b></tt> and <tt><b>Sounds</b></tt>.  If you don't see them in the <tt><b>Resources</b></tt> tab then you can find the two folders <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/">here</a>.  Inside are all the files we need for the game.  Please note where this is located as you will need to access them on the next page.
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH1/TutorialResourcesInFolder.png" alt="Tutorial resources in Resource menu listed in gamemaker">
+
+	<p>
+		Normally you would start a game from scratch.  Since this tutorial creates a game for you. I will show you the process (<b>you don't need to do this for this tutorial</b>) if you wanted to start a GML game from scratch.  You would select <tt><b>New</b></tt> then <tt><b>GameMaker Language</b></tt> and then put it in a folder and give the project a name:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH1/StartNewGame.png" alt="Start new GML game">
+
+	<p>
+		On the next page we will start by getting the plane started.
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<!-- <a href="Chapter_1/page09.html"  class="prev">
+				<div id="button-prev"></div> -->
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="ch2/page01.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

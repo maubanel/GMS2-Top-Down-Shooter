@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch2 - Page 3</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				
+				<optgroup label="Chapter 2 - Ship">
+					<option value="page03.html">Add Gamepad</option>
+				</optgroup>
+				<optgroup label="Chapter 3 - Background">
+					<option value="../ch3/page01.html">Scrolling Water</option>
+					<option value="../ch3/page02.html">Scrolling Islands</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<option value="../ch4/page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../ch5/page01.html">Player Health<<</option>
+					<option value="../ch5/page02.html">Player Taking Damage</option>
+					<option value="../ch5/page03.html">Ghost Mode</option>
+					<option value="../ch5/page04.html">Audio</option>
+					<option value="../ch5/page05.html">Front End</option>
+					<option value="../ch5/page06.html">Lives</option>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="page01.html">Getting Ship in Room</option>
+						<option value="page02.html">Moving Ship with Keyboard</option>
+						</optgroup>
+						</optgroup>
+						</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Add Gamepad</b>
+
+	<p>
+		If you do not have a controller to test with then skip to the next <a href="../ch3/page01.html">chapter</a>.  Otherwise lets continue and add a controller.  First make sure that you controller is compatible with your PC or Mac.  The XBox controller is a good option for a PC and the Sony controller is natively supported on most macs.
+
+	<p>
+		The original game and most shooters use a controller instead of the keyboard.  Game mechanics have developed with the user interface in mind.  Often game systems that work well on controllers don't translate so well on keyboards and mice.  I find shooters just shine using a game controller.
+
+	<p>
+		I have included a <tt><b>Game Object</b></tt> to poll for the gamepad and assign it to a global array <tt><b>global.gamepad[]</b></tt>.  You can access up to 4 gameplads by accessing index 0 through 3 (you still need to have gamepads plugged into your computer for it to work).
+	
+	<p>
+		If you want to find out more about how this works check out GameMaker's excellent tutorial <a href="https://marketplace.yoyogames.com/assets/5785/adding-gamepad-support-code" target="blank">Add Gamepad Support</a>.  
+		
+	<p>
+		Drag <tt><b>obj_gamepad</b></tt> into <tt><b>rm_lvl_1</b></tt>:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/AddGamePadObject.png" alt="Add obj gamepad to room">	
+	
+	<p>
+		Lets quickly look at two items in the <tt><b>obj_gamepad</b></tt> object.  Open it and look at the <tt><b>Create</b></tt> event.  Notice that we initialize the four gamepads to <b><a href="gms2tutorials:///ShowHelp?keyword=noone">noone</a></b>.  This is a keyword that means that something is empty or not there.  We are basically saying in Gamemaker parlance that there is no controller plugged into this slot.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/InititalizeGamepadsToNoone.png" alt="Look at gamepad obj_gamepad Create event initializing controllers">	
+		
+	<p>
+		The event where the magic happens is in the <tt><b>Asynchronous | Async System</b></tt> event.  Here we print debug messages if a controller is plugged in or unplugged as well as save a reference to the index number that we can use in the <tt><b>global.gamepad</b></tt> array. 
+
+	<p>
+		The <tt>global.</tt> keyword allows us to create a variable that is not only seen inside the instance of an object.  It is a global variable where there is only one global copy and it is accessible everywhere.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/AsyncGamepad.png" alt="Illustration of computer science variable as a box">	
+	
+	<p>
+		Open <tt><b>obj_player: Step</b></tt> event and add controls after we check for keyboard. To stop cheating where players press both keyboard and joystick, we can add an if statement to ensure we are getting 0's for keyboard input (player is not pressing both at the same time).  Also, we don't have to compensate for diagonals because the controller returns a horizontal and vertical value with a magnitude of 1.
+
+	<p>
+		We are using <b><a href="gms2tutorials:///ShowHelp?tag=gamepad_axis_value">gamepad_axis_value</a></b> where we can get 2D axis values for the left and right gamepad stick (we are looking for the left here). This will return a value of -1 to 1 just like when we check for the keyboard axis. Add the code after the keyboard controls but before you move the player. 
+		
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/AddControllerToGame.png" alt="Illustration of computer science variable as a box">	
+	
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> and try your controller out.  You should be able to move the player around at any angle.  Look I can turn the player in circles.  You also don't go faster if you press both arrow keys and the gamepad.  Test it out! Next up we will move on to adding backgrounds to the game.
+
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/GameadControllingShip.gif" alt="Illustration of computer science variable as a box">	
+
+
+		
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page02.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="../ch3/page01.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,590 @@
+{
+    "id": "da887b09-6b37-411b-8457-ed12c2505d6a",
+    "modelName": "GMProject",
+    "mvc": "1.0",
+    "IsDnDProject": false,
+    "configs": [
+        
+    ],
+    "option_ecma": false,
+    "parentProject": {
+        "id": "7a4a8a64-b15e-4b53-8fb7-6d13119ba1cf",
+        "modelName": "GMProjectParent",
+        "mvc": "1.0",
+        "alteredResources": [
+            {
+                "Key": "ed6a955d-5826-4f98-a450-10b414266c27",
+                "Value": {
+                    "configDeltas": [
+                        "inherited"
+                    ],
+                    "id": "5fde66d6-2536-4aba-80ee-d2dddc855f6c",
+                    "resourcePath": "options\/main\/options_main.yy",
+                    "resourceType": "GMMainOptions"
+                }
+            }
+        ],
+        "hiddenResources": [
+            
+        ],
+        "projectPath": "${base_project}"
+    },
+    "resources": [
+        {
+            "Key": "1d818280-2b4d-49f4-9237-d00f218f003e",
+            "Value": {
+                "id": "2d92857f-a499-400c-afc8-e3e27c40bc06",
+                "resourcePath": "datafiles_yy\/TutorialContent\/tutorial.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "22a50add-3afb-416a-b593-048538fabe1a",
+            "Value": {
+                "id": "0ebe27bc-f4c0-4200-9204-450ee0eb6c32",
+                "resourcePath": "views\/22a50add-3afb-416a-b593-048538fabe1a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "24cce84c-008c-4365-bfef-c8bc529eec09",
+            "Value": {
+                "id": "bfae333e-1b9f-416d-a4de-997981d18388",
+                "resourcePath": "views\/24cce84c-008c-4365-bfef-c8bc529eec09.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "268ac552-be9a-4bf9-b75b-aa5cd927cc39",
+            "Value": {
+                "id": "e3eba27c-0f97-47f9-9723-2efbacfb64e8",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_enemy_explosion_sprite_sheet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "2ad3a4df-5f32-45ba-a175-2873d42fc0fc",
+            "Value": {
+                "id": "bc1a915a-f74f-4d62-9cff-111f798cc0c9",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch2\/page02.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "331baa14-3485-48e9-8491-1925c87a04dd",
+            "Value": {
+                "id": "96beaeec-7afb-4607-aba9-beea105977f9",
+                "resourcePath": "objects\/obj_gamepad\/obj_gamepad.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "38181374-e4c3-4925-9a8e-6c284bcd61b7",
+            "Value": {
+                "id": "1fd1b6d5-247c-409c-ba48-ec9e64eb9b83",
+                "resourcePath": "views\/38181374-e4c3-4925-9a8e-6c284bcd61b7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "387ea986-f6dc-44cc-9684-a4a9943c21e6",
+            "Value": {
+                "id": "6fb7055b-c234-468d-9413-95db7b2ad484",
+                "resourcePath": "datafiles_yy\/TutorialContent\/Light.css.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "39f70f50-5841-4062-838a-e9b856700fc6",
+            "Value": {
+                "id": "9abe0b0f-e28d-4fb0-92fe-529c238ec304",
+                "resourcePath": "views\/39f70f50-5841-4062-838a-e9b856700fc6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3a06c22c-9030-4906-ba19-646c70fdd0ed",
+            "Value": {
+                "id": "df232b1a-a223-460f-b9cf-3f9d37dd8261",
+                "resourcePath": "views\/3a06c22c-9030-4906-ba19-646c70fdd0ed.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3b7b58a7-655c-4577-8412-d2eed0b92980",
+            "Value": {
+                "id": "3addb0ca-4085-4496-ad9f-8953dff88ed1",
+                "resourcePath": "views\/3b7b58a7-655c-4577-8412-d2eed0b92980.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3beb1d6c-e687-44a4-a1fd-3677e7f794e4",
+            "Value": {
+                "id": "0f6abaaa-e12a-4e17-bc39-319a4264c428",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_player_explosion_sprite_sheet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "4033c1b0-c468-4192-8ad1-bd6cd7dfca41",
+            "Value": {
+                "id": "3353d446-c111-464e-8d7d-6eca5bc1c239",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch5\/page02.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "413bdd2d-6e0d-4998-b3d5-5d80460ec28d",
+            "Value": {
+                "id": "2d57473e-f316-43eb-a86e-fe87996ccc77",
+                "resourcePath": "views\/413bdd2d-6e0d-4998-b3d5-5d80460ec28d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "445f9b03-9715-4d84-b6ee-fcefa7679cdc",
+            "Value": {
+                "id": "ba2ff2c8-3a57-4927-8cef-b9479010a637",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_title_page.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "46557ac7-88ac-45f1-b81c-6985a14788cf",
+            "Value": {
+                "id": "bb1f133a-0f37-47bf-8045-e4c95b18d86e",
+                "resourcePath": "datafiles_yy\/TutorialContent\/Dark.css.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "4fad2fa0-1caa-48b0-a0d9-f8137454c156",
+            "Value": {
+                "id": "cd9b4d9e-ab9d-4b0e-9983-25134b14a7ec",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_enemy_target_sprite_sheet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "50ca8013-7513-4a88-8993-8ab98e6c8f6f",
+            "Value": {
+                "id": "db65dd6f-38a5-4bf9-9eb8-15985f04740f",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_island_3.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "512c8ed5-4b53-4828-a437-5ab7ed5e78f0",
+            "Value": {
+                "id": "1959cf9a-aa43-49a1-8d4e-d2e1beff83b6",
+                "resourcePath": "views\/512c8ed5-4b53-4828-a437-5ab7ed5e78f0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5383246d-5459-427f-946b-cacafa6afb0b",
+            "Value": {
+                "id": "d1990242-214c-4a99-8041-fa19eb51b7c6",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sounds\/snd_player_explode.wav.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "551d9307-3f01-403c-923d-46d98a208e5f",
+            "Value": {
+                "id": "f485dc6f-18e0-4e0a-bd41-d9a3d139f38e",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch4\/page01.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "59d00791-867c-453d-ad67-f465159b1588",
+            "Value": {
+                "id": "7c440ee7-fdcb-4a57-a05b-8e7b1b9c58c8",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch2\/page03.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "602fb27f-7d3a-497d-a309-db708f68df4f",
+            "Value": {
+                "id": "7dd7931a-7ee5-4077-9827-665530c20d1c",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch4\/page03.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "69665054-6934-4ffa-be0c-6c3bf7a4e556",
+            "Value": {
+                "id": "221dffb9-143e-4ee9-9f6d-39272be0b7b9",
+                "resourcePath": "rooms\/room0\/room0.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "6a90a2c3-2e5a-4a8e-823c-9f46e6843de5",
+            "Value": {
+                "id": "7dfc6cbd-852d-4be3-b1f1-98a7e879bb85",
+                "resourcePath": "views\/6a90a2c3-2e5a-4a8e-823c-9f46e6843de5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "70757b46-d6ca-437b-9649-299831faedc8",
+            "Value": {
+                "id": "e5dcef1e-2a73-40b1-a522-68d37ad63ea0",
+                "resourcePath": "views\/70757b46-d6ca-437b-9649-299831faedc8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "77a09f58-81c6-4d1e-a637-81d34ade6164",
+            "Value": {
+                "id": "e5a83b55-f123-485f-b257-b1897ef9fa2d",
+                "resourcePath": "views\/77a09f58-81c6-4d1e-a637-81d34ade6164.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "78d1aef8-d7da-43b1-9194-e897a113aee4",
+            "Value": {
+                "id": "9215b672-1a7d-41f7-a259-85b3b2c00ca9",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_island_1.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "7be56ffd-65e1-4fe2-9912-5905f99ec27a",
+            "Value": {
+                "id": "80f3c225-3111-4dca-b636-de47ed3d8348",
+                "resourcePath": "views\/7be56ffd-65e1-4fe2-9912-5905f99ec27a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d1c2f32-6f84-4f9e-a9e4-0df27c7cb5b0",
+            "Value": {
+                "id": "66917767-be76-43a9-a5a9-e8a96aa31eff",
+                "resourcePath": "views\/7d1c2f32-6f84-4f9e-a9e4-0df27c7cb5b0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "87ae66d1-7b13-4cab-bd38-54d4e3f04ce3",
+            "Value": {
+                "id": "1fbd7c9c-a34e-4f24-b9ae-2b80ee4230b6",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch5\/page05.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "87b5a122-785e-4bf7-ba18-c2912329a59d",
+            "Value": {
+                "id": "04198c3f-0b90-4e77-b3d3-ecaa1e0dbacb",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sounds\/snd_enemy_explode.wav.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "896ec7db-3b53-482e-8fa5-bec5abbb0f71",
+            "Value": {
+                "id": "70edae68-26c6-42c8-a0ba-d032d3d4797c",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch5\/page06.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "8b6a5770-3bbb-4e14-96cc-138c2923e00c",
+            "Value": {
+                "id": "80ae526d-949f-48a8-b0f0-a794ea1667a8",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_enemy_bullet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "8ed4996e-4d1c-41dc-bc6a-d96ec07371c0",
+            "Value": {
+                "id": "e1fa4c6d-c3d3-463f-8013-8fda0457e766",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_tile_water.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "968dfdfc-25fc-4bff-975f-6e34336eec95",
+            "Value": {
+                "id": "5bd05453-3801-440d-adc9-b5dec9122ee0",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_player_bullet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a0f70188-8945-41ee-80e7-34d3c9cc5623",
+            "Value": {
+                "id": "e94a3252-15ae-49f5-a9dd-6e730ceb2268",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch4\/page04.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a4c22986-3718-4700-b0a0-58948c7e3858",
+            "Value": {
+                "id": "652b6076-128e-49ec-bb7a-852aa6eda7ee",
+                "resourcePath": "views\/a4c22986-3718-4700-b0a0-58948c7e3858.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a668bff5-fb33-4422-a507-274a19de5347",
+            "Value": {
+                "id": "ea607646-a05e-41dd-a499-2d2f45d3da4c",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch5\/page03.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a7510763-7bfc-414f-a0e6-7e6d10f3fb34",
+            "Value": {
+                "id": "fe656aa7-3410-48ee-996a-64de43ede5c4",
+                "resourcePath": "datafiles_yy\/TutorialContent\/default_style.css.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a8f28fd2-803d-41bb-9dd0-b807cece044b",
+            "Value": {
+                "id": "9091923f-a6ce-4f76-94a8-4d7c30802141",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch4\/page05.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "b9ac3020-575f-4d3d-9493-ff1e05ae59e9",
+                "resourcePath": "options\/linux\/options_linux.yy",
+                "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ab19d0df-2251-40fc-918b-0b603b1ec5c5",
+            "Value": {
+                "id": "b7d4b5ec-11eb-45a3-b2db-c611c116f611",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_press_space.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "abec5e43-20a3-4877-bea3-1c94800b797b",
+            "Value": {
+                "id": "c6c3a1f6-98ed-49cf-8998-c34de235895c",
+                "resourcePath": "views\/abec5e43-20a3-4877-bea3-1c94800b797b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "aca48270-483a-45a4-af2e-69b86273fe61",
+            "Value": {
+                "id": "5d15c528-4943-4474-897e-2dd99df2c6b3",
+                "resourcePath": "views\/aca48270-483a-45a4-af2e-69b86273fe61.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "afa9bf71-6800-4b6d-915a-ca1f54eca02a",
+            "Value": {
+                "id": "957ca068-bd56-40cb-ba22-dab65223a2c8",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_island_2.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "b071c1c7-0534-45ec-bc1d-2980521f1181",
+            "Value": {
+                "id": "31052434-99a3-445b-a543-a1146c384567",
+                "resourcePath": "views\/b071c1c7-0534-45ec-bc1d-2980521f1181.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b271b244-a1b0-4e72-8de1-fd8a49f48aeb",
+            "Value": {
+                "id": "b8a59db7-824e-43b9-a369-82336ef5cd1f",
+                "resourcePath": "views\/b271b244-a1b0-4e72-8de1-fd8a49f48aeb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b46087c9-d861-4dde-bfa1-91cbcb6c1bb0",
+            "Value": {
+                "id": "f230b814-3129-4345-8d33-eb0269c1bffc",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch4\/page02.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "ba77b3fd-6d02-4116-b5c5-fe5d7b967f74",
+            "Value": {
+                "id": "52759b6f-9998-4077-83ea-15c7f5041a07",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch3\/page02.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "bb0d899f-4d21-439d-90d9-08b33c98a2c8",
+            "Value": {
+                "id": "e1de1781-967b-43e1-a7ca-dfe5ee63b57f",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_player_sprite_sheet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
+            "Value": {
+                "id": "7bdac36c-04a8-4791-a7bc-b379b91e3d66",
+                "resourcePath": "options\/windows\/options_windows.yy",
+                "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf9f790a-3757-424e-be8b-c3254c405577",
+            "Value": {
+                "id": "58b1f504-1c97-44a0-80ad-b3fb22db7552",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_enemy_basic_sprite_sheet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "d1a37b27-468e-4807-90f8-e2c21218abde",
+            "Value": {
+                "id": "014d9cef-b774-4ff4-b969-b6d5b69eae83",
+                "resourcePath": "views\/d1a37b27-468e-4807-90f8-e2c21218abde.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d35d9ef8-840d-4255-bbe7-8d5f068117f8",
+            "Value": {
+                "id": "b9cb74ec-44fa-4eb6-be77-3f7f6ba7cd77",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch5\/page04.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "d6bd7ebe-c713-41a8-8545-64a0a3c1799f",
+            "Value": {
+                "id": "178d681d-543d-4077-9a4e-0eb98ee3cd44",
+                "resourcePath": "datafiles_yy\/TutorialContent\/page01.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "d6d57912-051a-405e-a12e-05cb931ad73a",
+            "Value": {
+                "id": "bfff47db-a1b1-4558-8ca1-49327bbeb9cf",
+                "resourcePath": "views\/d6d57912-051a-405e-a12e-05cb931ad73a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d8e92a28-0185-45ab-b0bd-b487987b3617",
+            "Value": {
+                "id": "8b42f5a1-fd4e-4f8b-96fd-a3c386570928",
+                "resourcePath": "views\/d8e92a28-0185-45ab-b0bd-b487987b3617.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dbd52f1f-7ea8-4b5b-b450-a7dfa5ae7758",
+            "Value": {
+                "id": "2ff2741f-3982-45ae-937f-1ea8bf30fd9f",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch2\/page01.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "dcb54977-da29-45d1-8b77-0f0049b1c001",
+            "Value": {
+                "id": "4d46a5fc-2718-4193-800d-9c6cb5a14d0b",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch3\/page01.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "e74a848a-c66b-46c3-9287-527cece4aad9",
+            "Value": {
+                "id": "65f0239a-f379-4d19-9ea1-33d16cfe4a0b",
+                "resourcePath": "views\/e74a848a-c66b-46c3-9287-527cece4aad9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e9716742-4060-4f07-90ec-b3e3efc8db0e",
+            "Value": {
+                "id": "49de6e0f-b6c2-4087-8564-ce87104b57d4",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sounds\/snd_player_shoot.wav.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "f077c409-64d0-462d-939e-c70362eecfd6",
+            "Value": {
+                "id": "5f75d582-084a-4a80-a65d-481bf158a40c",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sounds\/snd_Enemy_shoot.wav.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "f2344c5f-cf0e-4f10-a19b-29dc2dc4b501",
+            "Value": {
+                "id": "e41b7036-7d6a-444b-9a65-d743a1f00fe6",
+                "resourcePath": "views\/f2344c5f-cf0e-4f10-a19b-29dc2dc4b501.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "cffbc51e-f1de-4591-bf0a-0e770be33953",
+                "resourcePath": "options\/mac\/options_mac.yy",
+                "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f454d9dd-ebc2-4047-bd75-beb34b1ad69b",
+            "Value": {
+                "id": "78c276b1-dedb-4aae-9beb-cce3a2ac98d6",
+                "resourcePath": "datafiles_yy\/TutorialContent\/style.css.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "f4759295-6278-49cd-9b22-16b74c93688e",
+            "Value": {
+                "id": "22b74e9f-8d60-48b7-81d8-4e8f6d7441be",
+                "resourcePath": "views\/f4759295-6278-49cd-9b22-16b74c93688e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fadc3807-016c-4f17-93f7-4c129d2a6ffc",
+            "Value": {
+                "id": "78fbcab6-6368-4f10-bf7c-e09235ae2d12",
+                "resourcePath": "datafiles_yy\/TutorialResources\/Sprites\/spr_enemy_shoot_sprite_sheet.png.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "ff4b253f-00a2-42af-a01b-4a18badc1caa",
+            "Value": {
+                "id": "5cf93efe-5ee2-4565-90f3-9f8dd2149b65",
+                "resourcePath": "datafiles_yy\/TutorialContent\/ch5\/page01.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        }
+    ],
+    "script_order": [
+        
+    ],
+    "tutorial": "datafiles"
+}

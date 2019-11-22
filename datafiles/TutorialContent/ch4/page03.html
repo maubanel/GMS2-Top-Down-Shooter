@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch4 - Page 3</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="page03.html">Shooting</option>
+					<option value="page04.html">Shooting Enemies</option>
+					<option value="page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../ch5/page01.html">Player Health</option>
+					<option value="../ch5/page02.html">Player Taking Damage</option>
+					<option value="../ch5/page03.html">Ghost Mode</option>
+					<option value="../ch5/page04.html">Audio</option>
+					<option value="../ch5/page05.html">Front End</option>
+					<option value="../ch5/page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="page01.html">Setting up Three Enemy Types</option>
+					<option value="page02.html">Enemy Basic and Timelines</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Shooting</b>
+
+	<p>
+		Now we should add shooting and collision between bullets and enemies. Create a new <tt><b>Sprite</b></tt>, press the <tt><b>Import</b></tt> button and load from the  <tt><b>Included Files | TutorialResources | Sprites | spr_player_bullet.png </b></tt>.  If you can't find it you can locate the file in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_enemy_basic_sprite_sheet.png">here</a>) and import the <tt><b>spr_player_bullet.png</b></tt> file.
+
+	<p>
+		Call it <tt><b>spr_player_bullet</b></tt> and change the origin to <tt><b>Bottom Center</b></tt>.  We want the bullet to spawn at the front of the plane so it is best to have the origin at the bottom of the sprite so it spawns in front of the plane.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SprPlayerBullet.png" alt="Add spr_play_bullet and adjust origin to bottom center">
+	
+	<p>
+		Create a new <tt><b>Game Object</b></tt> and call it <tt><b>obj_player_bullet</b></tt>. Assign the <tt><b>spr_player_bullet</b></tt> to the new object:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ObjPlayerBullet.png" alt="Add obj_player_bullet and bind spr_player_bullet to it">
+		
+	<p>
+		Add a new <tt><b>Create</b></tt> event script on the newly created <tt><b>obj_player_bullet</b></tt> and send the bullet upscreen fast!
+		<h3><tt><b>obj_player_bullet: Create</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/PlayerBulletCreateEvent.png" alt="Add an obj_player_bullet: Create event and add some script">
+
+	<p>
+		Open <tt><b>rm_lvl_1</b></tt> and add a new <tt><b>Instance Layer</b></tt> to the room and call it <tt><b>Bullets</b></tt> and place it between <tt><b>Instance_Player</b></tt> and <tt><b>Islands</b></tt>:
+
+	<h3><tt><b>rm_lvl_1</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/AddBulletLayerRm.png" alt="Add instance layer Bullets to rm_lvl_1">
+		
+	<p>
+		Open the <tt><b>obj_player: Create</b></tt> event script for obj_player and add the rate of fire for the bullets.  We also want to add a speed relative to room speed (3 times a second) and a variable called <tt><b>cooldown</b></tt> that will be used to limit how often you can fire a bullet (simulate the time for a new bullet to be loaded in the chamber).
+
+		<h3><tt><b>obj_player: Create</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/PllayerShootingCreate.png" alt="Add an obj_player Create event and set a speed for it in script">
+
+	<p>
+		Open the Step Event Script for <tt><b>obj_player: Step</b></tt> and add to the bottom of the script.  We add an offset horizontally to the bullet or it looks like it fires behind the plane as opposed to outside of its turret as it is hidden during the first frame beneath the plane.  Offsetting it one player moves has it catch up to current frame.
+
+		<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/AddShottingToStep.png" alt="Add firing bullet spawning logic to obj_player step event">
+
+	<p class="code">
+//Player shooting<br>
+if ((keyboard_check_pressed(vk_space) ||<br>
+	gamepad_button_value(global.gamepad[0], gp_shoulderrb))<br>
+ 	&& cooldown < 1)<br>
+{<br>
+	instance_create_layer(x + x_axis * player_speed * (delta_time/1000000), y, "Bullets", obj_player_bullet);<br>
+	cooldown = rate_of_fire;<br>
+}<br>
+<br>
+//Reload bullet timer<br>
+cooldown -= 1;<br>	
+
+<p>
+		Try running the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="Debug run icon"> debug mode (right to the left of the regular run game button) and check the <tt><b>Instances</b></tt> tab below. Notice that the plane fires bullets every time you press the space bar.  Notice that the bullets just keep adding up and are never destroyed.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletsFlyAndDontGetDestroyed.gif" alt="Play game and press the space bar to fire bullets.  Notice that the bullets are fired but never destroyed.">
+
+	<p>
+		Now lets destroy the bullet if it leaves the room. We don't want the game to run out of memory because we have too many bullets. We will use the <tt><b>Other | Outside Room</b></tt> event type on <tt><b>obj_bullet</b></tt>:
+	<h3><tt><b>obj_bullet: Outside Room</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyPlayerBulletLeaveRoom.gif" alt="Destroy bullet when it leaves room in obj_bullet outside room event.">
+
+	<p>
+		Run the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="Debug run button icon">  debug mode. See how the bullets get destroyed once they leave the room.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletsFireAndGetDestroyed.gif" alt="Run game in debug mode and notice that bullets are now destroyed.">
+		
+
+	<p>
+		Now lets deal with the bullet enemy collision. Create a new <tt><b>Collision Event</b></tt> Script in <tt><b>obj_bullet</b></tt>> with a <tt><b>Collision | obj_enemy_parent</b></tt>.  We collide with the parent as it allows us to get an event with one object as they all inherit from it.
+	
+	<p>
+		We destroy the bullet itself and use <tt><b>with (other)</b></tt> to access the object that the bullet is colliding with.
+		
+		<h3><tt><b>obj_bullet: Collision obj_enemy_parent</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyPlayerBulletLeaveRoom.gif" alt="Destroy objects when bullets and enemies collide">
+
+	<p class="code">
+		/// @description All Enemies hit by bullet<br>
+	instance_destroy();<br>
+	<br>
+	with (other)<br>
+	{<br>
+		instance_destroy();<br>
+	}<br>
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and you should destroy them (and the bullets):
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletKillsPlane.gif" alt="Run game and you should see the rock and bullet disappear">
+
+	<p>
+		Lets add some visual fluff and add an explosion animation. Create a new <tt><b>Sprite</b></tt> and and call it <tt><b>spr_enemy_explosion</b></tt>. Click on the <tt><b>Edit Image</b></tt> button.
+
+	<p>
+		Since this is 5 frames long, I didn't provide separate files. I provided them in a single animation sheet or strip. This means you can import a longer sequence from one file. In this case each frame is 128 x 128 pixels and they are on a single row. To import this we need to click on the <tt><b>Image</b></tt> menu item at the top and select <tt><b>Import Strip Image</b></tt>.
+	
+	<p>
+		Select the file <tt><b>spr_enemy_explosion_sprite_sheet</b></tt> and load it.
+	
+	<p>
+		This brings up the <tt><b>Convert to Frames</b></tt> menu. In this menu we select the size of each individual frame, how many there are and whether there are any offsets or margins.
+		Now I know there are 5 frames and they are in a single row. So I select <tt><b>5 Number of Frames</b></tt> and <tt><b>5 Frames per Row</b></tt>. Now you can see the default size is 32 x 32 and they show where the five frames line up in the artwork with white boxes. Change it to <tt><b>128</b></tt> and <tt><b>128</b></tt>.
+
+	<p>
+		Press the <tt><b>Convert</b></tt> button then select yes to confirm that you will be replacing the frames:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SprEnemyExplosion.gif" alt="Add explosion animaton frames by setting size to 128 by 128, 5 frames per row and total number of frames">
+
+	<p>
+		Name the sprite <tt><b>spr_enemy_explosion</b></tt>, adjust its origin to <tt><b>Middle Center</b></tt> and hit play and adjust the speed, I like <tt><b>12</b></tt>.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SprEnemyExplosion.png" alt="Name sprite spr_enemy_explosion and adjust origin to middle center">
+		
+	<p>
+		Create a new Game Object called <tt><b>obj_enemy_explosion</b></tt> and bind the explosion animation you just imported:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ObjEnemyExplosion.png" alt="Create a new object called obj_enemy_explosion and bind spr_enemy_explosion">
+		
+	<p>
+		Now we will trigger the explosion animation in a collision event between the <tt><b>obj_bullet</b></tt> and the <tt><b>obj_enemy_parent</b></tt>. Why the parent? This way any enemy that inherits from <tt><b>obj_enemy_parent</b></tt> will trigger this event, which is exactly what we want with three types of planes. This avoids us having to create three separate collision events. Open the <tt><b>obj_player_bullet: Collision | obj_enemy_parent</b></tt> event script and add at the end:
+<h3><tt><b>obj_player_bullet: Collision obj_enemy_parent</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ObjEnemyParentAddExplosion.png" alt="Add a obj_player_bullet collision script with enemy parent and destroy objects.">
+		
+<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and see a cood explosion but they do not dissappear and loop endlessly!
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ShotPlaneExplosionDontDissapear.gif" alt="Play game and fire at planes.  Notice that explosions do not disappear">
+
+		
+<p>
+	There is an event that runs once an animation has finished playing.  That will be perfect for us a we only want the explosion animation to run once.  Open up <tt><b>obj_enemy_explosion</b></tt> and press the <tt><b>Add Event </b></tt> button and select<tt><b> Other | Animation End</b></tt> and destroy the object:
+<h3><tt><b>obj_enemy_explosion: Animation End</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyExplosionAfterPlaying.gif" alt="Destroy animation object at end of animation">
+
+<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and the explosions work correctly!
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/EnemyExplodesOnce.gif" alt="Run game and fire at enemies and notice explosion only runs once">
+	
+<p>
+	Next we will create a shooting enemy.
+
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page02.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page04.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

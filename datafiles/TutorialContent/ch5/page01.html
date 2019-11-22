@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch5 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="page01.html">Player Health</option>
+					<option value="page02.html">Player Taking Damage</option>
+					<option value="page03.html">Ghost Mode</option>
+					<option value="page04.html">Audio</option>
+					<option value="page05.html">Front End</option>
+					<option value="page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Player Health</b>
+
+<p>
+		We now want the planes to take on damage from being hit. Since the enemies currently have  no health and and are one hit kills, lets implement health on the player.  I will let you decide if you want to add health to the enemies.
+
+<p>
+		OK, so the easiest way to represent player health is through a health bar. We will not use the globally available <tt><b>health</b></tt> variable that GameMaker gives us as we might add multiplayer in the future and need more than one.
+
+<p>
+	Double click <tt><b>obj_player: Create</b></tt> event scripts and add a new variable for player health at the bottom:
+<h3><tt><b>obj_player: Create</b></tt> Event</h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddPlayerHealthToPlayerCreate.png" alt="Add a new player health variable in obj_player">
+
+<p>
+	Lets draw a health bar.  There is an event specifically made for GUI's where we don't have to worry about level versus screen space or sorting layers in the room.  Press the <tt><b>Add Event</b></tt> button on <tt><b>obj_game_controller</b></tt> and select <tt><b>Draw | Draw GUI</b></tt>.  This says relative to camera space (instead of level space) and always renders in front of all other artwork regardless of the layer.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddDrawGUIToGameController.png" alt="Draw gui event type to obj_game_controller">
+
+<p>
+	We will be using the  <b><a href="gms2tutorials:///ShowHelp?tag=draw_healthbar">draw_healthbar(x1, y1, x2, y2, amount, backcol, mincol, maxcol, direction, showback, showborder)</a></b>.  Now there are a lot of options here.  The <tt><b>x1</b></tt>, <tt><b>y1</b></tt>, <tt><b>x2</b></tt>, <tt><b>y2</b></tt> represent the top left corner and bottom right corner of the health bar.  <tt><b>backcol</b></tt> is the color behind the healthbar.  The <tt><b>mincol</b></tt> is when health is low (usually red) and the <tt><b>maxcol</b></tt> is when health is high, usually green.  The <tt><b>direction</b></tt> is the angle of the health bar.  0 will represent left to right the most common representation. <tt><b>showback</b></tt> and <tt><b>showborder</b></tt> represents how you want to healthbar to look.
+
+	<p>
+		Here are the settings I picked and added to the <tt><b>obj_game_controller: Draw | Draw Gui</b></tt> event script:
+<h3><tt><b>obj_game_controller: Draw Gui</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/DrawPlayerHealthOnGUI.png" alt="Add a Draw GUI event and add the code to draw the health bar">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. You should see a healthbar that is green at 100%:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/HealthBarInGame.png" alt="Run game and see health">
+
+
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="../ch4/page05.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

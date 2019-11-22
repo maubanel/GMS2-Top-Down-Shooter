@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch4 - Page 5</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 4 - Enemies">
+					<option value="page05.html">Targeting Enemies</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="../ch5/page01.html">Player Health</option>
+					<option value="../ch5/page02.html">Player Taking Damage</option>
+					<option value="../ch5/page03.html">Ghost Mode</option>
+					<option value="../ch5/page04.html">Audio</option>
+					<option value="../ch5/page05.html">Front End</option>
+					<option value="../ch5/page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="page01.html">Setting up Three Enemy Types</option>
+					<option value="page02.html">Enemy Basic and Timelines</option>
+					<option value="page03.html">Shooting</option>
+					<option value="page04.html">Shooting Enemies</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Targeting Enemies</b>
+
+	<p>
+		OK, lets move on to the third enemy type <tt><b>obj_enemy_target</b></tt>.  It is like the shooting plane by intead of shooting down is is shooting at the player's future position.
+	
+	<p>
+		Create a wave of the new planes. Open <tt><b>tl_lvl_1</b></tt> and Add another <tt><b>Moment</b></tt> at <tt><b>600</b></tt> (or 20 seconds in) with a V formation of seven enemy targeting shooters. Add to the script:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ThirdWaveTimeline.png" alt="Add to tl_lvl_1 and add a Moment at 600 frames and add a v formation of sevent enemy targeting shooters">
+		
+	<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  You should see a non shooting third wave:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/VFormationWave3NotShooting.gif" alt="Run game and see third wave of targeting shooters">
+
+	<p>
+		Lets add the behavior we want in the inheritted class.  Open <tt><b>obj_enemy_target</b></tt> and add a new <tt><b>Create</b></tt> event:
+
+		<div class="note">
+		<p>
+		Please note: There are two events one for parent and one for step that is inherited. Remember to run them using <tt><b>event_inherited()</b></tt>.
+		</div>
+
+		<h3><tt><b>obj_enemy_target: Create</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/CreateEventTargetEnemy.png" alt="Add create event and inherit the event on obj_enemy_target">
+
+	<p>
+		Add the same two variables we had in the shooter as well as inheriting the parents create event script:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RateOfFireForTargetingEnemy.png" alt="Add two shooting variables that we used in the last shooting enemy">
+
+	<p>
+		How to we make the enemies target? We need to calculate an angle between the enemy shooting and the future position of the player. We don't need to use any trig as there is a GameMaker function that does the work for us called <b><a href="gms2tutorials:///ShowHelp?tag=point_direction">point_direction(x1, y1, x2, y2)</a></b>.
+
+	<p>
+		This function returns an angle in degrees between the positions [x1, y1] and [x2, y2]. We will use this to figure out what direction the targeting plane aims the bullets. Now I have made a decision to change it up to how I have implemented this previously.  I want the bullet to change angles to match the direction it is going in. This will cause some problems that we will have to address.
+
+	<p>
+		Create a new <tt><b>Step | Step</b></tt> event script on <tt><b>obj_enemy_target</b></tt>, inherit functionality from the parent and add:
+	<h3><tt><b>obj_enemy_target: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/StepTargetingEnemy.png" alt="Add enemy target step and inherit from the parent and add shooting to the player's future position">
+
+	<p>
+		Lets walk through this.  First we inherit the previous functionality from the the <tt><b>Step</b></tt> event's parent.  Then we store one of three lookups that will offset to a future potential position of the plane.  Then we spawn the bullet and save a reference to that intance.  We then alter its direction based on the offset from the enemy to the player's future position (we use the same math as we used in the player).  Then we set the angle to be the same as the direction. The rest is the same as the shooter.
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. When you get to the targeting enemy it crashes:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RuntimeCrashEnemyTarget.png" alt="Play game and see that the targeting enemy crashes the game">
+		
+	<p>
+		If we go to the <tt><b>obj_player: Step</b></tt> event we see that we use the keyword <tt><b>var</b></tt> in front of the <tt><b>x_offset</b></tt> and <tt><b>y_offset</b></tt> variables.  This makes it local to this step event (they are removed from memory after processing this event).  Since we want to access it externally we want this to be a public permanent variable.
+
+<h3><tt><b>obj_player: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/LocalVarXAxis.png" alt="Show var from x_offset and y_offset in obj_player step event">
+
+	<p>
+		Remove the two <tt><b>var</b></tt> keywords:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RemovedVarKeyword.png" alt="Remove var from x_offset and y_offset in obj_player step event">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it doesn't crash but the angle of the bullets are all wrong.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/AngleOfBulletMessedUp.png" alt="Run game but targeting shooter bullet angles are wrong">
+
+	<p>
+		Why is that?  This is because GameMaker defaults to 0 degrees pointing right.  Our bullets point down initially so we are off by 90 degrees.  Lets fix this.  Open <tt><b>spr_enemy_bullet</b></tt> and press the <tt><b>Edit Image</b></tt> button.  Select the <tt><b>Image | Rotate All Frames (anti-clockwise 90)</b></tt>.
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RotateBulletCounterClockwise.png" alt="Rotate all spr_enemy_bullet frames counter clockwise 90 degrees">
+		
+		<p>
+			This should now restart in the 0 degrees default position.
+
+		<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/FixedEnemyBulletAngle.png" alt="Now bullet defaults to 0 degrees">
+		
+	<p>
+			Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon> <tt><b>Play Button</b></tt>. Now we have messed up the angle of the bullets on the shooting enemy.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletsWrongAngle.png" alt="Play game and bu targeting enemy shoots at wrong angle">
+
+	<p>
+		Open <tt><b>obj_enemy_shoot: Step</b></tt> event and we need to adjust the angle of the bullet.  Get a variable from the instance creation and adjust it's image angle by 90 degrees clockwise (or -90 in GameMaker):
+	
+	<h3><tt><b>obj_enemy_shoot: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RotateBulletClockwise90Degrees.png" alt="Adjust enemy shoot angle by 90 degrees">
+
+	<p>
+			Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Notice that this one feature I wanted to add caused quite a few bugs and required some code refactoring.  Be aware that all changes, no matter how small, can cause a lot of work and issues.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/TargetingEnemyComplete.gif" alt="Run the game and player shoots at correct angle">
+
+	<p>
+		Now that we have the base behavior for enemies lets move forward and build the actual game components.
+		
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page04.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="../ch5/page01.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

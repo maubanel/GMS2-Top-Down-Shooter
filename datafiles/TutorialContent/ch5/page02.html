@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch5 - Page 2</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="page02.html">Player Taking Damage</option>
+					<option value="page03.html">Ghost Mode</option>
+					<option value="page04.html">Audio</option>
+					<option value="page05.html">Front End</option>
+					<option value="page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					</optgroup>
+					<optgroup label="Chapter 5 - Game Components">
+					<option value="page01.html">Player Health</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Player Taking Damage</b>
+
+	<p>
+		Lets add the animation for the player getting hit by bullet and subtract points from its health. We will reuse the animation for the enemy. Open <tt><b>obj_enemy_bullet</b></tt>and press the <tt><b>Add Event</b></tt> button and add a <tt><b>Collision | obj_player</b></tt> event.
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddCollisionBulletPlayerEvent.png" alt="Add a collision from obj_enemy_bullet to obj_player event">
+
+	<p>
+		Add to this new script an instance of <tt><b>obj_enemy_explosion</b></tt> and deduct from the player's health and destroy the bullet.  We do not destroy the player as we only would do this if there is no health left.
+		<h3><tt><b>obj_enemy_bullet: Collision obj_player</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddBulletPlayerCollisionScript.png" alt="Add to collision event to sap player's health when hit by bullet">
+		
+	<p>
+		Now for testing purposes I just want these three waves to continue for ever.  Add a <tt><b>Step | Step</b></tt> event script to <tt><b>obj_game_controller</b></tt> and lets loop at 900 frames the timeline forever:
+
+<h3><tt><b>obj_game_controller: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/DebugAddedToGameControllerStep.png" alt="Make rocks spawn endlessly in obj_game_controller step event">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. You should now see an explosion and the health should depleat to beyond 0. Also the enemies will just keep respawning.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/FistPassPlayerHealth.gif" alt="Evenmies respawn, and health depletes when player is hit">
+
+	<p>
+		I would like the explosion to be above the player and not behind him.  This is not currenlty possible as our top most layer in the room is <tt><b>Instance_Player</b></tt>.  Lets open <tt><b>rm_lvl_1</b></tt> and add an instance layer to the top called <tt><b>Explosion</b></tt>:
+	
+	<h3><tt><b>rm_lvl_1</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddExplosionLayerToRoom.png" alt="Add Explosion layer at very top called Explosion">
+		
+	<p>
+		In <tt><b>obj_enemy_bullet: Collision | obj_player</b></tt> player script change the layer from <tt><b>"Instance_Player"</b></tt> to <tt><b>"Explosion"</b></tt>.
+	<h3><tt><b>obj_enemy_bullet: Collision obj_player</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ChangeScriptToExplosion.png" alt="Change layer animation spawns on in obj_enemy_bullet collision event with obj_player">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now explosions should be on top of the player:
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ExplosionTopLayer.gif" alt="Run game and now when player gets hit the explosion is on top of everything">
+
+	<p> 
+		Lets deal with enemy and player collision.  This will destroy the plane and do triple damage of 30 points.  Lets try two explosions. Double click <tt><b>obj_enemy_parent</b></tt> and press <tt><b>Add Event</b></tt> and select <tt><b>Collision | obj_player</b></tt>:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddCollisionParentEvent.png" alt="Change damage done in obj_enemy_parent collision with obj_player script">
+		
+	<p> 
+		Add two explosions and take away triple health damage to bullets.
+		<h3><tt><b>obj_enemy_parent Collision obj_player</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/DamageToPlayerForPlaneCollision.png" alt="Add two explosions and take away triple health points">
+
+		<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now run into an enemy to see if it works.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/	PlaneOnPlaneDeath.gif" alt="Play game and run into enemy.">
+
+	<p>
+		Now play test the game and adjust your <tt><b>Collision Masks</b></tt> to your liking.  I like to have them a bit loose and not take the entire sprite.  Here are the settings that I liked, but choose your own:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PlayerCollisionMast.png" alt="Adjust all sprite collision masks to your liking">
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/EnemyShootCollisionMask.png" alt="Adjust all sprite collision masks to your liking">
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/EnemyTargetCollisionMask.png" alt="Adjust all sprite collision masks to your liking">
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/BasicEnemyCollisionMask.png" alt="Adjust all sprite collision masks to your liking">
+
+	<p>
+		Lets not have the targeting planes shoot backwards or the shooting planes shoot when they are below the player.  We will check to see if the player is in front of the enemy before firing.  Open <tt><b>obj_enemy_shoot: Step</b></tt> event and add a check:
+	<h3><tt><b>obj_enemy_shoot: Step</b></tt> Event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddCheckOnY.png" alt="Stop shooting up screen in obj_enemy_shoot object">
+
+	<p>
+		Do the same thing in <tt><b>obj_enemy_target: Step</b></tt> event:
+		<h3><tt><b>obj_enemy_target: Step</b></tt> Event</h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddCheckOnY2.png" alt="Stop shooting up screen in obj_enemy_target object">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now the enemies shouldn't shoot before moving upwards.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/EnemiesDontShootUp.gif" alt="Run game and look to see that player's don't fire up screen">	
+
+	<p>
+		The other thing I want to adjust is to not have all the planes fire at exactly the same time. This makes them feel robotic and not very natural.  Lets adjust the rate_of_fire timing to be different. Open <tt><b>tl_lvl_1</b></tt> timeline and adjust the spawner for <tt><b>obj_enemy_shoot</b></tt>.  We need to get an instance reference then adjust the <tt><b>rate_of_fire</b></tt> and <tt><b>cooldown</b></tt> variables.
+	
+	<h3><tt><b>tl_lvl_1</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AdjustEnemyShootRateOfFire.png" alt="Adjust enemy shoot timeline event in second wave by randomizing shoot timing">
+
+	<p>
+		Repeat this for the spawning scripts for <tt><b>obj_enemy_target</b></tt>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AdjustEnemyShootRateOfFire.png" alt="Adjust enemy target timeline event in second wave by randomizing shoot timing">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now the timing seems more natural.  Next up we will be adding a ghost mode for the player when the player dies and respawns.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/BulletTimingAltered.gif" alt="Play game and notice time delay in firing">
+
+
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page03.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

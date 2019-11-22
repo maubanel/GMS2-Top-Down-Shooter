@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GMS2 Top Down Shooter - Ch5 - Page 5</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - GMS2 Top Down Shooter</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Game Components">
+					<option value="page05.html">Front End</option>
+					<option value="page06.html">Lives</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Getting Set-Up">
+						<option value="../page01.html"><b>Getting Started</b></option>
+						<optgroup label="Chapter 2 - Ship">
+						<option value="../ch2/page01.html">Getting Ship in Room</option>
+						<option value="../ch2/page02.html">Moving Ship with Keyboard</option>
+						<option value="../ch2/page03.html">Add Gamepad</option>
+						<optgroup label="Backgrounds">
+							<option value="../ch3/page01.html">Scrolling Water</option>
+							<option value="../ch3/page02.html">Scrolling Islands</option>
+					<optgroup label="Chapter 4 - Enemies">
+					<option value="../ch4/page01.html">Setting up Three Enemy Types</option>
+					<option value="../ch4/page02.html">Enemy Basic and Timelines</option>
+					<option value="../ch4/page03.html">Shooting</option>
+					<option value="../ch4/page04.html">Shooting Enemies</option>
+					<optgroup label="Chapter 5 - Game Components">
+					<option value="page01.html">Player Health</option>
+					<option value="page02.html">Player Taking Damage</option>
+					<option value="page03.html">Ghost Mode</option>
+					<option value="page04.html">Audio</option>
+					</optgroup>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browser window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Front End</b>
+
+	<p>
+		Lets add the front end screen that comes up before the game starts. Create a new Sprite and press the <tt><b>Import</b></tt> button.  Find the file in <tt><b>Included Files | TutorialResources | Sprites | spr_title_page.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_title_page.png">here</a>). Call this sprite <tt><b>spr_title_page</b></tt> and leave the origin in the top left corner (do not alter it).
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/SpriTitlePage.png" alt="AAdd spr_title_page and import sprite of same name from the TutorialResources/Sprite folder">	
+	
+	<p>
+		Create a new <tt><b>Room</b></tt> and call it <tt><b>rm_lvl_front_end</b></tt>. Change the <tt><b>Width</b></tt> and <tt><b>Height</b></tt> to <tt><b>1000</b></tt> by <tt><b>1536</b></tt>. Drag this new room to the top of the list so it is the first room loaded.
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/RmLevelFE.png" alt="Add new room called rm_lvl_front_end and drag to top of room list in resource folder">	
+
+	<p>
+		Now we are going to use the sprite as a background. Select the <tt><b>Background Layer</b></tt> and click on <tt><b>no sprite</b></tt>. Load the newly imported background. You should now have a screen that looks like:
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ChangeFrontEndBackGround.png" alt="spr_title_page added to rm_lvl_front_end background">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="run button icon"> <tt><b>Play Button</b></tt>.	The room should now look like:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/WW2ShooterGameDoesNothing.png" alt="Run game and game should start in front end with a static background">	
+
+	<p>
+		Create a new <tt><b>Sprite</b></tt> and import <tt><b>spr_press_space.png</b></tt> and call it <tt><b>spr_press_space</b></tt>. Find the file in <tt><b>Included Files | TutorialResources | Sprites</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_press_space.png">here</a>).
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/SprPressSpaceToStart.png" alt="AAdd spr_press_space and import sprite of same name from the TutorialResources/Sprite folder">	
+
+	<p>
+		Create a new game <tt><b>Object</b></tt> and bind the above sprite to it calling it <tt><b>obj_press_space</b></tt>. 
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/ObjPressSpace.png" alt="Create object obj_press_space and bind spr_press_space">	
+		
+		
+	Place the newly created object in <tt><b>rm_lvl_front_end</b></tt> on the <tt><b>Instances</b></tt> layer.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddTitleToRoom.png" alt="Place obj_press_space in rm_lvl_front_end">	
+
+	<p>
+		Run the game and now you should see the front end that still does nothing but has a call to action:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/PressSpaceToStart.png" alt="Run game and start game font appears but we can't start game">	
+
+	<p>
+		Lets make the press space call to action flash to attract the users attention. Create a new <tt><b>Step</b></tt> event script on <tt><b>obj_press_space</b></tt> and add:
+	<h3><tt><b>obj_press_space: Step</b></tt> event</h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/FlashLogoTitleScreen.png" alt="Add step event to obj_press_space and add flashing logic">	
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="run button icon"> <tt><b>Play Button</b></tt>.	The call to action should be flashing:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/FlashingTitle.gif" alt="Run game and now play button flashes">	
+
+	<p>
+		Now lets add the ability to change rooms through the scripts which uses another GameMaker function <b><a href="gms2tutorials:///ShowHelp?tag=room_goto">room_goto(index)</a></b>.  The argument <tt><b>index</b></tt> is the name of the room we assigned.  In our case it is the <tt><b>rm_lvl_1</b></tt> that we want to go to.
+
+	<p>		
+		We will be checking for both a space bar and a start button.  Ideally we would change this title text to have start instead of space, but maybe this is something you could do on your own!  
+		
+	<p>
+		Now add to the bottom of the <tt><b>obj_press_space: Step</b></tt> event.
+	<h3><tt><b><tt><b>obj_press_space: Step</b></tt> Event</b></tt></h3>
+	<p></p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/StartGameLogic.png" alt="Add room change to game in obj_press_space step event">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="run button icon"> <tt><b>Play Button</b></tt>. Woops we get an error.  It looks like it can't find the global variable.  
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/CantFindGamepadVariable.png" alt="Run game, but we get an error">
+	
+	<p>
+		This happens because it is looking for a variable in the room that is stored in <tt><b>obj_gamepad</b></tt>.  We need to add the <tt><b>obj_gamepad</b></tt> to <tt><b>rm_lvl_front_end</b></tt>
+	<h3><tt><b>rm_lvl_front_end</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/AddGamepadToRoom.png" alt="Add obj_gamepad to rm_lvl_front_end">
+
+	<p>
+		If you have a gamepad test the game. On my system the controller does not work in the game room.  The reason is that this controller information gets stored at game bootup or any time the player removes or adds a controller.  So the controller location stored in the front end screen is reset when entering the game level.  How do we have <tt><b>obj_gamepad</b></tt> persist from level to level?  There is a way.
+
+	<p>
+		First lets delete the <tt><b>obj_gamepad</b></tt> from <tt><b>rm_lvl_1</b></tt>. Select <tt><b>obj_gamepad</b></tt> on the layer you stored it on and delete it. 
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/DeleteObjGamepadInRmLvl1.png" alt="Remove obj_gamepad from rm_lvl_1">
+
+	<p>
+		<img style="vertical-align:middle" src="../images/Icon_LMB.png" alt="left mouse button icon"> Double click and open <tt><b>obj_gamepad</b></tt> from <tt><b>rm_lvl_1</b></tt>. Select <tt><b>Persistent</b></tt> which will not delete this object from level to level so all the data stored in its variables do not get reset and persist.
+
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/MakeGameControllerPersistent.png" alt="Make obj_gamepad Persistent">
+
+	<p>
+		Test the game and you should now be able to press space and you can go to the game screen.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH5/FEToGame.gif" alt="Play game and we should now be able to go from front end to in game">
+
+	<p>
+		Next up, we will implement lives.
+	
+</div>
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left">
+				<a href="page04.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page06.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+
