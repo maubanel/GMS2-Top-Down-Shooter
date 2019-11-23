@@ -62,14 +62,14 @@
 	<b>Shooting Enemies</b>
 
 <p>
-	Create a wave of the new planes. Open <tt><b>tl_lvl_1</b></tt>> and <tt><b>Add</b></tt> another <tt><b>Moment</b></tt> at <tt><b>220</b></tt> (or 4 seconds in) with a V wave of four enemy shooters. Add to the script:
+	Create a wave of the new planes. Open <tt><b>tl_lvl_1</b></tt> and <tt><b>Add</b></tt> another <tt><b>Moment</b></tt> at <tt><b>220</b></tt> (or 4 seconds in) with a V wave of four enemy shooters. Add to the script:
 
 <h3><tt><b>tl_lvl_1: 220 Moment</b></tt></h3>
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SecondWaveTL.png" alt="Add a second wave of enemy shooters at 220 frames into the game">
 
 <p>
-	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  You should see a second wave follow close behind the first one.  Notice that the explosion works for this one as we have put all the code in the parent which it inherits from.
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  You should see a second wave follow close behind the first one.  Notice that the explosion works for this one as we have put all the code in the parent which it inherits from.
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SecondWaveEnemyShooter.gif" alt="Second wave of shooting planes that don't shoot">
@@ -81,7 +81,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/SprEnemyBullet.png" alt="Add new sprite called spr_enemy_bullet and adjust the origin to top center">
 	
 <p>
-	Create a new <tt><b>Game Object </b></tt> and call it <tt><b>obj_enemy_bullet</b></tt>> and bind the above sprite to it:
+	Create a new <tt><b>Game Object </b></tt> and call it <tt><b>obj_enemy_bullet</b></tt> and bind the above sprite to it:
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ObjEnemyBullet.png" alt="Create obj_enemy_bullet and assign spr_enemy_bullet">
@@ -121,7 +121,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/StepEventEnemyShoot.png" alt="Add event_inherited(); to newly created obj_player_shoot step event">
 
 	<p>
-	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  The enemy now shoots (although the bullet does no harm).
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  The enemy now shoots (although the bullet does no harm).
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ShootingEnemy.gif" alt="Play game and enemies shoot bullets.  They do no damage to the player right now.">
@@ -130,14 +130,14 @@
 	We have a problem with these bullets, again they never disappear and they just keep going.  We don't want a memory leak so lets clean this up the same way we did player bullets.
 	
 <p>
-	Open <tt><b>obj_enemy_bullet</b></tt>. Create a new event <tt><b>Other | Outside Room</b></tt>script and destroy the bullet:
+	Open <tt><b>obj_enemy_bullet</b></tt>. Create a new event <tt><b>Other | Outside Room</b></tt> script and destroy the bullet:
 
-<h3><tt><b>obj_enemy_bullet: Outside Room</b></tt> Event</h3>
+<h3><tt><b>obj_enemy_bullet: Outside Room Event</b></tt></h3>
 <p>
-	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ShootingEnemy.gif" alt="Add outside room event to obj_enemy_bullet and destroy oneself">
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyEnemyBullet.png" alt="Add outside room event to obj_enemy_bullet and destroy oneself">
 
 <p>
-	Run the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="run button icon">  debug mode and double check that all bullets and enemy planes are destroyed once they leave the room:
+	Run the game in <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_DebugProject.png" alt="run button icon">  debug mode and double check that all bullets and enemy planes are destroyed once they leave the room:
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RunDebugEverythingCleansUp.gif" alt="Add a loop that repeats 5 times and adds one to a variable">

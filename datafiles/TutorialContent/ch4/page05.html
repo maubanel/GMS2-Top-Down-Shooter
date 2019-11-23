@@ -71,7 +71,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ThirdWaveTimeline.png" alt="Add to tl_lvl_1 and add a Moment at 600 frames and add a v formation of sevent enemy targeting shooters">
 		
 	<p>
-	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  You should see a non shooting third wave:
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  You should see a non shooting third wave:
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/VFormationWave3NotShooting.gif" alt="Run game and see third wave of targeting shooters">
@@ -110,7 +110,7 @@
 		Lets walk through this.  First we inherit the previous functionality from the the <tt><b>Step</b></tt> event's parent.  Then we store one of three lookups that will offset to a future potential position of the plane.  Then we spawn the bullet and save a reference to that intance.  We then alter its direction based on the offset from the enemy to the player's future position (we use the same math as we used in the player).  Then we set the angle to be the same as the direction. The rest is the same as the shooter.
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. When you get to the targeting enemy it crashes:
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. When you get to the targeting enemy it crashes:
 	
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RuntimeCrashEnemyTarget.png" alt="Play game and see that the targeting enemy crashes the game">
@@ -129,16 +129,16 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RemovedVarKeyword.png" alt="Remove var from x_offset and y_offset in obj_player step event">
 		
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it doesn't crash but the angle of the bullets are all wrong.
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it doesn't crash but the angle of the bullets are all wrong.
 	
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/AngleOfBulletMessedUp.png" alt="Run game but targeting shooter bullet angles are wrong">
 
 	<p>
-		Why is that?  This is because GameMaker defaults to 0 degrees pointing right.  Our bullets point down initially so we are off by 90 degrees.  Lets fix this.  Open <tt><b>spr_enemy_bullet</b></tt> and press the <tt><b>Edit Image</b></tt> button.  Select the <tt><b>Image | Rotate All Frames (anti-clockwise 90)</b></tt>.
+		Why is that?  This is because GameMaker defaults to 0 degrees pointing right.  Our bullets point down initially so we are off by 90 degrees.  Lets fix this.  Open <tt><b>spr_enemy_bullet</b></tt> and press the <tt><b>Edit Image</b></tt> button.  Select the <tt><b>Image | Rotate All Frames (clockwise 90)</b></tt>.
 
 		<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RotateBulletCounterClockwise.png" alt="Rotate all spr_enemy_bullet frames counter clockwise 90 degrees">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RotateBulletCounterClockwise.png" alt="Rotate all spr_enemy_bullet frames clockwise 90 degrees">
 		
 		<p>
 			This should now restart in the 0 degrees default position.
@@ -147,7 +147,7 @@
 			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/FixedEnemyBulletAngle.png" alt="Now bullet defaults to 0 degrees">
 		
 	<p>
-			Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon> <tt><b>Play Button</b></tt>. Now we have messed up the angle of the bullets on the shooting enemy.
+			Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon> <tt><b>Play Button</b></tt>. Now we have messed up the angle of the bullets on the shooting enemy.
 	
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletsWrongAngle.png" alt="Play game and bu targeting enemy shoots at wrong angle">
@@ -160,7 +160,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/RotateBulletClockwise90Degrees.png" alt="Adjust enemy shoot angle by 90 degrees">
 
 	<p>
-			Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Notice that this one feature I wanted to add caused quite a few bugs and required some code refactoring.  Be aware that all changes, no matter how small, can cause a lot of work and issues.
+			Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Notice that this one feature I wanted to add caused quite a few bugs and required some code refactoring.  Be aware that all changes, no matter how small, can cause a lot of work and issues.
 	
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/TargetingEnemyComplete.gif" alt="Run the game and player shoots at correct angle">

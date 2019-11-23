@@ -108,7 +108,7 @@
 	<p class="code">
 //Player shooting<br>
 if ((keyboard_check_pressed(vk_space) ||<br>
-	gamepad_button_value(global.gamepad[0], gp_shoulderrb))<br>
+  gamepad_button_check_pressed(global.gamepad[0], gp_shoulderrb))<br>
  	&& cooldown < 1)<br>
 {<br>
 	instance_create_layer(x + x_axis * player_speed * (delta_time/1000000), y, "Bullets", obj_player_bullet);<br>
@@ -119,7 +119,7 @@ if ((keyboard_check_pressed(vk_space) ||<br>
 cooldown -= 1;<br>	
 
 <p>
-		Try running the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="Debug run icon"> debug mode (right to the left of the regular run game button) and check the <tt><b>Instances</b></tt> tab below. Notice that the plane fires bullets every time you press the space bar.  Notice that the bullets just keep adding up and are never destroyed.
+		Try running the game in <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_DebugProject.png" alt="Debug run icon"> debug mode (right to the left of the regular run game button) and check the <tt><b>Instances</b></tt> tab below. Notice that the plane fires bullets every time you press the space bar.  Notice that the bullets just keep adding up and are never destroyed.
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletsFlyAndDontGetDestroyed.gif" alt="Play game and press the space bar to fire bullets.  Notice that the bullets are fired but never destroyed.">
@@ -132,14 +132,14 @@ cooldown -= 1;<br>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyPlayerBulletLeaveRoom.gif" alt="Destroy bullet when it leaves room in obj_bullet outside room event.">
 
 	<p>
-		Run the game in <img style="vertical-align:middle" src="../images/Icon_DebugProject.png" alt="Debug run button icon">  debug mode. See how the bullets get destroyed once they leave the room.
+		Run the game in <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_DebugProject.png" alt="Debug run button icon">  debug mode. See how the bullets get destroyed once they leave the room.
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletsFireAndGetDestroyed.gif" alt="Run game in debug mode and notice that bullets are now destroyed.">
 		
 
 	<p>
-		Now lets deal with the bullet enemy collision. Create a new <tt><b>Collision Event</b></tt> Script in <tt><b>obj_bullet</b></tt>> with a <tt><b>Collision | obj_enemy_parent</b></tt>.  We collide with the parent as it allows us to get an event with one object as they all inherit from it.
+		Now lets deal with the bullet enemy collision. Create a new <tt><b>Collision Event</b></tt> Script in <tt><b>obj_bullet</b></tt> with a <tt><b>Collision | obj_enemy_parent</b></tt>.  We collide with the parent as it allows us to get an event with one object as they all inherit from it.
 	
 	<p>
 		We destroy the bullet itself and use <tt><b>with (other)</b></tt> to access the object that the bullet is colliding with.
@@ -158,7 +158,7 @@ cooldown -= 1;<br>
 	}<br>
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and you should destroy them (and the bullets):
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and you should destroy them (and the bullets):
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/BulletKillsPlane.gif" alt="Run game and you should see the rock and bullet disappear">
@@ -201,7 +201,7 @@ cooldown -= 1;<br>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ObjEnemyParentAddExplosion.png" alt="Add a obj_player_bullet collision script with enemy parent and destroy objects.">
 		
 <p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and see a cood explosion but they do not dissappear and loop endlessly!
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and see a cood explosion but they do not dissappear and loop endlessly!
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/ShotPlaneExplosionDontDissapear.gif" alt="Play game and fire at planes.  Notice that explosions do not disappear">
@@ -214,7 +214,7 @@ cooldown -= 1;<br>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyExplosionAfterPlaying.gif" alt="Destroy animation object at end of animation">
 
 <p>
-	Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and the explosions work correctly!
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Fire away at the planes and the explosions work correctly!
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/EnemyExplodesOnce.gif" alt="Run game and fire at enemies and notice explosion only runs once">

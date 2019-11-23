@@ -97,13 +97,16 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ControlsStepEventPlayerKeyboard.png" alt="Illustration of computer science variable as a box">	
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Does what prints in the output window make sense?
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Does what prints in the output window make sense?
 	<h3><tt><b>obj_player: Step</b></tt> Event</h3>
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/KeyboardAxisPrinting.gif" alt="Add a step event to obj player and add debug info to press the horizontal and vertical axis of motion.">	
 
 	<p>
+		If you get the correct debug message you can comment out this line or delete it as we will be adding movement instead below.
+
+		<p>
 		Now that we have a normalized value between -1 and 1, let's translate this into motion.  First we check to see if there is an input that would cause us to move the player.  We check to see <tt><b>if (x_axis != 0 || y_axis != 0)</b></tt>.  If it is true then one of the two values has an input that is not 0 and we need to move the player.
 
 	<p>
@@ -121,7 +124,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/MovePlayerSinceLastFrame.png" alt="Add first pass at player movement to the obj_player step event">	
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt> and press up down left and right.  Try diagonals.  Play careful attention to the speed and see if moving in diagonals is moving faster than moving laterally?
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt> and press up down left and right.  Try diagonals.  Play careful attention to the speed and see if moving in diagonals is moving faster than moving laterally?
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/MovingShipWithKeyboardDiagWrong.gif" alt="Movement is implemented but diagonals move ship faster">	
@@ -161,7 +164,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/CompensateForDiagonals.png" alt="Add alteration to adjust diagonal speed">	
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Now diagonals should move at the same speed as the rest of the ship.
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Now diagonals should move at the same speed as the rest of the ship.
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/DiagonalSameSpeed.gif" alt="Run game and play now the diagonal speed is corrected">	
@@ -189,7 +192,7 @@
 
 
 		<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="../images/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). The original arcade game used a joystick so I would like us to do the same.  Press the below <tt><b>Next</b></tt> button to add a joystick. If you don't have access to a joystick for your mac or PC you can skip to <a href="../ch3/page01.html">Scrolling Water</a>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png"> <tt><b>Play Button</b></tt> press a combination of buttons.  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). The original arcade game used a joystick so I would like us to do the same.  Press the below <tt><b>Next</b></tt> button to add a joystick. If you don't have access to a joystick for your mac or PC you can skip to <a href="../ch3/page01.html">Scrolling Water</a>
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/ShipLimitedToBounds.gif" alt="Run game and make sure ship cannot leave screen">	
