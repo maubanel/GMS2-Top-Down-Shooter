@@ -76,6 +76,4 @@ obj_gamepad() adds 4 controllers to game
 replace diagonals with clamping speed
 
 
-``` 
 (5, 50)&#8226;-------> &#8226;(15, 50)
-```
