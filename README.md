@@ -74,3 +74,8 @@ provided objects
 obj_gamepad() adds 4 controllers to game
 
 replace diagonals with clamping speed
+
+
+```mermaid 
+graph TD; A-->B; A-->C; B-->D; C-->D;
+```
