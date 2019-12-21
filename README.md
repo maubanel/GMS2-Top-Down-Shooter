@@ -30,3 +30,47 @@ In this walk through:
 * Right trigger shoots
 * Start button begins the game
 
+progra,ming concepts
+dynamic arrays
+
+gms2 functions
+audio_sound_pitch
+audio_sound_gain
+event_inherited instance_exists?
+instance_Create_layer returns instance
+point_direction()?
+game_restart()?
+layer_vspeed()
+draw_healthbar()
+draw_sprite_ext
+distance_to_point()
+place_meeting
+gamepad_axis_value
+gamepad_button_value
+instance_change
+
+
+gms2 internal variables
+timeline_index
+timeline_runnung
+timeline_position
+delta_time
+
+vectors players velocity
+stopping repetitive audio
+parent child relationship
+rate of fire/timer not using alarms
+finite state machine
+explain place_meeting and two other collision detection functions
+clamping for bounds simplest for, of collision detection
+benefits of using actual seconds over steps
+controller bias in this scheme
+sinewave trig
+
+gamemaker assets
+timeline
+
+provided objects
+obj_gamepad() adds 4 controllers to game
+
+replace diagonals with clamping speed
