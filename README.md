@@ -79,7 +79,8 @@ This function allows us to adjust the pitch of the audio from its default state.
 <sub>
 <sup>
 <pre>
-audio_sound_pitch(snd_explosion,choose(.8,1,1.2));
+audio_sound_pitch(snd_explosion,
+   choose(.8,1,1.2));
 </pre>
 </sup>
 </sub>
