@@ -58,11 +58,18 @@ These are the functions that GameMaker provides that we used in this exercise. H
 | audio_sound_gain(sound, volume, time)                                 | This function allows us to adjust the gain (volume) of the sound over time.  You pass it a single instance of the sound to affect an instance value **or** the name of the sound to affect all versions of it being played. The `volume` argument is the loudness of the sound.  `0` would be completely silent, and `1` would be the original volume of the recording.  The `time` argument allows fading in or fading out thsi sound over time in milliseconds.  So to have the change occur immediately you would pass a `0` for time and it you wanted it over 3 seconds you would pass it a value of `3000` ms.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | audio_sound_gain(snd_explosion, choose(.6, .7, .8, .9, 1), 0); |
 | event_inherited()                                 | Each game object has a single set of events available to it like the `step` or `create` event.  But when you inherit from a parent object you also get those parent objects event scripts.  To call the parents script and add specific children behavior that child object needs to call event inherited.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 
 ```
-    //&#160;obj&#160;parent_enemy&#160;create&#160;event`<br>`health = 1000;
-    ammo = 10;`<br>`// obj child_enemy create event`<br>`event_inherited() 
-    // gets health and ammo value of parent`<br>`ammo = 20; 
+    //parent_enemy create event
+    health = 1000;
+    ammo = 10;
+    
+    // obj child_enemy create event
+    // gets health and ammo value of parent
+    event_inherited();
+    
+    ammo = 20; 
     // changes the amount of ammo in the child enemy
-``` |
+``` 
+|
 
 
 event_inherited 
