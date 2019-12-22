@@ -69,13 +69,12 @@ Example
           
 <tbody>     
 <tr>     
-<th>
+<td>
 audio_sound_pitch(sound, pitch) 
-</th>
-<th>
+</td>
 This function allows us to adjust the pitch of the audio from its default state.  You pass it a single instance of the sound to affect an instance value **or** the name of the sound to affect all versions of it being played.  For the `pitch` argument, a value under `1` lowers the pitch and a value above `1` raises the pitch.  A value of `1` plays the pitch at the recorded value.  Use small increments as this makes fairly large changes in the audio and you can easily shift it outside the audible range. Changing the pitch also changes the duration of the audio being played back
-</th>
-<th>
+</td>
+<td>
 <sub>
 <sup>
 <pre>
@@ -84,7 +83,7 @@ audio_sound_pitch<br>(snd_explosion,choose(.8,1,1.2));
 </sup>
 </sub>
 </small>
-</th>     
+</td>    
 </tbody>   
 </table>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | audio_sound_pitch(snd_explosion, choose(.8, .9, 1, 1.1, 1.2)); |
 |_sound_gain(sound, volume, time)                                 | This function allows us to adjust the gain (volume) of the sound over time.  You pass it a single instance of the sound to affect an instance value **or** the name of the sound to affect all versions of it being played. The `volume` argument is the loudness of the sound.  `0` would be completely silent, and `1` would be the original volume of the recording.  The `time` argument allows fading in or fading out thsi sound over time in milliseconds.  So to have the change occur immediately you would pass a `0` for time and it you wanted it over 3 seconds you would pass it a value of `3000` ms.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | audio_sound_gain(snd_explosion, choose(.6, .7, .8, .9, 1), 0); |
