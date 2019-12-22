@@ -1,7 +1,7 @@
 # GameMaker Studio 2 Top Down Shooter
 
 ## Introduction
-This tutorial is a a simplified version of the arcade game **1942**.  It is NOT a complete game but a scaffolding that allows you to complete the game on your own.  It uses GML programming language.  It would be useful if you have completed a previous tutorial such as [YoYo Games Space Rocks GML](https://marketplace.yoyogames.com/assets/7423/space-rocks-gml) prior to workign in this tutorial.
+This tutorial is a a simplified version of the arcade game **1942**.  It is NOT a complete game but a scaffolding that allows you to complete the game on your own.  It uses GML programming language.  It would be useful if you have completed a previous tutorial such as [GMS2-First-Look](https://github.com/maubanel/GMS2-First_Look), [YoYo Games Space Rocks GML](https://marketplace.yoyogames.com/assets/7423/space-rocks-gml) and [GMS2-Space-Rocks-Extended](https://github.com/maubanel/GMS2-Space-Rocks-Extended/blob/master/README.md) prior to workign in this tutorial.
 
 All artwork needed for the game is supplied in this tutorial.  There is a folder called datafiles/TutorialResources/Sprites and a folder called datafiles/TutorialResources/Sounds that include all the assets that you need (except for one song that the tutorial asks you to find for yourself).
 
@@ -30,11 +30,26 @@ In this walk through:
 * Right trigger shoots
 * Start button begins the game
 
+## Programming Concepts
+
+The following programming concepts are raised in the Top Down Shooter walk through. These follow concepts introduced in [GMS2-First-Look](https://github.com/maubanel/GMS2-First_Look) and [GMS2-Space-Rocks-Extended](https://github.com/maubanel/GMS2-Space-Rocks-Extended/blob/master/README.md). Here are the new GameMaker programming concepts that are introduced in this third walk through.
+
 | Programming Concept                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Example                                                                                                                                                                                                                                             |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | dynamic arrays                                    | A dynamic array allows us to store a list of objects as opposed to a single value.  The array can grow and shrink at run-time and memory will ge allocated by the engine.  There are one dimensional and two dimensional arrays available.  An array starts with a variable name such as `cards` and is followed by square brackets `cards[0]` with the index to the array entry as an integer.  So `[0]` would be the first card and `[51]` (52nd card) would be the last in a standard deck of cards. The other advantages of arrays is that they can be altered in scripts without being returned one at a time.  This can allow for more complex scripts that make multiple adjustments and acts as a pass by reference for the array.  More information can be found in the [GameMaker Manual](https://docs.yoyogames.com/source/dadiospice/002_reference/001_gml%20language%20overview/401_06_arrays.html).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | for&#160;(var&#160;i=0;&#160;i<10;&#160;++i)<br>{<br>&#160;&#160;&#160;numbers[i]&#160;=&#160;i&#160;*&#160;10;<br>} |
-programming concepts
-dynamic arrays
+
+## GameMaker Resources
+
+On the right hand side of the game editor you have a list of all resources that can be added to the game.  Here are the new GameMaker resources that are introduced in this third walk through.
+
+| GameMaker Resources | Description                                                                                                                                                                                                                                                                                                                                                 |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Timeline              | Timelines work in a similar way to alarms but are not limited to 12 events.  This is perfect for spawning enemies over the course of a level. This allows us the ability to escalate difficulty by adjusting how many enemies we spawn at what point of time in the level.  In this game, we are on rails (the player does not control the speed they are moving through the level) so the escalation is driven by the spawning of enemies in the timeline.  More information can be foud in the [GameMaker Manual](https://docs.yoyogames.com/source/dadiospice/001_advanced%20use/005_time%20lines.html) as well as [timeline functions and variables](https://docs.yoyogames.com/source/dadiospice/002_reference/timelines/index.html)
+
+|
+
+gamemaker assets
+timeline
 
 gms2 functions
 audio_sound_pitch
