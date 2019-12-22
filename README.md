@@ -72,6 +72,7 @@ Example
 <td>
 audio_sound_pitch(sound, pitch) 
 </td>
+<td>
 This function allows us to adjust the pitch of the audio from its default state.  You pass it a single instance of the sound to affect an instance value **or** the name of the sound to affect all versions of it being played.  For the `pitch` argument, a value under `1` lowers the pitch and a value above `1` raises the pitch.  A value of `1` plays the pitch at the recorded value.  Use small increments as this makes fairly large changes in the audio and you can easily shift it outside the audible range. Changing the pitch also changes the duration of the audio being played back
 </td>
 <td>
