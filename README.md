@@ -91,8 +91,8 @@ audio_sound_pitch
 </sub>
 </small>
 </td>    
-</th>
-<th>
+</tr>
+<tr>
 <td>
 audio_sound_gain (sound, volume, time)
 </td>
