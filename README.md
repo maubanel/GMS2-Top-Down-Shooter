@@ -52,6 +52,8 @@ On the right hand side of the game editor you have a list of all resources that 
 
 These are the functions that GameMaker provides that we used in this exercise. Here are the new GameMaker built in functions that are introduced in this third walk through.
 
+
+<div style="width:290px">
 <table>
 <thead>
 <tr>
@@ -107,7 +109,8 @@ audio_sound_gain(snd_explosion, choose(.6, .7, .8, .9, 1), 0);
 </sup>
 </sub>
 </tbody>   
-</table>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | audio_sound_pitch(snd_explosion, choose(.8, .9, 1, 1.1, 1Each game object has a single set of events available to it like the `step` or `create` event.  But when you inherit from a parent object you also get those parent objects event scripts.  To call the parents script and add specific children behavior that child object needs to call event inherited.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |<pre>//parent_enemy create event
+</table>           
+</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | audio_sound_pitch(snd_explosion, choose(.8, .9, 1, 1.1, 1Each game object has a single set of events available to it like the `step` or `create` event.  But when you inherit from a parent object you also get those parent objects event scripts.  To call the parents script and add specific children behavior that child object needs to call event inherited.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |<pre>//parent_enemy create event
     health = 1000;
     ammo = 10;
     
