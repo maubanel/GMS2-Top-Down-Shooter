@@ -46,7 +46,7 @@ On the right hand side of the game editor you have a list of all resources that 
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Timeline              | Timelines work in a similar way to alarms but are not limited to 12 events.  This is perfect for spawning enemies over the course of a level. This allows us the ability to escalate difficulty by adjusting how many enemies we spawn at what point of time in the level.  In this game, we are on rails (the player does not control the speed they are moving through the level) so the escalation is driven by the spawning of enemies in the timeline.  More information can be foud in the [GameMaker Manual](https://docs.yoyogames.com/source/dadiospice/001_advanced%20use/005_time%20lines.html) as well as [timeline functions and variables](https://docs.yoyogames.com/source/dadiospice/002_reference/timelines/index.html)
 
-|
+
 
 ## GameMaker Built in Functions
 
