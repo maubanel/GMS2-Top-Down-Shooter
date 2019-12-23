@@ -62,12 +62,13 @@ These are the functions that GameMaker provides that we used in this exercise. H
 |game_restart()|This function restarts the game from the very beginning.|<pre>if (lives <= 0) game_restart()</pre> |
 |layer_vspeed(layer, speed) | You can use this function to set the vertical speed in pixels per step for the layer passed as a string.|`layer_vspeed("instance", 3);`|
 |draw_healthbar(x1, y1, x2, y2, amount, backcol, mincol, maxcol, direction, showback, showborder);|This function should be placed in a draw event.  You pass it`x1`, `y1` the top left corner of the health bar and the `x2`, `y2` the bottom right hand corner of the health bar. You then pass it the `amount` which is the `health` variable you are using.  You set the `backcolor` to a color for the background, `mincol` for a color when you are low on health (typically `c_red`) and `maxcol` for when you are healthy (typically `c_lime`).  You give it a direction with `0` degrees being from left to right.  You pass it a boolean to show the background with `showback` and/or show a `border`.|<pre>// Draw Player 1 health bar<br>draw_healthbar(30, 30, 300, 60, hud_health, c_gray, c_red, c_green, 0, true, true);</pre>|
-draw_sprite_ext
-distance_to_point()
-place_meeting
-gamepad_axis_value
-gamepad_button_value
-instance_change
+|draw_sprite_ext(sprite, subimg, x, y, xscale, yscale, rot, colour, alpha) |This function draws the `sprite` passed with the image_index passed as `subimg`. You then place it in world space passing it an `x` and `y` coordinate.  A scale is given for the x and y axis with `xscale` and `yscale`.  You can pass a rotation in degrees called `rot`, a `colour` and a number between `0` and `1` to represent the alpha and how opaque the sprite is|<pre>// draw small version of player sprites for lives<br>draw_sprite_ext(spr_player, 0, 360 + space, 45, .4, .4, true, c_white, 1);</pre>|
+|distance_to_point(x, y)|This function returns the distance in pixels between the calling object and the `x` and `y` values passed|<pre>// returns distance between enemy and player from the player<br>dis = distance_to_point(obj_enemy.x, obj_enemy.y);</pre>|
+|place_meeting(x, y, obj)|This function is a collision detection call between the calling object and another object in a given `x` and `y` position.  This returns `true` or `false` depending on whether a collision occurs|<pre>if (place_meeting(obj_player.x, obj_player.y, obj_enemy)<br>{<br>   do something...<br>}</pre>|
+|instance_change(obj, perf)|This function changes the calling object to a new object passed as `obj`.  You set `perf` to true if you want to perform the new object's create and destroy events.|<pre>if (health<0)<br>instance_change(obj_ghost, true);</pre>|
+|gamepad_axis_valuegamepad_axis_value(device, axisIndex)|This function returns a value between `-1` and `1` based on the axis of a joystick on the controller.  The `device` is the gamepad slot to check and `axisIndex` is which joystick to check|<pre>x_axis = gamepad_axis_value(global.gamepad[0], gp_axislh);</pre>|
+|gamepad_button_value(device, button)|With this function you can get the current value of an analogue button, from 0 to 1, where `0` is no pressure and `1` is full pressure. The `device` is the gamepad slot to check and the `button` is the analogue button to check.|<pre>shoot = gamepad_button_check_pressed(global.gamepad[0], gp_shoulderrb))</pre>|
+
 
 
 gms2 internal variables
