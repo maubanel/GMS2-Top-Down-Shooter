@@ -53,7 +53,7 @@ On the right hand side of the game editor you have a list of all resources that 
 These are the functions that GameMaker provides that we used in this exercise. Here are the new GameMaker built in functions that are introduced in this third walk through.
 
 
-<div style="width:290px">
+<div style="width:600px">
 <table>
 <thead>
 <tr>
