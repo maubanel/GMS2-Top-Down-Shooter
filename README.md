@@ -67,42 +67,50 @@ These are the functions that GameMaker provides that we used in this exercise. H
 |place_meeting(x, y, obj)|This function is a collision detection call between the calling object and another object in a given `x` and `y` position.  This returns `true` or `false` depending on whether a collision occurs|<pre>if (place_meeting(obj_player.x, obj_player.y, obj_enemy)<br>{<br>   do something...<br>}</pre>|
 |instance_change(obj, perf)|This function changes the calling object to a new object passed as `obj`.  You set `perf` to true if you want to perform the new object's create and destroy events.|<pre>if (health<0)<br>instance_change(obj_ghost, true);</pre>|
 |gamepad_axis_valuegamepad_axis_value(device, axisIndex)|This function returns a value between `-1` and `1` based on the axis of a joystick on the controller.  The `device` is the gamepad slot to check and `axisIndex` is which joystick to check|<pre>x_axis = gamepad_axis_value(global.gamepad[0], gp_axislh);</pre>|
-|gamepad_button_value(device, button)|With this function you can get the current value of an analogue button, from 0 to 1, where `0` is no pressure and `1` is full pressure. The `device` is the gamepad slot to check and the `button` is the analogue button to check.|<pre>shoot = gamepad_button_check_pressed(global.gamepad[0], gp_shoulderrb))</pre>|
+|gamepad_button_value(device, button)|With this function you can get the current value of an analogue button, from 0 to 1, where `0` is no pressure and `1` is full pressure. The `device` is the gamepad slot to check and the `button` is the analogue button to check.|<pre>shoot = gamepad_button_check_pressed(global.gamepad[0], gp_shoulderrb));</pre>|
 
+## Built in Object Variables
 
+GameMaker objects all share common built in variables. Here are the ones that are important to this exercise. Here are the new Built-In Variables that are introduced in this third walk through.
 
-gms2 internal variables
-timeline_index
-timeline_runnung
-timeline_position
-delta_time
+| Built in Object Variables                    | Description&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; | Example   | 
+|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+|timeline_index|This variable holds the index of the time line currently associated with the instance of the object.  You can use the name of the timeline that is in your asset folder |<pre>timeline_index = tml_lvl1;</pre>|
+|timeline_running|Timelines default to `false` and do not run at playtime.  The timeline variable needs to be set to `true` for the timeline to run|<pre>// Start timeline<br>timeline_running = true;</pre>|
+|timeline_position|This variable holds which frame the timeline is currently at.  You can change this dynamically in code as needed|<pre>if (health <= 0)<br>// reset timeline to begining<br>{<br>    timeline_position = 0;<br>}</pre>|
+|delta_time|This variable changes each frame and holds a real number in microseconds since the last frame rendered.  To get this value in milliseconds (ms) you need to divide it by `1,000,000`.|<pre>var tick = delta_time / 1000000;</pre>|
 
-vectors players velocity
-stopping repetitive audio
-parent child relationship
-rate of fire/timer not using alarms
-finite state machine
-explain place_meeting and two other collision detection functions
-clamping for bounds simplest for, of collision detection
-benefits of using actual seconds over steps
-controller bias in this scheme
-sinewave trig
+## Algorythms
+
+### vectors players velocity
+
+### stopping repetitive audio
+
+### parent child relationship
+
+### rate of fire/timer not using alarms
+
+### finite state machine
+
+### explain place_meeting and two other collision detection functions
+
+### clamping for bounds simplest for, of collision detection
+
+### benefits of using actual seconds over steps
+
+### controller bias in this scheme
+
+### sinewave trig
 
 gamemaker assets
 timeline
 
-provided objects
-obj_gamepad() adds 4 controllers to game
+## provided objects
+obj_gamepad() adds up to 4 controllers to game.  Place this object in the very first room and make it `persistent`.  This way the controllers will be with the engine for the entire game.  You can access the controllers in `global.gamepad[0]`, `global.gamepad[1]`, `global.gamepad[2]` and `global.gamepad[3]`
 
 replace diagonals with clamping speed
 
 
 (5, 50)&#8226;-------> &#8226;(15, 50)
 
---------------------------------------------------------------------
-Column 1                                                Column 2
-------------------------------------------------------  ------------
-I want the contents of this cell to fit into one line   Word1 Word2
-
-------------------------------------------------------  ------------
 
