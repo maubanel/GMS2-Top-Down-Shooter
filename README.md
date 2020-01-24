@@ -5,8 +5,7 @@ This tutorial is a a simplified version of the arcade game **1942**.  It is NOT 
 
 All artwork needed for the game is supplied in this tutorial.  There is a folder called datafiles/TutorialResources/Sprites and a folder called datafiles/TutorialResources/Sounds that include all the assets that you need (except for one song that the tutorial asks you to find for yourself).
 
-<br><br>
-In this walk through:
+In this walk through we will be working on:
 
 * Importing ship animation
 * Moving ship with keyboard
