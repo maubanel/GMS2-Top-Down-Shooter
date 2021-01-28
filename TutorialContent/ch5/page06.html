@@ -61,7 +61,7 @@
 	<b>Lives</b>
 	
 	<p>
-		Open the <tt><b>obj_game_controller: Create</b></tt>> event and add a new variable called <tt><b>player_1_lives</b></tt>.  There is a built in GameMaker variable that is global but there is only one.  We might want to add a second player to this game so we will create our own variable name for this. 
+		Open the <tt><b>obj_game_controller: Create</b></tt> event and add a new variable called <tt><b>player_1_lives</b></tt>.  There is a built in GameMaker variable that is global but there is only one.  We might want to add a second player to this game so we will create our own variable name for this. 
 		
 	<p>
 		Why don't we add this to the player object? The player object is destroyed at death then restarted.  If we kept the varibale there it would get reset.  It is best to keep track of global game settings in an object that we will not alter during game.

@@ -62,7 +62,7 @@
 	<b>Shooting</b>
 
 	<p>
-		Now we should add shooting and collision between bullets and enemies. Create a new <tt><b>Sprite</b></tt>, press the <tt><b>Import</b></tt> button and load from the  <tt><b>Included Files | TutorialResources | Sprites | spr_player_bullet.png </b></tt>.  If you can't find it you can locate the file in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_enemy_basic_sprite_sheet.png">here</a>) and import the <tt><b>spr_player_bullet.png</b></tt> file.
+		Now we should add shooting and collision between bullets and enemies. Create a new <tt><b>Sprite</b></tt>, press the <tt><b>Import</b></tt> button and load from the  <tt><b>TutorialResources | Sprites | spr_player_bullet.png </b></tt>.  If you can't find it you can locate the file in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_enemy_basic_sprite_sheet.png">here</a>) and import the <tt><b>spr_player_bullet.png</b></tt> file.
 
 	<p>
 		Call it <tt><b>spr_player_bullet</b></tt> and change the origin to <tt><b>Bottom Center</b></tt>.  We want the bullet to spawn at the front of the plane so it is best to have the origin at the bottom of the sprite so it spawns in front of the plane.
@@ -107,8 +107,8 @@
 
 	<p class="code">
 //Player shooting<br>
-if ((keyboard_check_pressed(vk_space) ||<br>
-  gamepad_button_check_pressed(global.gamepad[0], gp_shoulderrb))<br>
+if (keyboard_check_pressed(vk_space) ||<br>
+  gamepad_button_check_pressed(global.gamepad[0], gp_shoulderrb)<br>
  	&& cooldown < 1)<br>
 {<br>
 	instance_create_layer(x + x_axis * player_speed * (delta_time/1000000), y, "Bullets", obj_player_bullet);<br>
@@ -126,7 +126,7 @@ cooldown -= 1;<br>
 
 	<p>
 		Now lets destroy the bullet if it leaves the room. We don't want the game to run out of memory because we have too many bullets. We will use the <tt><b>Other | Outside Room</b></tt> event type on <tt><b>obj_bullet</b></tt>:
-	<h3><tt><b>obj_bullet: Outside Room</b></tt> Event</h3>
+	<h3><tt><b>obj_player_bullet: Outside Room</b></tt> Event</h3>
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyPlayerBulletLeaveRoom.gif" alt="Destroy bullet when it leaves room in obj_bullet outside room event.">
@@ -144,7 +144,7 @@ cooldown -= 1;<br>
 	<p>
 		We destroy the bullet itself and use <tt><b>with (other)</b></tt> to access the object that the bullet is colliding with.
 		
-		<h3><tt><b>obj_bullet: Collision obj_enemy_parent</b></tt> Event</h3>
+		<h3><tt><b>obj_player_bullet: Collision obj_enemy_parent</b></tt> Event</h3>
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/DestroyPlayerBulletLeaveRoom.gif" alt="Destroy objects when bullets and enemies collide">
 

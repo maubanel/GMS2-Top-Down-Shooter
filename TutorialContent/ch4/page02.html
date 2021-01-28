@@ -92,6 +92,14 @@
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH4/StartTimelineController.png" alt="Assign the timeline index and start running the timeline in obj_game_controller Create event">
 
+
+		<p>
+		This was supposed to be enough to work but there seems to be a bug in 2.3.1.542 on the mac at least where if you dynamically create an object it does not run the <tt><b>Create Event</b></tt>.  So until the bug is fixed we need to call it in the child object.  Open up all three enemy objects and you notice that the create event of the parent shows up in light gray and is not editable.  Create a new <tt><b>Create Event</b></tt> for each one as you normally would. Then you will add the following script to all three enemy planes:
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/CallParentCreateBug.png" alt="Scroll islands based on macro">
+
+	<p>
+
 	<p>
 		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Run button icon"> <tt><b>Play Button</b></tt>.  Now after one second you should see three enemy ships move down screen:
 
