@@ -15,7 +15,7 @@ Lets get started with setting up version control and starting the project.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Go to [New GML Project](https://github.com/maubanel/GMS2-Snippets/blob/main/new-gml/README.md#user-content-new-gml-project) and create a project called `Top Down Shooter`. Click on the <kbd>Settings</kbd> button and change the name of the **Display Name** on macOS and/or Windows to `Top Down Shooter`.  Check the directory and double check that it created the files where you expected.
+Go to [New GML Project](https://github.com/maubanel/GMS2-Snippets/blob/main/new-gml/README.md#user-content-new-gml-project) and create a project called `Top-Down-Shooter`. Click on the <kbd>Settings</kbd> button and change the name of the **Display Name** on macOS and/or Windows to `Top Down Shooter`.  Check the directory and double check that it created the files where you expected.
 
 ![start gamemaker studio 2 project called Top Down Shooter](images/TopDownShooter.png)
 
@@ -55,7 +55,7 @@ You get to your empty repository on **GitHub**.
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Open up **GitHub Desktop** and select **File | New Repository** to create a **GitHub** repository inside the **GameMaker Space Rocks** project you just created.
+Open up **GitHub Desktop** and select **File | New Repository** to create a **GitHub** repository inside the **Top Down Shooter** project you just created.
 
 ![alt_text](images/fileNewRepository.png)
 
