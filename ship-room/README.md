@@ -50,7 +50,7 @@ Press play on the animation menu to see the speed of the animation.  It defaults
 
 Create a new **Game Object** by selecting **Objects | Create | Object** and call it `obj_player`. Bind the spr_player you created above.
 
-![alt_text](images/.png)
+![Create a new object called obj_player and assign the spr_player sprite](images/CreatePlayerObject.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
