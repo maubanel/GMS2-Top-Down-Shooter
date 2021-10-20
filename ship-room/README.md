@@ -15,7 +15,7 @@ Lets get the world war 2 plane into the level.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Lets start by importing the player.  Right click on Sprite in the Resources tab and select Create Sprite.  Name the new sprite spr_player and then press Edit Image:
+Lets start by importing the player.  *Right click* on **Sprites** in the Resources tab and select **Create | Sprite**.  Name the new sprite `spr_player` and then press <kbd>Edit Image</kbd> button.
 
 ![Create a new sprite and call it spr_player](images/CreateNewPlayerSprite.gif)
 
@@ -23,7 +23,9 @@ Lets start by importing the player.  Right click on Sprite in the Resources tab 
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Download [spr_player_sprite_sheet.png](Sprites/spr_player_sprite_sheet.png). The player is 128 x 128 pixels large and there are two frames to its animation.  Both frames are included in a sprite sheet so we can't import the sprite directly.  We select **Image | Import Strip Image** from the top drop down menus.  Find the spr_player_sprite_sheet png that you downloaded.
+
+![Import strip image spr_player_sprite_sheet.png](images/ImportPlayerSpriteSheet.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
