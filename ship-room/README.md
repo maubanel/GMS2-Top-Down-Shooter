@@ -42,7 +42,7 @@ This brings up the **Convert to Frames** menu.  In this we need to make some adj
 Press play on the animation menu to see the speed of the animation.  It defaults to 15 Frames per Second and you can adjust the playback speed. I prefer 12.  We also want to center the sprite on the place so choose Middle Center for the Origin of the sprite.
 
 
-![Center origin and change framerate of playback to 12](images/http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/SpeedAndOriginPlayer.png.png)
+![Center origin and change framerate of playback to 12](images/http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH2/SpeedAndOriginPlayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
