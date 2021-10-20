@@ -31,7 +31,9 @@ Download [spr_player_sprite_sheet.png](../Assets/Sprites/spr_player_sprite_sheet
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+This brings up the **Convert to Frames** menu.  In this we need to make some adjustments.  *Change* both the **Frame Width** and **Frame Height** to `128`.  There are two frames so ajust the **Number of Frames** to `2` and **Frames per Row** to `2`. *Press* the <kbd>Convert</kbd> button to import the new sprite.
+
+![Import a 128 by 128 sprite with 2 frames per row with 2 number of framers then press the convert button](images/ConvertPlayerShipToFrames.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
