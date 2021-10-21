@@ -87,7 +87,7 @@ We need to have a **Game Object** that handles the common game issues from level
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-*Double click* on **room_lvl_1** and *delete* the **obj_player** to remove from the room.
+*Double click* on **rm_lvl_1** and *delete* the **obj_player** to remove from the room.
 		
 Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are like **Photoshop** where the ones on top render first and the ones underneath render beneath it.  We want our player to be at the top of the layers.
 
