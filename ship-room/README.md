@@ -56,7 +56,13 @@ Create a new **Game Object** by selecting **Objects | Create | Object** and call
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+*Edit* the existing room by *renaming* it to `rm_lvl_1` (you can *right click *on the name and select **Rename**). 	
+
+Now if you look at the video the game is in portrait mode. Lets set the room dimensions to: 1000 x 1536. Go to the **Properties** tab in the **Room Editor** and expand it. Set the **Width** to `1000` and **Height** to `1536`.
+
+*Drag and drop* the `obj_player` into to the bottom of the room from the **Resources** menu.
+
+![alt_teChange name of room to rm_lvl_1 and adjust the size to 1000 by 1536xt](images/ChangeDimensionsOfGameRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
