@@ -76,7 +76,12 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+OK, now we don't want to place the player plane in the room. Since the player will die and have to reappear, we want to control the plane being added through scripting.
+
+	
+We need to have a **Game Object** that handles the common game issues from level to level. Create a new empty **Game Object** called `obj_game_controller`. *Add* it to the room.  Since we don't have a sprite on it there will be nothing shown in the game but it will still run the object's script events.
+
+![Create new object called obj_game_controller and add it to the room](images/AddGameControllerToRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
