@@ -87,8 +87,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 We need to separate the direction we are pointing in from the speed we are moving at.  
 
-`direction = point_direction(0, 0, h_)
-![alt_text](images/.png)
+`direction = point_direction(0, 0, h_)`
+
+![get controller direction then adjust speed](images/directionSpeed.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
