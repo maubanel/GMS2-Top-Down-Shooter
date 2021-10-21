@@ -104,7 +104,7 @@ So when you move left and right you would move 1 unit (* player_speed) but if yo
 We need to separate the direction we are pointing in from the speed we are moving at. So we were just using `hspeed` and `vspeed` which breaks the magnitude and directoin into two variables.  Lets use `speed` and `direction`.  So lets take the keyboard input and get a direction. We need to go from the cartesian to the polar coordinate system and there is a function that transposes it.
 
 We will check from point `(0,0)` to the `(h_input, v_input)` and use 
-**[direction = point_direction(x1, y1, x2, y2](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/point_direction.htm)** to get an angle back in degrees.
+**[direction = point_direction(x1, y1, x2, y2)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/point_direction.htm)** to get an angle back in degrees.
 
 > This function returns the direction of a vector formed by the specified components [x1,y1] and [x2,y2] in relation to the fixed x/y coordinates of the room. - GameMaker Manual
 
