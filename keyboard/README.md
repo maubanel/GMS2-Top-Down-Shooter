@@ -64,15 +64,12 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 If you get the correct debug message you can comment out this line or delete it as we will be adding movement instead below.
 
-Now that we have a normalized value between -1 and 1, let's translate this into motion.  First we check to see if there is an input that would cause us to move the player.  We check to see if (x_axis != 0 || y_axis != 0).  If it is true then one of the two values has an input that is not 0 and we need to move the player.
+Now that we have a normalized value between -1 and 1, let's translate this into motion.  We need to figure out how to translate the player_speed variable from frames per second to frames since last tick.  We will use `delta_time` to figure out how many microseconds have passed since last frame. 1 microsecond is 1,000,000th of a second.  So to turn this into a fractional number in seconds we need to divide delta/time / 1,000,000 (commas for clarity you can't enter commas into the script).
 
-Now we need to figure out how to translate the player_speed variable from frames per second to frames since last tick.  We will use `delta_time` to figure out how many microseconds have passed since last frame. 1 microsecond is 1,000,000th of a second.  So to turn this into a fractional number in seconds we need to divide delta/time / 1,000,000 (commas for clarity you can't enter commas into the script).
-
-So if we multiply (`delta/time / 1,000,000`) by `player_speed` we will get frames since last tick.
+So if we multiply (`delta/time / 1,000,000`) by `player_speed` we will get frames since last tick in milliseconds.
 
 Let me give an example.  Lets say we have a framerate of 2 frames per second.  
-`delta_time` would be `500,000`.  So if we divide 500,000 / 1,000,000 we get a value of .5.  This means that it will have the value of speed which get us to our delta per frame.  Type into the bottom of the **obj_player: Step** event and delete the `show_debug_message(string)` from earlier:
-
+`delta_time` would be `500,000`.  So if we divide 500,000 / 1,000,000 we get a value of .5.  This means that it will have the value of speed which get us to our delta per frame.  Type into the bottom of the **obj_player: Step** event and comment out the `show_debug_message(string)` from earlier:
 
 ![Add first pass at player movement to the obj_player step event](images/MovePlayerSinceLastFrame.png)
 
