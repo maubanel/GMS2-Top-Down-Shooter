@@ -1,4 +1,4 @@
-# GMS2 UE4 Top Down Shooter
+# GMS2 Top Down Shooter
 
 
 <!-- OVERVIEW -->
