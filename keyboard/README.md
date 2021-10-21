@@ -79,6 +79,15 @@ Let me give an example.  Lets say we have a framerate of 2 frames per second.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press up down left and right.  Try diagonals.  Play careful attention to the speed and see if moving in diagonals is moving faster than moving laterally?
 
+Now the problem is that they are travelling 1 unit to on the horizontal axis and 1 unit on the vertical axis.
+
+            -
+            -
+            -
+------------------------
+            -
+            -
+            -
 ![Movement is implemented but diagonals move ship faster](images/MovingShipWithKeyboardDiagWrong.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
