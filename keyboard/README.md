@@ -79,32 +79,33 @@ Let me give an example.  Lets say we have a framerate of 2 frames per second.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press up down left and right.  Try diagonals.  Play careful attention to the speed and see if moving in diagonals is moving faster than moving laterally?
 
-Now the problem is that they are travelling 1 unit to on the horizontal axis and 1 unit on the vertical axis.
-
-            ^
-            ^
-            ^
-^  ^  ^  ^  ^  ^  ^  ^  ^
-            ^
-            ^
-            ^
 ![Movement is implemented but diagonals move ship faster](images/MovingShipWithKeyboardDiagWrong.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We need to separate the direction we are pointing in from the speed we are moving at.  
+Now the problem is that they are travelling 1 unit to on the horizontal axis and 1 unit on the vertical axis. So if we move 1 unit to the right and 1 unit to the left.  We can calculate the velocity with Pythagorean theorem.  If we take
 
-`direction = point_direction(0, 0, h_)`
+h = √a<sup>2</sup> * a<sup>2</sup> *  + b<sup>2</sup> * b<sup>2</sup> .
+h = √1sup>2</sup> * 1sup>2</sup> + 1sup>2</sup> * 1sup>2</sup>
+h = √1 + 1
+h = √2
+h = 1.4142
 
-![get controller direction then adjust speed](images/directionSpeed.png)
+So when you move left and right you would move 1 unit (* player_speed) but if you move diagonally, you would move by `.4142 * player_speed and move faster.
+
+![pythagorean theorem explains speed](images/diagonals.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+We need to separate the direction we are pointing in from the speed we are moving at.  
+
+`direction = point_direction(0, 0, h_)`
+
+![get controller direction then adjust speed](images/directionSpeed.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
