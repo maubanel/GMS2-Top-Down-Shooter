@@ -68,8 +68,7 @@ Now if you look at the video the game is in portrait mode. Lets set the room dim
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
- Make sure that you see the plane in a dark background layer that should look like the below photo.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure that you see the plane in a dark background layer that should look like the below photo.
 
 ![Plane animating on background](images/PlaneNoLogicInGame.png)
 
