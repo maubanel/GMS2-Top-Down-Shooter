@@ -97,11 +97,9 @@ Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Now create a new **obj_game_controller: Create Event** script and *spawn* the player in the bottom center of the game room:
+Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Create Event** script and *spawn* the player in the bottom center of the game room.
 
 *Please Note: Notice that we can put the same script over multiple lines.  We don't want to go so wide that we can't read the entire line and miss important information.  We can split up a long line of script as necessary.  I am using a comma as a spot to separate the code.*
-
-*Open* up **obj_game_controller: Create Event**.
 
 ![Spawn player in obj_game_controller Create script](images/SpawnPlayerCreate.png)
 
