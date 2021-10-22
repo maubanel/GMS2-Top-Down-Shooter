@@ -1,15 +1,12 @@
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-### Moving Ship with Joystick
+### Add Title
 
-<sub>[previous](../keyboard/README.md#user-content-moving-ship-with-keyboard) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../)</sub>
+<sub>[previous](../) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-If you do not have a controller to test with then skip to the next chapter [Scrolling Water]().  Otherwise lets continue and add a controller.  First make sure that you controller is compatible with your PC or Mac.  The XBox controller is a good option for a PC and the Sony controller is natively supported on most macs.
-
-	
-The original game and most shooters use a controller instead of the keyboard.  Game mechanics have developed with the user interface in mind.  Often game systems that work well on controllers don't translate so well on keyboards and mice.  I find shooters just shine using a game controller.
+Chapter introduction here.
 
 <br>
 
@@ -150,5 +147,5 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../keyboard/README.md#user-content-moving-ship-with-keyboard)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../)|
+| [previous](../)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../)|
 |---|---|---|
