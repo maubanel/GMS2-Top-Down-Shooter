@@ -169,7 +169,7 @@ Now we go to the step event and we can **[clamp(val, min, max)](https://manual.y
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press a combination of buttons and try to leave the play area?  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). The original arcade game used a joystick so I would like us to do the same. 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press a combination of buttons and try to leave the play area?  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). 
 
 ![Run game and make sure ship cannot leave screen](images/ShipLimitedToBounds.gif)
 
