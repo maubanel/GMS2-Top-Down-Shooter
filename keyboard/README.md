@@ -151,21 +151,13 @@ We want to restrict player to the bottom third of the screen and to not go off t
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Open obj_player: Create event script and create 4 variables representing the top, bottom, left and right boundary of the game.
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
-
-Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
+Open obj_player: Create event script and create 4 variables representing the top, Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
 
 ![Add four variables for 4 bounds](images/boundVariables.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now we go to the step event and we can **[clamp(val, min, max)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Number_Functions/clamp.htm)** our **x** and **y** position of the ship to the bounds we just created.  Place this after we move the player (so the player will move out of bounds then the **clamp()** function will force it back on screen). 
 
@@ -173,7 +165,7 @@ Now we go to the step event and we can **[clamp(val, min, max)](https://manual.y
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press a combination of buttons and try to leave the play area?  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). The original arcade game used a joystick so I would like us to do the same. 
 
@@ -181,35 +173,11 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
 ![save, quit, commit and push to github](images/GitHub.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
-
-![alt_text](images/.png)
 
 ___
 
