@@ -147,6 +147,5 @@ ___
 <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - ">
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../shooting-enemies/README.md#user-content-shooting-enemies)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../player-health/README.md#user-content-player-health) <br>
-<kbd></kbd> &nbsp;&nbsp; |
+| [previous](../shooting-enemies/README.md#user-content-shooting-enemies)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../player-health/README.md#user-content-player-health) |
 |---|---|---|
