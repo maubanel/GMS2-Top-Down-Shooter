@@ -36,6 +36,7 @@ In this walk through we will be working on:
 <kbd></kbd> &nbsp;&nbsp; [Setting Up](setting-up/README.md#user-content-setting-up) <br>
 <kbd></kbd> &nbsp;&nbsp; [Getting Ship in Room](ship-room/README.md#user-content-getting-ship-in-room) <br>
 <kbd></kbd> &nbsp;&nbsp; [Moving Ship with Keyboard](keyboard/README.md#user-content-moving-ship-with-keyboard) <br>
+<kbd></kbd> &nbsp;&nbsp; [Moving Ship with Joystick](joystick/README.md#user-content-moving-ship-with-joystick) <br>
 
 
 <!-- LICENSE -->
