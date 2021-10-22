@@ -141,7 +141,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now since our **Origin** is at `64` by `64` in the middle of the sprite we don't want any of the ship to leave the play area so we need to go from `64` to `room_width - 65`.
+
+![restrict player to room boundaries](images/RoomBoundariesForPlayArea.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
