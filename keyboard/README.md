@@ -151,13 +151,17 @@ We want to restrict player to the bottom third of the screen and to not go off t
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
+Open obj_player: Create event script and create 4 variables representing the top, bottom, left and right boundary of the game.
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
+
+![Add four variables for 4 bounds](images/boundVariables.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
