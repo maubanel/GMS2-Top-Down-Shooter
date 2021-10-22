@@ -48,8 +48,8 @@ In this walk through we will be working on:
 <kbd></kbd> &nbsp;&nbsp; [Player Taking Damage](player-damage/README.md#user-content-player-taking-damage) <br>
 <kbd></kbd> &nbsp;&nbsp; [Ghost Mode](ghost-mode/README.md#user-content-ghost-mode) <br>
 <kbd></kbd> &nbsp;&nbsp; [Audio](audio/README.md#user-content-audio) <br>
-<kbd></kbd> &nbsp;&nbsp; [FrontEnd](front-end/README.md#user-content-front-end) <br>
-<kbd></kbd> &nbsp;&nbsp; [Lives](audio/README.md#user-content-lives) <br>
+<kbd></kbd> &nbsp;&nbsp; [Front End](front-end/README.md#user-content-front-end) <br>
+<kbd></kbd> &nbsp;&nbsp; [Lives](lives/README.md#user-content-lives) <br>
 
 <!-- LICENSE -->
 ## License
