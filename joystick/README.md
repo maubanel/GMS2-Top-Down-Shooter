@@ -17,7 +17,7 @@ The original game and most shooters use a controller instead of the keyboard.  G
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-First lets import the game object that holds the code for the joystick [joystick.mauby.games.yymps])(../Assets/Objects/joystick.mauby.games.yymps).
+First lets import the game object that holds the code for the joystick [joystick.mauby.games.yymps](../Assets/Objects/joystick.mauby.games.yymps).
 
 ![alt_text](images/.png)
 
