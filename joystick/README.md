@@ -6,9 +6,8 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-If you do not have a controller to test with then skip to the next chapter [Scrolling Water]().  Otherwise lets continue and add a controller.  First make sure that you controller is compatible with your PC or Mac.  The XBox controller is a good option for a PC and the Sony controller is natively supported on most macs.
+If you do not have a controller to test with then skip to the next chapter [Scrolling Water](scrolling-water/README.md#user-content-scrolling-water).  Otherwise lets continue and add a controller.  First make sure that you controller is compatible with your PC or Mac.  The XBox controller is a good option for a PC and the Sony controller is natively supported on most macs.
 
-	
 The original game and most shooters use a controller instead of the keyboard.  Game mechanics have developed with the user interface in mind.  Often game systems that work well on controllers don't translate so well on keyboards and mice.  I find shooters just shine using a game controller.
 
 <br>
@@ -17,6 +16,8 @@ The original game and most shooters use a controller instead of the keyboard.  G
 
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+
+First lets import the game object that holds the code for the joystick [joystick.mauby.games.yymps])(../Assets/Objects/joystick.mauby.games.yymps).
 
 ![alt_text](images/.png)
 
