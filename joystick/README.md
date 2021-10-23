@@ -49,8 +49,7 @@ Now in the **Objects** folder you should have an **obj_gamepad**.  Double click 
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Lets quickly look at two items in the obj_gamepad object.  Open it and look at the **obj_gamepad | Create** event.  Notice that we initialize the four gamepads to **[noone](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Instance_Keywords.htm)**.  This is a keyword that means that something is empty or not there.  We are basically saying in Gamemaker parlance that there is no controller plugged into this slot.
-
+Lets quickly look at two items in the obj_gamepad object.  Open it and look at the **obj_gamepad | Create** event.  Notice that we initialize the four gamepads to **[noone](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Instance_Keywords.htm)**.  This is a keyword that means that something is empty or not there.  We are basically saying in Gamemaker parlance that there is no controller plugged into any of the 4 gamepad slots.
 
 ![Look at gamepad obj_gamepad Create event initializing controllers](images/InititalizeGamepadsToNoone.png)
 
