@@ -56,6 +56,12 @@ Press the **Vertical Tile**  and **Horizontal Tile**  check boxes. Look at what 
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
+We will be scrolling water underneath us.  The islands will need to scroll at the same speed as the water.  We want to use the same value for both objects.  We could use a global variable name but there is a safer way. Since this variable doesn't change we can make it a constant.
+	
+We will be using a **[macros](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Variables/Constants.htm)**.  We want to use a constant that is unmutable (cannot be changed).  What this means is that we don't want someone on the team to change this value.  When we use the keyword macro this makes the variable a constant.  This macro constant is global in scope and can be accessed anywhere by any object.	
+	
+Notice we do not use the assignment operator =.  It is a naming convention to use **ALL CAPS** when naming constants. Open the **obj_game_ Create** event script and add to the bottom the macro.
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
