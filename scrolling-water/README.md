@@ -34,7 +34,7 @@ The other option would be to have the room where the plane doesn't move but the 
 So we are going to load a 256 x 256 background tile for water (ocean).  This tile will match on all sides and we will fill the entire screen up with water.  After that we will add islands to fly over to give a better sense of motion.
 		
 
-*Right click* on **Sprites** and select **Create | Sprite**.  Name this new sprite `spr_tile_water`.  *Press* the **Import** button and download [spr_tile_water.png](../Assets/Sprites/spr_tile_water.png).  Name the sprite `spr_tile_water`.
+Download [spr_tile_water.png](../Assets/Sprites/spr_tile_water.png). *Right click* on **Sprites** and select **Create | Sprite**.  Name this new sprite `spr_tile_water`.  *Press* the **Import** button and select the sprite in your **Downloads** folder called **spr_tile_water.png**.  *Name* the sprite `spr_tile_water`.
 
 ![import spr_tile_water](images/ImportWaterSprite.gif)
 
