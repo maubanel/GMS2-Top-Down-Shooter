@@ -79,17 +79,25 @@ We are using [gamepad_axis_value](https://manual.yoyogames.com/GameMaker_Languag
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Open up **rm_lvl_1** and add **obj_gamepad** to the **Instance_Player** level.
+
+![add obj_gamepad to rm_lvl_1](images/addGamepadToLevel.png)
+
+##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game and try your controller out.  You should be able to move the player around at any angle.  Look I can turn the player in circles.  You also don't go faster if you press both arrow keys and the gamepad.  Test it out!
 
 ![move player in game with joystick](images/GameadControllingShip.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
 ![save, quit, commit and push to github](images/GitHub.png)
+
+
 
 ___
 
