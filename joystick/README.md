@@ -73,13 +73,13 @@ Open **obj_player: Step** event and add controls after we check for keyboard. To
 
 We are using [gamepad_axis_value](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Game_Input/GamePad_Input/gamepad_axis_value.htm) where we can get 2D axis values for the left and right gamepad stick (we are looking for the left here). This will return a value of -1 to 1 just like when we check for the keyboard axis. Add the code after the keyboard controls but before you move the player. 
 
-![alt_text](images/AddControllerToGame.png)
+![add gamepad_axis_value to read gamepad](images/AddControllerToGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+![alt_text](images/GameadControllingShip.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
