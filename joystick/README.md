@@ -41,7 +41,9 @@ Select the **obj_gamepad** and press the <kbd>Add</kbd> button.  It should move 
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now in the **Objects** folder you should have an **obj_gamepad**.  Double click to open it up.
+
+![alt_text](images/objGamepad.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
