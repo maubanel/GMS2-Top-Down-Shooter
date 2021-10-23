@@ -61,7 +61,7 @@ The event where the magic happens is in the **Asynchronous | Async System** even
 
 The `global.` keyword allows us to create a variable that is not only seen inside the instance of an object.  It is a global variable where there is only one global copy and it is accessible everywhere. 
 
-The square brackets [0] after `global.gamepad` indicates that it is a list.  A reference to the 4 **gamepads** are stored in **array**[0], [1], [2], [3], [4].
+The square brackets `[i]` after `global.gamepad` indicates that it is a list.  A reference to the 4 **gamepads** are stored in **array**[0], [1], [2], [3], [4]. So `i` contains an integer of 0 through 4.
 
 ![async gamepad event](images/AsyncGamepad.png)
 
@@ -69,7 +69,11 @@ The square brackets [0] after `global.gamepad` indicates that it is a list.  A r
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open **obj_player: Step** event and add controls after we check for keyboard. To stop cheating where players press both keyboard and joystick, we can add an if statement to ensure we are getting 0's for keyboard input (player is not pressing both at the same time).  Also, we don't have to compensate for diagonals because the controller returns a horizontal and vertical value with a **normalized** magnitude of 1.
+
+We are using [gamepad_axis_value](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Game_Input/GamePad_Input/gamepad_axis_value.htm) where we can get 2D axis values for the left and right gamepad stick (we are looking for the left here). This will return a value of -1 to 1 just like when we check for the keyboard axis. Add the code after the keyboard controls but before you move the player. 
+
+![alt_text](images/AddControllerToGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
