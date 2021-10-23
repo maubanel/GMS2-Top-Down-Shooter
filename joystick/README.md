@@ -41,9 +41,9 @@ Select the **obj_gamepad** and press the <kbd>Add</kbd> button.  It should move 
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now in the **Objects** folder you should have an **obj_gamepad**.  Double click to open it up.
+Now in the **Objects** folder you should have an **obj_gamepad**.  Double click to open it up. If you want to find out more about how this works, check out **GameMakers** excellent tutorial [Adding Gamepad Support GML](https://marketplace.yoyogames.com/assets/5785/adding-gamepad-support-gml).
 
-![alt_text](images/objGamepad.png)
+![obj_gamepad in game](images/objGamepad.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
