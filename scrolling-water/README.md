@@ -62,7 +62,7 @@ We will be using a **[macros](https://manual.yoyogames.com/GameMaker_Language/GM
 	
 Notice we do not use the assignment operator =.  It is a naming convention to use **ALL CAPS** when naming constants. Open the **obj_game_ Create** event script and add to the bottom the macro.
 
-![alt_text](images/.png)
+![Assign macro BACKGROUNDSCROLLSPEED in obj_game_controller create event](images/BackgroundScrollSpeedMacro.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
