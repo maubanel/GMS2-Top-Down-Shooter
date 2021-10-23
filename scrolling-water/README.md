@@ -42,18 +42,15 @@ So we are going to load a 256 x 256 background tile for water (ocean).  This til
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open room **rm_lvl_1** and click on the Background layer and make sure the Background Layer Properties tab is open.
-
+Open room **rm_lvl_1** and click on the **Background** layer and make sure the **Background Layer Properties** tab is open.
 
 Please note that on instance layers that you can only drag Game Objects onto it. On Background layers you can only drag Sprites.
 
+This brings up a **Background Properties** menu below with the colour and selection box with **No Sprite**. Click on this and select `spr_tile_water`.
 
-This brings up a Background Properties menu below with the colour and selection box with No Sprite. Click on this and select spr_tile_water.
+Press the **Vertical Tile**  and **Horizontal Tile**  check boxes. Look at what happens to the level.
 
-
-Press the Vertical Tile  and Horizontal Tile  check boxes. Look at what happens to the level:
-
-![alt_text](images/.png)
+![add spr_tile_water to background layer and tile vertically and horizontally](images/AddWaterToBackgroundTiling.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
