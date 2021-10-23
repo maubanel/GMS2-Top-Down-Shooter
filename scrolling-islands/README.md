@@ -36,29 +36,41 @@ Lets start by downloading the 3 island sprites **[spr_island_1.png](../Assets/Sp
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Since we want the islands to all share the same behavior, we will create a **Game Object** that will act as a **Parent** that all the children will inherit from. This allows us to write the **Island** logic once and be able to debug and tune it but all islands will inherit the behavior.
+	
+*Create* a blank **Game Object** called `obj_island_parent` that we will write all our scripts for and the three islands will inherit from. DO NOT assign a sprite to it.	
+
+![Add a obj_island_parent with NO sprite assigned](images/http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/ObjIslandParents.png.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now create three new objects and assign the appropriate sprite and attach the `obj_island_parent` to the **Parent** selector. Call them `obj_island_1`, `obj_island_2` and `obj_island_3`:
+
+![Add obj_island_1, obj_island_2 and obj_island_3 and assign the three sprites](images/http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/ThreeIslandChildren.png.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open **rm_lvl_1** and create a new **Instance** Layer and call it **Islands** and put it between the **Instance_Player** and the **Background** layer. We want the plane to be above the islands, and the islands to be in front of the water. The layers in **GameMaker** are like those in **Photoshop** in terms of rendering order.
+
+![Add a new instance layer called Islands between Player and Background](images/http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/SilandsBackgroundLayer.gif.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+*Creatively* drag and drop 6-8 islands and place them on the Islands layer in the room. You can select an island with the left mouse click then when the circular arrow appears you can rotate the sprite so they are not all in the same orientation. You can also just double click on the island (make sure you are on the Island layer) to bring up the instance editor and type in a new value in the Rotation field.  Here is how I filled in my room.
+
+![Add Islands to level and rotate them](images/http://marcaubanel.com/gamemaker/GMS2-Images/Top-Down-Shooter/CH3/PutIslandsInRoom.gif.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Play button icon"> Play Button and the background scrolls and islands stay put. 
 
 ![alt_text](images/.png)
 
