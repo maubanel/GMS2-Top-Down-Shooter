@@ -17,23 +17,41 @@ We are supposed to be in a plane over the high seas.  Lets get a texture and hav
 
 There are two ways I can think of to deal with the room (level). We could just make a very tall room and put all of our graphics and enemies in the room. We can move the plane up each frame so it scrolls through it. 
 
-![Illustration of a long level with all the islands and planes placed](images/ConveyorBelt.png)
+![Illustration of a long level with all the islands and planes placed](images/LongLevelProto.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+The other option would be to have the room where the plane doesn't move but the background scrolls like on a conveyor belt. There is a staging area where islands and enemies are spawned then they move downwards on screen.  When islands fall off the bottom they get sent back to the staging area.  When the enemies go off the bottom they are destroyed.
+
+![Illustration of three zone conveyor belt](images/ConveyorBelt.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+So we are going to load a 256 x 256 background tile for water (ocean).  This tile will match on all sides and we will fill the entire screen up with water.  After that we will add islands to fly over to give a better sense of motion.
+		
+
+*Right click* on **Sprites** and select **Create | Sprite**.  Name this new sprite `spr_tile_water`.  *Press* the **Import** button and download [spr_tile_water.png](../Assets/Sprites/spr_tile_water.png).  Name the sprite `spr_tile_water`.
+
+![import spr_tile_water](images/ImportWaterSprite.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Open room **rm_lvl_1** and click on the Background layer and make sure the Background Layer Properties tab is open.
+
+
+Please note that on instance layers that you can only drag Game Objects onto it. On Background layers you can only drag Sprites.
+
+
+This brings up a Background Properties menu below with the colour and selection box with No Sprite. Click on this and select spr_tile_water.
+
+
+Press the Vertical Tile  and Horizontal Tile  check boxes. Look at what happens to the level:
 
 ![alt_text](images/.png)
 
