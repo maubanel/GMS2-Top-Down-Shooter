@@ -59,10 +59,11 @@ Lets quickly look at two items in the obj_gamepad object.  Open it and look at t
 
 The event where the magic happens is in the **Asynchronous | Async System** event.  Here we print debug messages if a controller is plugged in or unplugged as well as save a reference to the index number that we can use in the global.gamepad array. 
 
-	
 The `global.` keyword allows us to create a variable that is not only seen inside the instance of an object.  It is a global variable where there is only one global copy and it is accessible everywhere. 
 
-![alt_text](images/AsyncGamepad.png)
+The square brackets [0] after `global.gamepad` indicates that it is a list.  A reference to the 4 **gamepads** are stored in **array**[0], [1], [2], [3], [4].
+
+![async gamepad event](images/AsyncGamepad.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
