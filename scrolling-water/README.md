@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+We are supposed to be in a plane over the high seas.  Lets get a texture and have it move to look like we are flying over water.
 
 <br>
 
@@ -15,7 +15,9 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+There are two ways I can think of to deal with the room (level). We could just make a very tall room and put all of our graphics and enemies in the room. We can move the plane up each frame so it scrolls through it. 
+
+![Illustration of a long level with all the islands and planes placed](images/ConveyorBelt.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
