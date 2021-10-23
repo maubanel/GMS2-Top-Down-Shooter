@@ -68,13 +68,17 @@ Notice we do not use the assignment operator =.  It is a naming convention to us
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Lets prove it is a constant.  Lets try resetting the macro to `6`.  Notice the game will not compile when you press run:
+
+![Try to change BACKGROUNDSCROLLSPEED macro and get error message](images/CANTCHANGEMACRO.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Lets double check that it resolves the constant to the value 5 we have set.  *Delete* the above entry and instead add a `show_debug_message(string)`.  Notice that it prints the message just like a normal variable.
+
+![print macro BACKGROUNDSCROLLSPEED](images/BackgroundSpeedDebug.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
