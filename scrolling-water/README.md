@@ -84,6 +84,8 @@ Lets double check that it resolves the constant to the value 5 we have set.  *De
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+*Delete* the `show_debug_message(string)` line.  Now lets scroll the background.  We are using **[layer_vspeed(layer_id, vspd)](). The layer_id parameter is the name of the background layer in the room which defaults to Background.  The vspd is pixels per second with positive moving downwards and negative moving upwards.
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
