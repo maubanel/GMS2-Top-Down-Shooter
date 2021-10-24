@@ -15,7 +15,7 @@ All three planes fly downwards at the same speed. One shoots straight down and t
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-All three planes fly down at a constant speed. Make sure this speed isn't the same as the water or it will look like the planes are floating on the water like a boat. *Double click* on **obj_enemy_parent** and press <kbd>Add Event</kbd> button and add a new **Create** event script then add some logic.
+All three planes fly down at a constant speed. Make sure this speed isn't the same as the water or it will look like the planes are floating on the water like a boat. *Double click* on **obj_enemy_parent** and press <kbd>Add Event</kbd> button and add a new **Create** event script then add a downward motion.
 
 ![Add a create event and give them a speed](images/EnemyParentCreateEvent.png)
 
@@ -41,11 +41,13 @@ Add a new **Moment** to the timeline.  *Right click* on **moment 0** and select 
 
 Each object has a timeline that is accessed through **timeline_index** but it defaults to `-1`.  We need to *assign* the newly created timeline and also start it.  Since it is unassigned it needs to be started.  Open **obj_game_controller | Create event** and assign the timeline at the bottom of the script.
 
-![alt_text](images/.png)
+![Assign the timeline index and start running the timeline in obj_game_controller Create event](images/StartTimelineController.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+
+This was supposed to be enough to work but there seems to be a bug in 2.3.1.542 on the mac at least where if you dynamically create an object it does not run the Create Event.  So until the bug is fixed we need to call it in the child object.  Open up all three enemy objects and you notice that the create event of the parent shows up in light gray and is not editable.  Create a new Create Event for each one as you normally would. Then you will add the following script to all three enemy planes:
 
 ![alt_text](images/.png)
 
