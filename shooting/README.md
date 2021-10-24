@@ -32,14 +32,17 @@ Create a new **Game Object** and call it `obj_player_bullet`. *Assign* the `spr_
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+Press the <kbd>Add Event</kbd> and select a **Create** event. Send the bullet upscreen fast!
 
-![alt_text](images/.png)
+![Add an obj_player_bullet: Create event and add some script](images/PlayerBulletCreateEvent.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open **rm_lvl_1** and add a new **Instance Layer** to the room and call it `Bullets` and place it between **Instance_Player** and **Islands**.
+
+![Add instance layer Bullets to rm_lvl_1](images/AddBulletLayerRm.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
