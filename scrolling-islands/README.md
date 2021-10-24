@@ -104,13 +104,17 @@ Double click **obj_island_parent**.   Press the <kbd>Add Event</kbd> and select 
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The background scrolls with islands now looping back onto the top of the screen.
+
+![Run game and islands go off bottom and are back on the top of the screen](images/IslandsLoop.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now lets randomize the islands position along the X axis so that it looks like we are flying through new spaces rather than the same one over and over again. Since this is not affecting gameplay using a random number will just add to the realism of the game.  Edit the **obj_island_parent: Step** event script and add a single line to place the island randomly along the x axis.
+
+![Add a random variation to islands along x axis](images/IslandParentStepRandomizeOnX2.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
