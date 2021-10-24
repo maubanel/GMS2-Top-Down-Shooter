@@ -38,7 +38,7 @@ Lets start by downloading the 3 island sprites **[spr_island_1.png](../Assets/Sp
 
 Since we want the islands to all share the same behavior, we will create a **Game Object** that will act as a **Parent** that all the children will inherit from. This allows us to write the **Island** logic once and be able to debug and tune it but all islands will inherit the behavior.
 	
-*Create* a blank **Game Object** called `obj_island_parent` that we will write all our scripts for and the three islands will inherit from. DO NOT assign a sprite to it.	
+*Create* a blank **Game Object** called `obj_island_parent` that we will write all our scripts for and the three islands will inherit from. **DO NOT** assign a sprite to it.	
 
 ![Add a obj_island_parent with NO sprite assigned](images/ObjIslandParents.png)
 
