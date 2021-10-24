@@ -135,7 +135,7 @@ Before we place the island we will need to check that the area it will be in is 
 	
 If it is we will stop the loop.  This is done with the **[break](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/break.htm)** statement.  This will quit the loop if the collision ends up being false Open up the **obj_island_parent: Step** event and add the following script.
 
-![alt_text](images/.png)
+![Repeat 5 tries at placing island](images/Repeat5TimesIslandSpawn.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
