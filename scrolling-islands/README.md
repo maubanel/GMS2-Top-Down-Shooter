@@ -72,9 +72,9 @@ We want to center all the sprites so open up **spr_island_1**,**spr_island_2** a
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="Play button icon"> Play Button and the background scrolls and islands stay put. 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game and the background scrolls and islands stay put. 
 
-![alt_text](images/.png)
+![Run game but islands don't move](images/IslandsDontMove.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
