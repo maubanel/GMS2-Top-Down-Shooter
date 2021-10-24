@@ -56,7 +56,9 @@ Open the **obj_player: Create** event script for **obj_player** and add the rate
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open the **Step Event** Script for **obj_player** and *add* to the bottom of the script.  We will add an offset horizontally to the bullet or it looks like it fires behind the plane as opposed to outside of its turret as it is hidden during the first frame beneath the plane.  Offsetting it one player moves has it catch up to current frame.
+
+![Add firing bullet spawning logic to obj_player step event](images/AddShottingToStep.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
