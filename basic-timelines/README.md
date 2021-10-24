@@ -59,7 +59,7 @@ We have a small problem with the enemies. It is small now, but if we spawn many 
 
 </details>
 <details><summary>Answer</summary>
-So what is the problem with the enemies as we have them currently? Try running the game in debug mode (right to the left of the regular run game button), let the enemies go off the screen, pause the game and look at your instances. Make sure you press the **Update** real time instances button and have the Instances window open.  Notice that the planes never disappear even when they go off the bottom of the screen.  If we spawn too many enemies the game will run out of memory and crash.
+So what is the problem with the enemies as we have them currently? Try running the game in debug mode (right to the left of the regular run game button), let the enemies go off the screen, pause the game and look at your instances. Make sure you press the Update real time instances button and have the Instances window open.  Notice that the planes never disappear even when they go off the bottom of the screen.  If we spawn too many enemies the game will run out of memory and crash.
 
 ![Run game in debug mode and look at instances](images/EnableRealTimeDebugging.png)
 </details>
