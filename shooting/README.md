@@ -94,7 +94,21 @@ Now lets deal with the bullet enemy collision. Create a new **Collision Event** 
 	
 We destroy the bullet itself and use with (other) to access the object that the bullet is colliding with.
 
-![Destroy objects when bullets and enemies collide](images/DestroyPlayerBulletLeaveRoom.gif)
+```
+/// @description All Enemies hit by bullet
+
+
+// Destroy bullet
+instance_destroy();
+
+// Destroy enemy
+with (other)
+{
+	instance_destroy();
+}
+```
+
+![Destroy objects when bullets and enemies collide](images/enemyBulletCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
