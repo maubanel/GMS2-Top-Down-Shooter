@@ -74,7 +74,9 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now lets destroy the bullet if it leaves the room. We don't want the game to run out of memory because we have too many bullets. Add a **Other | Outside Room** event on **obj_bullet**:
+
+![Destroy bullet when it leaves room in obj_bullet outside room even](images/DestroyPlayerBulletLeaveRoom.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
