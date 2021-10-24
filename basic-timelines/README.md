@@ -55,7 +55,17 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+We have a small problem with the enemies. It is small now, but if we spawn many more it will become an even bigger issue later. Can you figure it out? 
+
+</details>
+<details><summary>Answer</summary>
+So what is the problem with the enemies as we have them currently? Try running the game in debug mode (right to the left of the regular run game button), let the enemies go off the screen, pause the game and look at your instances. Make sure you press the **Update** real time instances button and have the Instances window open.  Notice that the planes never disappear even when they go off the bottom of the screen.  If we spawn too many enemies the game will run out of memory and crash.
+
+![Run game in debug mode and look at instances](images/EnableRealTimeDebugging.png)
+</details>
+
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
