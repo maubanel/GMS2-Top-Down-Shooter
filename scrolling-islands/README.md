@@ -80,7 +80,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game an
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+We created a parent so that we just need to add scripts to it and all the children will inherit from it. *Double click* the **obj_island_parent: Create** event script and adjust the object's `vspeed`.  We will use the **macro** we just created for this to ensure the islands move at the same speed as the water.
+
+![Scroll islands based on macro](images/speedScrollIslandParent.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
