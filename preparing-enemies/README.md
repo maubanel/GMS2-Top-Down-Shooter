@@ -35,7 +35,7 @@ Set the **Player Width** and **Player Height** to `64`.  Set the **Number of Fra
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Repeat this by doing the same for [spr_enemy_shoot_sprite.png](../Assets/Sprites/spr_enemy_shoot_sprite.png) and [spr_enemy_target.png](../Assets/Sprites/spr_enemy_target.png).  **Import** these sprite strips and call them `spr_enemy_shoot` and `spr_enemy_target`. Adjust the **Framerate** to `12` FPS.
+Repeat this by doing the same for [spr_enemy_shoot_sprite_sheet.png](../Assets/Sprites/spr_enemy_shoot_sprite_sheet.png) and [spr_enemy_target_sprite_sheet.png](../Assets/Sprites/spr_enemy_target_sprite_sheet.png).  **Import** these sprite strips and call them `spr_enemy_shoot` and `spr_enemy_target`. Adjust the **Framerate** to `12` FPS.
 
 ![Import two more sprites as a strip image called spr_enemy_shoot and spr_enemy_target](images/EnemyShootAndTarget.png)
 
