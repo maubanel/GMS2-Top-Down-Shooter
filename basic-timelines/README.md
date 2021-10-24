@@ -47,9 +47,9 @@ Each object has a timeline that is accessed through **timeline_index** but it de
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-This was supposed to be enough to work but there seems to be a bug in 2.3.1.542 on the mac at least where if you dynamically create an object it does not run the Create Event.  So until the bug is fixed we need to call it in the child object.  Open up all three enemy objects and you notice that the create event of the parent shows up in light gray and is not editable.  Create a new Create Event for each one as you normally would. Then you will add the following script to all three enemy planes:
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  Now after one second you should see three enemy ships move down screen:
 
-![alt_text](images/.png)
+![Run game, first wave of ships appear after 1 second](images/FirstWaveBasicA.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
