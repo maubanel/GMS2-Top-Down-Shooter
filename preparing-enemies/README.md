@@ -19,13 +19,17 @@ The enemy sprites have 2 frames and they are 64 x 64 pixels. We will import them
 
 *Create* a new **Sprite** by clickng on by *right clicking* on the **Sprites** title and selecting **Create | Sprite**. Then press the <kbd>Edit Image</kbd> button. *Click* the **Image** menu item on the top and select **Import strip image**. Go to TutorialResources | Sprites | spr_enemy_basic_sprite_sheet.png. 
 
+Set the **Player Width** and **Player Height** to `64`.  Set the **Number of Frames** and the **Number per Row** to `2`. Press the <kbd>Convert</kbd> button.  Select the sprite and reduce the **Framerate** to `12` fps.
+
 ![Import enemy_basic_sprite_sheet.png as an Import strip image](images/ImportEnemyBasicSprite.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+*Name* the new sprite: `spr_enemy_basic`. Basic stands for an enemy that doesn't shoot.  It just flies and has no projectile weapons.
+
+![Name the new sprite spr_enemy_basic](images/SprEnemyBasic.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
