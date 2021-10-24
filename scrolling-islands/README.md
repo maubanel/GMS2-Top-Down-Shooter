@@ -96,7 +96,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Double click **obj_island_parent**.   Press the <kbd>Add Event</kbd> and select a **Step | Step** event. Move the island back to the top of the screen when it goes off the bottom.  We will also randomize the angle by 0 to 360 degrees.
+
+![Add step event and move islands back to top of screen](images/IslandParentStepRandomizeOnX.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
