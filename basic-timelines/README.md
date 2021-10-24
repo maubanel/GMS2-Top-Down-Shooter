@@ -39,7 +39,7 @@ Add a new **Moment** to the timeline.  *Right click* on **moment 0** and select 
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Each object has a timeline that is accessed through **timeline_index** but it defaults to `-1`.  We need to *assign* the newly created timeline and also start it.  Since it is unassigned it needs to be started.  Open **obj_game_controller | Create event** and assign the timeline at the bottom of the script.
+Each object has a timeline that is accessed through **timeline_index** but it defaults to `-1`.  We need to *assign* the newly created timeline and also start it.  Since it is unassigned it needs to be started.  Open **obj_game | Create event** and assign the timeline at the bottom of the script.
 
 ![Assign the timeline index and start running the timeline in obj_game_controller Create event](images/StartTimelineController.png)
 
