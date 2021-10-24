@@ -125,27 +125,24 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 Lets add some visual fluff and add an explosion animation. Download [spr_enemy_explosion_sprite_sheet.png](../Assets/Sprites/spr_enemy_explosion_sprite_sheet.png). *Create* a new **Sprite** and and call it `spr_enemy_explosion`. Click on the <kbd>Edit Image</kbd> button.
 
-	
-Since this is 5 frames long, I didn't provide separate files. I provided them in a single animation sheet or strip. This means you can import a longer sequence from one file. In this case each frame is 128 x 128 pixels and they are on a single row. To import this we need to click on the Image menu item at the top and select Import Strip Image.
+Since this is 5 frames long, I didn't provide separate files. I provided them in a single animation sheet or strip. This means you can import a longer sequence from one file. In this case each frame is **128 x 128** pixels and they are on a single row. To import this we need to click on the Image menu item at the top and select Import Strip Image.
+
+This brings up the **Convert to Frames** menu. In this menu we select the size of each individual frame, how many there are and whether there are any offsets or margins.
+
+Now I know there are **5** frames and they are in a single row. So I select `5` for **Number of Frames** and `5` for **Frames per Row**. Now you can see the default size is 32 x 32 and they show where the five frames line up in the artwork with white boxes. Change it to `128` and `128`.
+
+Press the <kbd>Convert</kbd> button then select <kbd>Yes</kbd> to confirm that you will be replacing the frames.  Change the framerate to `12`.
 
 
-Select the file spr_enemy_explosion_sprite_sheet and load it.
-	
-	
-This brings up the Convert to Frames menu. In this menu we select the size of each individual frame, how many there are and whether there are any offsets or margins.
-Now I know there are 5 frames and they are in a single row. So I select 5 Number of Frames and 5 Frames per Row. Now you can see the default size is 32 x 32 and they show where the five frames line up in the artwork with white boxes. Change it to 128 and 128.
-
-	
-Press the Convert button then select yes to confirm that you will be replacing the frames:
-
-
-![alt_text](images/.png)
+![Add explosion animaton frames by setting size to 128 by 128, 5 frames per row and total number of frames](images/SprEnemyExplosion.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+*Name* the sprite `spr_enemy_explosion`. Adjust its origin to Middle Center.
+
+![Name sprite spr_enemy_explosion and adjust origin to middle center](images/SprEnemyExplosion.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
