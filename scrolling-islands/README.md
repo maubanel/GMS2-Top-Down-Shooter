@@ -129,6 +129,12 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
+Lets try five times to position the island successfully.  If it can't do it within 5 tries then we will just live with this overlap.  We will use a **[repeat(real)](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/repeat.htm)**. What we want to do is check each time if there is a collision and then stop the loop when we get no collision.
+
+Before we place the island we will need to check that the area it will be in is empty. We will have to do some collision detection in script to check for free space. For some simple collision detection we will look at a new function called **[place_meeting(x, y, obj)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Movement_And_Collisions/Collisions/place_meeting.htm)**. Remember that ! is a logical **not** so if we put this before the function it looks to see if the collision is false (the space is empty).
+	
+If it is we will stop the loop.  This is done with the **[break](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/break.htm)** statement.  This will quit the loop if the collision ends up being false Open up the **obj_island_parent: Step** event.
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
