@@ -66,7 +66,9 @@ We will add an offset horizontally to the bullet or it looks like it fires behin
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game in debug mode (right to the left of the regular run game button). Check the Instances tab below. Notice that the plane fires bullets every time you press the space bar.  Notice that the bullets just keep adding up and are never destroyed.
+
+![Play game and press the space bar to fire bullets.  Notice that the bullets are fired but never destroyed.](images/BulletsFlyAndDontGetDestroyed.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
