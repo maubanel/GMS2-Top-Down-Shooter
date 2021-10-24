@@ -19,7 +19,7 @@ The enemy sprites have 2 frames and they are 64 x 64 pixels. We will import them
 
 *Create* a new **Sprite** by clickng on by *right clicking* on the **Sprites** title and selecting **Create | Sprite**. Then press the <kbd>Edit Image</kbd> button. *Click* the **Image** menu item on the top and select **Import strip image**. Go to TutorialResources | Sprites | spr_enemy_basic_sprite_sheet.png. 
 
-![alt_text](images/.png)
+![Import enemy_basic_sprite_sheet.png as an Import strip image](images/ImportEnemyBasicSprite.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
