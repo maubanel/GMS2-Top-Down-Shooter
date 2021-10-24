@@ -148,7 +148,9 @@ Press the <kbd>Convert</kbd> button then select <kbd>Yes</kbd> to confirm that y
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Create a new **Game Object** called `obj_enemy_explosion` and bind the explosion animation you just imported.
+
+![Create a new object called obj_enemy_explosion and bind spr_enemy_explosion](images/ObjEnemyExplosion.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
