@@ -133,7 +133,7 @@ Lets try five times to position the island successfully.  If it can't do it with
 
 Before we place the island we will need to check that the area it will be in is empty. We will have to do some collision detection in script to check for free space. For some simple collision detection we will look at a new function called **[place_meeting(x, y, obj)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Movement_And_Collisions/Collisions/place_meeting.htm)**. Remember that ! is a logical **not** so if we put this before the function it looks to see if the collision is false (the space is empty).
 	
-If it is we will stop the loop.  This is done with the **[break](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/break.htm)** statement.  This will quit the loop if the collision ends up being false Open up the **obj_island_parent: Step** event.
+If it is we will stop the loop.  This is done with the **[break](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/break.htm)** statement.  This will quit the loop if the collision ends up being false Open up the **obj_island_parent: Step** event and add the following script.
 
 ![alt_text](images/.png)
 
