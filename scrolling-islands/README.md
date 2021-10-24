@@ -62,7 +62,9 @@ Open **rm_lvl_1** and create a new **Instance** Layer and call it **Islands** an
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-*Creatively* drag and drop 6-8 islands and place them on the Islands layer in the room. You can select an island with the left mouse click then when the circular arrow appears you can rotate the sprite so they are not all in the same orientation. You can also just double click on the island (make sure you are on the Island layer) to bring up the instance editor and type in a new value in the Rotation field.  Here is how I filled in my room.
+We want to center all the sprites so open up **spr_island_1**,**spr_island_2** and **spr_island_3** and set the **Origin** to `Middle | Center`.
+
+*Creatively* drag and drop 6-8 islands and place them on the Islands layer in the room. You can select an island with the left mouse click then when the circular arrow appears you can rotate the sprite so they are not all in the same orientation. 
 
 ![Add Islands to level and rotate them](images/PutIslandsInRoom.gif)
 
