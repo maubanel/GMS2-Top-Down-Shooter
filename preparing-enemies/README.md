@@ -51,7 +51,9 @@ Make sure the origin is set to Middle Center on all three enemy sprites.
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+Now we will use another parent object to hold our common behavior as well as act as our collision object that we will be checking when firing bullets. Create a new **Game Object** and call it *obj_enemy_parent*. Again, **DO NOT** assign a sprite to it.
+
+![Add a new game object with no sprite called obj_enemy_parent](images/EnemyParentObject.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
