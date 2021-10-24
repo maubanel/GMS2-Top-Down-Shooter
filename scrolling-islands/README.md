@@ -121,7 +121,9 @@ Now lets randomize the islands position along the X axis so that it looks like w
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The background scrolls with islands now looping back onto the top of the screen and randomize on the x axis.  This looks good except for the occasional overlap when islands are on top of each other like so:
+
+![Run game and notice that islands can overlap](images/IslandCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
