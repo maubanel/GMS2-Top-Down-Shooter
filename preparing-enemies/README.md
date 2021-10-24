@@ -43,7 +43,9 @@ Repeat this by doing the same for [spr_enemy_shoot_sprite_sheet.png](../Assets/S
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Make sure the origin is set to Middle Center on all three enemy sprites.
+
+![Adjust all three enemy sprites origin to middle center](images/CenterOriginEnemy.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
