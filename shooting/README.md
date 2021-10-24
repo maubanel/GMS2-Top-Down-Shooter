@@ -25,7 +25,9 @@ Call it `spr_player_bullet` and change the **Origin** to `Bottom Center`.  We wa
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Create a new **Game Object** and call it `obj_player_bullet`. *Assign* the `spr_player_bullet` to the new object.
+
+![Add obj_player_bullet and bind spr_player_bullet to it](images/ObjPlayerBullet.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
