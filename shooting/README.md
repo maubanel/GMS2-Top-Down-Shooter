@@ -90,7 +90,11 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-![alt_text](images/.png)
+Now lets deal with the bullet enemy collision. Create a new **Collision Event** script in **obj_bullet** with a **Collision | obj_enemy_parent**.  We collide with the parent as it allows us to get an event with one object as all the enemies inherit from the same parent.  This avoids having to check individually for the plane types.
+	
+We destroy the bullet itself and use with (other) to access the object that the bullet is colliding with.
+
+![Destroy objects when bullets and enemies collide](images/DestroyPlayerBulletLeaveRoom.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
