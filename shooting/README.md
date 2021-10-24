@@ -82,7 +82,9 @@ Now lets destroy the bullet if it leaves the room. We don't want the game to run
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game in debug mode. See how the bullets get destroyed once they leave the room.
+
+![Run game in debug mode and notice that bullets are now destroyed](images/BulletsFireAndGetDestroyed.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
