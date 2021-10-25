@@ -97,14 +97,20 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+We have a problem with these bullets, again they never disappear and they just keep going.  We don't want a memory leak so lets clean this up the same way we did player bullets.
+	
+Open **obj_enemy_bullet**. *Create* a new event **Other | Outside Room** script and destroy the bullet.
+
+![Add outside room event to obj_enemy_bullet and destroy oneself](images/DestroyEnemyBullet.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Debug Play</kbd> button in the top menu bar to launch the game in debug mode and double check that all bullets and enemy planes are destroyed once they leave the room:
+
+![make sure obj_enemy_bullets disappear when they leave room in debugger](images/RunDebugEverythingCleansUp.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
