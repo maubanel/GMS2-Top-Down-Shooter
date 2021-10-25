@@ -87,7 +87,9 @@ Why is that?  This is because **GameMaker** defaults to `0` degrees pointing rig
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now the bullet is facing the correct starting angle to represent 0°.
+
+![Now bullet defaults to 0 degrees](images/FixedEnemyBulletAngle.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
