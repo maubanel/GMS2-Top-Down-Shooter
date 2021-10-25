@@ -23,7 +23,9 @@ Now we have an enemy that is just a flying obstacle but does not attack the play
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  You should see a second wave follow close behind the first one.  Notice that the explosion works for this one as we have put all the code in the parent which it inherits from.
+
+![Second wave of shooting planes that don't shoot](images/SecondWaveEnemyShooter.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
