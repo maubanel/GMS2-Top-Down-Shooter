@@ -33,7 +33,11 @@ Lets draw a health bar.  There is an event specifically made for GUI's where we 
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+We will be using the **[draw_healthbar(x1, y1, x2, y2, amount, backcol, mincol, maxcol, direction, showback, showborder)]()**.  Now there are a lot of options here.  The **x1, y1, x2, y2** represent the top left corner and bottom right corner of the health bar.  **backcol** is the color behind the healthbar.  The **mincol** is when health is low (usually red) and the **maxcol** is when health is high, usually green.  The **direction** is the angle of the health bar.  **0** will represent left to right the most common representation. **showback** and **showborder** represents how you want to healthbar to look regrading a background and/or border.
+	
+Here are the settings I picked and added to the **obj_game | Draw | Draw Gui**.
+
+![Add a Draw GUI event and add the code to draw the health bar](images/DrawPlayerHealthOnGUI.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
