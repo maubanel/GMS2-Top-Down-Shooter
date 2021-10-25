@@ -50,7 +50,13 @@ Add the same two variables we had in the shooter as well as inheriting the paren
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+How do we make the enemies target? We need to calculate an angle between the enemy shooting and the future position of the player. We don't need to use any trig as there is a GameMaker function that does the work for us called **[point_direction(x1, y1, x2, y2)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/point_direction.htm)**.
+	
+This function returns an angle in degrees between the positions [x1, y1] and [x2, y2]. We will use this to figure out what direction the targeting plane aims the bullets.  I want the bullet to change angles to match the direction it is going in. This will cause some problems that we will have to address.
+
+*Create* a new **Step | Step** event script on **obj_enemy_target**, inherit functionality from the parent and add targeting logic.
+
+![Add enemy target step and inherit from the parent and add shooting to the player's future position](images/StepTargetingEnemy.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
