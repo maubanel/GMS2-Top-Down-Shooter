@@ -156,7 +156,9 @@ Create a new **Game Object** called `obj_enemy_explosion` and bind the explosion
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-![alt_text](images/.png)
+Now we will trigger the explosion animation in a collision event between the **obj_bullet** and the **obj_enemy_parent**. Why the parent? This way any enemy that inherits from **obj_enemy_parent** will trigger this event, which is exactly what we want with three types of planes. This avoids us having to create three separate collision events. Open the **obj_player_bullet: Collision | obj_enemy_parent** event script and add the new animation.
+
+![Add a obj_player_bullet collision script with enemy parent and destroy objects](images/ObjEnemyParentAddExplosion.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
