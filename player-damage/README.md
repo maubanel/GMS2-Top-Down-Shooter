@@ -63,7 +63,9 @@ In **obj_enemy_bullet: Collision | obj_player player** script change the layer f
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now explosions should be on top of the player.
+
+![Run game and now when player gets hit the explosion is on top of everything](images/ExplosionTopLayer.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
