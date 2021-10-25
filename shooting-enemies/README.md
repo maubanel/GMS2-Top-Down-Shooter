@@ -31,7 +31,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Download the enemy bullet [spr_enemy_bullet.png](../Assets/Sprites/spr_enemy_bullet.png). Create a new Sprite and call it spr_enemy_bullet. Load spr_enemy_bullet.png by pressing the Import button and go to TutorialResources | Sprites | spr_enemy_bullet.png .  Call it spr_enemy_bullet. If you can't find it you can locate the file in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_enemy_bullet.png">here</a>). Adjust the origin by selecting Top Center:
+
+![Add new sprite called spr_enemy_bullet and adjust the origin to top center](images/SprEnemyBullet.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
