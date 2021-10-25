@@ -164,7 +164,9 @@ Now we will trigger the explosion animation in a collision event between the **o
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  Fire away at the planes and see a cool explosion but they do not dissappear and loop endlessly!
+
+![Play game and fire at planes.  Notice that explosions do not disappear](images/ShotPlaneExplosionDontDissapear.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
