@@ -42,7 +42,9 @@ Please note: There are two events one for parent and one for current target obje
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Add the same two variables we had in the shooter as well as inheriting the parents create event script.
+
+![Add two shooting variables that we used in the last shooting enemy](images/RateOfFireForTargetingEnemy.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
