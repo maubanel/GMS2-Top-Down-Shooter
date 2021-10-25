@@ -47,7 +47,9 @@ Create a new **Game Object**  and call it `obj_enemy_bullet` and bind the above 
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+Press the <kbd>Add Event</kbd> and select a **Create** event and make the bullet move downwards:
+
+![Create event for enemy bullet and script to make it move down screen](images/BulletCreate.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
