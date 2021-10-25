@@ -95,7 +95,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Now play test the game and adjust your Collision Masks to your liking.  I like to have them a bit loose and not take the entire sprite.  Here are the settings that I liked, but choose your own:
+Now play test the game and adjust your **Collision Masks** on the player sprite and enemy sprites to your liking.  I like to have them a bit loose and not take the entire sprite.  Here are the settings that I liked, but choose your own, based on your preference.
 
 ![Adjust all sprite collision masks to your liking](images/PlayerCollisionMast.png)
 
@@ -113,7 +113,9 @@ Now play test the game and adjust your Collision Masks to your liking.  I like t
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Lets not have the targeting planes shoot backwards or the shooting planes shoot when they are below the player.  We will check to see if the player is in front of the enemy before firing.  Open **obj_enemy_shoot: Step** event and add a check for the player plane behind the enemy.
+
+![Stop shooting up screen in obj_enemy_shoot object](images/AddCheckOnY.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
