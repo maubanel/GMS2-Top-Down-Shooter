@@ -16,7 +16,7 @@ Now our final enemy type will target by shooting at the player's future location
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> button for another Moment at `1200` (or 20 seconds in) with a V formation of seven enemy targeting shooters. 
+Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> button for another Moment at `600` (or 10 seconds in) with a V formation of seven enemy targeting shooters. 
 
 ![Add to tl_lvl_1 and add a Moment at 1200 frames and add a v formation of sevent enemy targeting shooters](images/ThirdWaveTimeline.png)
 
