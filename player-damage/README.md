@@ -87,7 +87,9 @@ Add two explosions and take away triple health damage to bullets inside the **ob
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now run into an enemy to see if it works.
+
+![Play game and run into enemy](images/PlaneOnPlaneDeath.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
