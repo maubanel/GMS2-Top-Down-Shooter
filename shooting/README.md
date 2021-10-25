@@ -172,7 +172,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+There is an event that runs once an animation has finished playing.  That will be perfect for us a we only want the explosion animation to run once.  Open up **obj_enemy_explosion** and press the <kbd>Add Event</kbd> button and select **Other | Animation End** and destroy the object.
+
+![Destroy animation object at end of animation](images/DestroyExplosionAfterPlaying.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
