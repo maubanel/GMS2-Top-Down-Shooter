@@ -7,7 +7,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Now our final enemy type will target by shooting at the player's future location. 
 
 <br>
 
@@ -16,7 +16,9 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> button for another Moment at `1200` (or 20 seconds in) with a V formation of seven enemy targeting shooters. 
+
+![Add to tl_lvl_1 and add a Moment at 1200 frames and add a v formation of sevent enemy targeting shooters](images/ThirdWaveTimeline.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
