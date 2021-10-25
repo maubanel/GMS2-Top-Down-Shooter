@@ -121,13 +121,17 @@ Lets not have the targeting planes shoot backwards or the shooting planes shoot 
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Do the same thing in **obj_enemy_target: Step Event**.
+
+![Stop shooting up screen in obj_enemy_target object](images/AddCheckOnY2.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the enemies shouldn't shoot before moving upwards.
+
+![Run game and look to see that player's don't fire up screen](images/EnemiesDontShootUp.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
