@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+We now want the planes to take on damage from being hit. Since the enemies currently have  no health and and are one hit kills, lets implement health on the player.  I will let you decide if you want to add health to the enemies on your own!
 
 <br>
 
@@ -15,7 +15,11 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+OK, so the easiest way to represent player health is through a health bar. We will not use the globally available health variable that GameMaker gives us as we might add multiplayer in the future and need more than one.
+
+*Double click* the **obj_player: Create** event script and add a new variable for player health at the bottom:
+
+![Add a new player health variable in obj_player](images/AddPlayerHealthToPlayerCreate.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
