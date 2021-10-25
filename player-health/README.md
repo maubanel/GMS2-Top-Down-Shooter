@@ -17,7 +17,7 @@ We now want the planes to take on damage from being hit. Since the enemies curre
 
 OK, so the easiest way to represent player health is through a health bar. We will not use the globally available health variable that GameMaker gives us as we might add multiplayer in the future and need more than one.
 
-*Double click* the **obj_player: Create** event script and add a new variable for player health at the bottom:
+*Double click* the **obj_player: Create** event script and add a new variable for player health at the bottom called `p1_health`.
 
 ![Add a new player health variable in obj_player](images/AddPlayerHealthToPlayerCreate.png)
 
@@ -25,7 +25,9 @@ OK, so the easiest way to represent player health is through a health bar. We wi
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Lets draw a health bar.  There is an event specifically made for GUI's where we don't have to worry about level layers in the room.  The **Draw GUI** event will always draw over game instances.  Press the <kbd>Add Event</kbd> button on **obj_game** and select **Draw | Draw GUI**.  This stays relative to camera space (instead of level space) and always renders in front of all other artwork regardless of the layer. 
+
+![Draw gui event type to obj_game_controller](images/AddDrawGUIToGameController.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
