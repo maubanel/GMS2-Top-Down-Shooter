@@ -81,7 +81,9 @@ Add a `rate_of_fire` and `cooldown` to the shooting enemy just like we did in th
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Add to `obj_player_shoot` and add an overriding Step | Step event script on and add shooting after running the parent's step event through event_inherited();.
+
+![Add event_inherited(); to newly created obj_player_shoot step event](images/StepEventEnemyShoot.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
