@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Now we have an enemy that is just a flying obstacle but does not attack the player.  Lets create an emeny type that shoots straight down the screen.
 
 <br>
 
@@ -15,7 +15,9 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+Create a wave of the new planes. Open tl_lvl_1 and Add another Moment at 120 (or 4 seconds in) with a V wave of four enemy shooters. Add to the script a wave for the shooting enemy type.
+
+![Add a second wave of enemy shooters at 220 frames into the game](images/SecondWaveTL.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
