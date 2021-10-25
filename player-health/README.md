@@ -43,7 +43,9 @@ Here are the settings I picked and added to the **obj_game | Draw | Draw Gui**.
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. You should see a healthbar that is green at 100%:
+
+![Run game and see health](images/HealthBarInGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
