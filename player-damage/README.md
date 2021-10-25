@@ -79,7 +79,9 @@ Now lets deal with enemy plane and player collision.  This will destroy the plan
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Add two explosions and take away triple health damage to bullets inside the **obj_enemy_parent Collision obj_player** event script.
+
+![Add two explosions and take away triple health points](images/DamageToPlayerForPlaneCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
