@@ -32,7 +32,11 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Lets add the behavior we want in the inheritted class.  Open **obj_enemy_target** and add a new **Create** event.
+
+Please note: There are two events one for parent and one for current target object. Remember to run the parent script by using `event_inherited()`.
+
+![Add create event and inherit the event on obj_enemy_target](images/CreateEventTargetEnemy.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
