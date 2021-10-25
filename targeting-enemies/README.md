@@ -24,7 +24,9 @@ Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> 
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  You should see a non-shooting third wave.
+
+![Run game and see third wave of targeting shooters](images/VFormationWave3NotShooting.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
