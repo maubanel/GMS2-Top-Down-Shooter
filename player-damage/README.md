@@ -31,7 +31,9 @@ Open **obj_enemy_bullet** and press the <kbd>Add Event</kbd> button and add a **
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now for testing purposes I just want these three waves to continue for ever.  *Add* a **Step | Step** event script to obj_game and lets loop at `900` frames the timeline forever:
+
+![Make rocks spawn endlessly in obj_game_controller step event](images/DebugAddedToGameControllerStep.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
