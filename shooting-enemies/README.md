@@ -55,7 +55,9 @@ Press the <kbd>Add Event</kbd> and select a **Create** event and make the bullet
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+The one thing we have to be careful about inheriting parent scripts is to make sure that if you are adding another event to the child whose parent has the same event type that we need to make sure they both run (if we want them to).  *Double click*  **obj_enemy_shoot** and you will see a greyed out Create event and Step event.
+
+![Greyed out step and create event](images/InheritedCreateAndStep.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
