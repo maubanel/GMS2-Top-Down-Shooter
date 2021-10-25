@@ -55,7 +55,7 @@ Press the <kbd>Add Event</kbd> and select a **Create** event and make the bullet
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-The one thing we have to be careful about inheriting parent scripts is to make sure that if you are adding another event to the child whose parent has the same event type that we need to make sure they both run (if we want them to).  *Double click*  **obj_enemy_shoot** and you will see a greyed out Create event and Step event.
+The one thing we have to be careful about inheriting parent scripts is to make sure that if you are adding another event to the child whose parent has the same event type that we need to make sure they both run (if we want them to).  *Double click*  **obj_enemy_shoot** and you will see a greyed out Create event and Step event. This means that the parent already has these event types used with a script.
 
 ![Greyed out step and create event](images/InheritedCreateAndStep.png)
 
@@ -63,7 +63,11 @@ The one thing we have to be careful about inheriting parent scripts is to make s
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Our bullet is now set up. We will fire the bullet from the enemy plane that fires and we need to add a rate of fire. Lets create *another new* **Create Event** on **obj_enemy_shoot** and since which will override the parent's event.  We will then add an **[event_inherited()](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Objects/Object_Events/event_inherited.htm)**</a> which will run the parent's create event script before our new code.
+
+> This function will call the current event of the parent object of the instance. Normally, when an instance has a parent object, it automatically inherits all the same events as the parent, but if (for example) your parent object has a create event and you add one to your child object, all instances of the child object will run the new create event that you have added and not that which is in the parent object. Should you need to use both the parent object event and the child object event of the same type, you should use this function as it will run the parent object event before continuing with the rest of the code or actions that the child event contains. - GameMaker Manual
+
+![Add a Create event to obj_enemy_shoot and event_inherited from parent](images/EnemyCreateShootInherit.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
