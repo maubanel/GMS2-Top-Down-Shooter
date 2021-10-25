@@ -180,25 +180,17 @@ There is an event that runs once an animation has finished playing.  That will b
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  Fire away at the planes and the explosions work correctly!
+
+![Run game and fire at enemies and notice explosion only runs once](images/ExplosionGC.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
-
-![alt_text](images/.png)
+![save, quit, commit and push to github](images/GitHub.png)
 
 ___
 
