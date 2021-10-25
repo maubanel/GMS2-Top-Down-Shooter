@@ -95,13 +95,17 @@ Now the bullet is facing the correct starting angle to represent 0°.
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we have messed up the angle of the bullets on the shooting enemy.
+
+![Play game and see that targeting enemy bullets are at wrong angle](images/BulletsWrongAngle.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Open **obj_enemy_shoot | Step** event and we need to adjust the angle of the bullet.  Get a variable from the instance creation and adjust it's image angle by 90 degrees clockwise (or -90 in GameMaker).
+
+![Adjust enemy shoot angle by 90 degrees](images/RotateBulletClockwise90Degrees.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
