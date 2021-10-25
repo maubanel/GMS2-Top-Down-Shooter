@@ -39,7 +39,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Create a new **Game Object**  and call it `obj_enemy_bullet` and bind the above sprite to it.
+
+![Create obj_enemy_bullet and assign spr_enemy_bullet](images/ObjEnemyBullet.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
