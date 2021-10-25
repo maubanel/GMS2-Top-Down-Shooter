@@ -95,7 +95,18 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now play test the game and adjust your Collision Masks to your liking.  I like to have them a bit loose and not take the entire sprite.  Here are the settings that I liked, but choose your own:
+
+![Adjust all sprite collision masks to your liking](images/PlayerCollisionMast.png)
+
+
+![Adjust all sprite collision masks to your liking](images/EnemyShootCollisionMask.png)
+
+
+![Adjust all sprite collision masks to your liking](images/EnemyTargetCollisionMask.png)
+
+
+![Adjust all sprite collision masks to your liking](images/BasicEnemyCollisionMask.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
