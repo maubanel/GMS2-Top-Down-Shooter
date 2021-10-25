@@ -73,7 +73,9 @@ Our bullet is now set up. We will fire the bullet from the enemy plane that fire
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Add a `rate_of_fire` and `cooldown` to the shooting enemy just like we did in the player.
+
+![Add a rate_of_fire and cooldown variable](images/RateOfFireCreateEnemy.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
