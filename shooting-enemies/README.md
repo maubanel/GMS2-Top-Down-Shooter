@@ -15,7 +15,7 @@ Now we have an enemy that is just a flying obstacle but does not attack the play
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Create a wave of the new planes. Open tl_lvl_1 and Add another Moment at 120 (or 4 seconds in) with a V wave of four enemy shooters. Add to the script a wave for the shooting enemy type.
+*Create* a wave of the new planes. Open **Timelines | tl_lvl_1**  and press the <kbd>Add</kbd> button to create a Moment at `240` (or 4 seconds in) with a V wave of four enemy shooters. Add to the script a wave for the shooting enemy type.
 
 ![Add a second wave of enemy shooters at 220 frames into the game](images/SecondWaveTL.png)
 
