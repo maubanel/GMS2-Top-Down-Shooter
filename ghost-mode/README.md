@@ -92,7 +92,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Create** event. Put the player in the center horizontally off screen vertically:
+Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Create** event. Put the player in the center horizontally off screen vertically.
 
 ![Add a create event and position center off bottom of screen](images/SendPlayerOffScreenGhostPlayerCreate.png)
 
@@ -100,7 +100,9 @@ Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Crea
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-![alt_text](images/.png)
+Look at **obj_game_controller: Create** event and look at where the game spawns the player at the beginning.  We want to move it to this same spot before switching from ghost back to game mode.
+
+![Check out where we want to move plane back towards](images/XandYTarget.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
