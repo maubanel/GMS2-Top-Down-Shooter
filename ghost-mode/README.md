@@ -108,7 +108,7 @@ Look at **obj_game_controller: Create** event and look at where the game spawns 
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Lets add a speed of how fast to go back to starting point as well as making the sprite partially translucent. This is a common trick to let the player know that the player is invincible and not under player control. Open up the **obj_ghost_player: Create** event and add.
+Lets add the location to go to, a speed of how fast to go back to starting point as well as making the sprite partially translucent. This is a common trick to let the player know that the player is invincible and not under player control. Open up the **obj_ghost_player: Create** event and add.
 
 ![Add speed to player to return to starting point](images/SpeedTransulencyGhost.png)
 
@@ -126,7 +126,9 @@ Press the <kbd>Add Event</kbd> and select a **Step | Step** event. We will use t
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0. Notice that the player object changes, goes offscreen and comes back on screen:
+
+![Play game and ghost now moves back to center of screen](images/GhostModeFirstPass.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
