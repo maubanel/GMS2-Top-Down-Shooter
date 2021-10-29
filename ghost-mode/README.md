@@ -84,7 +84,9 @@ Repeat for **obj_enemy_shoot: Step**  vent and we need to check if the player ex
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player switches from **obj_player** to **obj_ghost_player**. This new ghost player cannot be controlled which is what we want!
+
+![Play game and player switches and can't be controlled, this can only be seen in the debugger](images/ChangeFromPlayerToGhost.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
