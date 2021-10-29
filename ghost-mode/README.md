@@ -52,7 +52,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open **obj_game_controller: Draw | Draw GUI** event and we need to remove the reference to **obj_player.player_health** from the draw_healthbar() function.  Lets instead create a local variable hud_health and then reference the player only if it exists in the room (otherwise there is no plane so the health is 0):
+
+![Add a loop that repeats 5 times and adds one to a variable](images/CheckPlayerExistsDrawGui.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
