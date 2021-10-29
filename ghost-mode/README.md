@@ -68,7 +68,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open **obj_enemy_target: Step** event and we need to check if the player exists before firing a bullet.
+
+![In enemy target check that player exists before shooting](images/CheckIfPlayerExistsBeforeShootingAtItTarget.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
