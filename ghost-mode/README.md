@@ -117,7 +117,10 @@ Lets add a speed of how fast to go back to starting point as well as making the 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Press the <kbd>Add Event</kbd> and select a **Step | Step** event. We will use the 
+**[move_towards_point(x, y, speed)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Movement_And_Collisions/Movement/move_towards_point.htm)** function to get to our destination.  Add this to the script.
+
+![Add step event to obj_ghost_player then use move_towards_point() to go back to starting point](images/GhostMoveToStartingStep.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
