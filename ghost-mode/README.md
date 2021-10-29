@@ -21,7 +21,12 @@ Now we want the plane when it runs out of health to go into ghost mode which is:
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+Now to do this we will need to create a finite state machine. What is a finite state machine? It is the logical state of any object. So a door can have 4 states. It can be closed, open (to more or less of a degree) or is in the act of opening or closing. Our **obj_player** will have two states: *Active In Game*vand *Out of Life Ghost Mode*.
+
+	
+For a very simple state machine, Create a new **object** for each state. We already have a **obj_player** for the *Active In Game* state. *Create* a new **Game Object**, then bind `spr_player` sprite to it and call it `obj_ghost_player`.
+
+![New object with spr_player attached called obj_ghost_player](images/ObjGhostPlayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
