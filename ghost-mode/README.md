@@ -60,7 +60,9 @@ Open **obj_game_controller: Draw | Draw GUI** event and we need to remove the re
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0.  Woops, yet another run time error.  It is in both the shooting and targeting player when it is checking to see if it is above it.
+
+![Run game again, now there is a run time error on the shooting and targeting players who can't find the player"](images/SecondRunTimeErrorInShootingTargetEnemy.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
