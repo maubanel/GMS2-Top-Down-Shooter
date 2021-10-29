@@ -76,7 +76,9 @@ Open **obj_enemy_target: Step** event and we need to check if the player exists 
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Repeat for **obj_enemy_shoot: Step**  vent and we need to check if the player exists before firing a bullet.
+
+![In enemy shoot check that player exists before shooting](images/CheckIfPlayerExistsBeforeShootingAtItShoot.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
