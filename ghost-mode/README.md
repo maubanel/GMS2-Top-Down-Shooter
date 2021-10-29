@@ -32,7 +32,13 @@ For a very simple state machine, Create a new **object** for each state. We alre
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+We need to switch the **obj_player** game object to **obj_ghost_player** when player health is less or equal to zero. GameMaker provides a function to do this for us called **[instance_change(obj, perf)}(https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_change.htm)**.
+	 
+The **obj** argument is the object you want to turn into and the **perf** parameter is whether to perform that new object's create and destroy events (true) or not (false).
+	
+We need to add to the **obj_player: Step** event script to switch the game object to **ObjGhostPlayer**. Add at the bottom logic to check for zero health.
+
+![Switch to ghost player when player dies in obj_player step event](images/GhostModeFromPlayerWithoutHealth.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
