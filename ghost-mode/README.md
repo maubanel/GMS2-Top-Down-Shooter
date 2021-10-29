@@ -134,7 +134,16 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now we need to switch back to game mode and back to obj_player once the player is close enough to its destination.  We use **distance_to_point(x, y)** to get the distance to target.  If it is less or equal to its speed then we switch back.  This requires a few steps:
+
+* set the image_alpha back to 1
+* Change the **obj_ghost_player** back to **obj_player**
+* Put the player's health back to 100</li>
+* Move to the targets x and y position
+
+Open up the **obj_ghost_player: Step** event and add to the bottom.
+
+![Add a loop that repeats 5 times and adds one to a variable](images/DistanceToPointCloseSwitchFromGhost.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
