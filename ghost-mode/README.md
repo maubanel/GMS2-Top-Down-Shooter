@@ -32,7 +32,7 @@ For a very simple state machine, Create a new **object** for each state. We alre
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-We need to switch the **obj_player** game object to **obj_ghost_player** when player health is less or equal to zero. GameMaker provides a function to do this for us called **[instance_change(obj, perf)}(https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_change.htm)**.
+We need to switch the **obj_player** game object to **obj_ghost_player** when player health is less or equal to zero. GameMaker provides a function to do this for us called **[instance_change(obj, perf)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_change.htm)**.
 	 
 The **obj** argument is the object you want to turn into and the **perf** parameter is whether to perform that new object's create and destroy events (true) or not (false).
 	
