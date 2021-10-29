@@ -6,7 +6,13 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Now we want the plane when it runs out of health to go into ghost mode which is:
+
+* Destroy player plane
+* Animate new transluscent ghost plane offscreen bottom center
+* Move ghost plane upwards
+* Do not take damage, do not take player control
+* After returning to starting point make player solid and give control back to gameplayer and give the plane 100% health again.
 
 <br>
 
