@@ -108,7 +108,9 @@ Look at **obj_game_controller: Create** event and look at where the game spawns 
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Lets add a speed of how fast to go back to starting point as well as making the sprite partially translucent. This is a common trick to let the player know that the player is invincible and not under player control. Open up the **obj_ghost_player: Create** event and add.
+
+![Add speed to player to return to starting point](images/SpeedTransulencyGhost.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
