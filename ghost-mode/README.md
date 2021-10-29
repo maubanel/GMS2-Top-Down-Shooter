@@ -92,7 +92,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Create** event. Put the player in the center horizontally off screen vertically:
+
+![Add a create event and position center off bottom of screen](images/SendPlayerOffScreenGhostPlayerCreate.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
