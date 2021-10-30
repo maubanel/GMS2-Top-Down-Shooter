@@ -67,7 +67,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	T
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-*Place* the newly created object in **rm_front_end** on the Instances layer.
+*Place* the newly created object in **rm_front_end** on the **Instances** layer.
 
 ![Place obj_press_space in rm_lvl_front_end](images/AddTitleToRoom.png)
 
