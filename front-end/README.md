@@ -99,7 +99,13 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	T
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now lets add the ability to change rooms through the scripts which uses another GameMaker function **[room_goto(index)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Rooms/room_goto.htm)**.  The argument index is the name of the room we assigned.  In our case it is the rm_lvl_1 that we want to go to.
+			
+We will be checking for both a space bar and a start button.  Ideally we would change this title text to have start instead of space, but maybe this is something you could do on your own!  
+
+Now add the room change to the bottom of the **obj_press_space: Step event**.
+
+![Add room change to game in obj_press_space step event](images/StartGameLogic.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
