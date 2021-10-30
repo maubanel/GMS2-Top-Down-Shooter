@@ -112,7 +112,9 @@ Now add the room change to the bottom of the **obj_press_space: Step event**.
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Woops we get an error.  It looks like it can't find the global variable.  
+
+![Run game, but we get an error](images/CantFindGamepadVariable.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
