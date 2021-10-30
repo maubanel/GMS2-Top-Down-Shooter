@@ -134,8 +134,7 @@ Here is an example of what it looks like in **obj_player: Step**.  Repeat this f
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and the sounds should alter a bit during playback. The only sound we forgot to put in was the sound playing when the player is hit directly by a plane.  I will let you figure this out on your own.
 
-
-![alt_text](images/.png)
+https://user-images.githubusercontent.com/5504953/139531886-3c7525a8-9d0c-4a45-b42a-2e778ebd36e7.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
