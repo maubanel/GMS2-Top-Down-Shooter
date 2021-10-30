@@ -49,7 +49,15 @@ Now that we have added lives, we need to subtract one each time the player dies.
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+We need to now deal with a player who has run out of health but has no lives left after this one.  We would like to:
+
+* Subtract our final life (there is one life left)
+* Destroy the player object as the game is over
+* Restart the game, but we will call an alarm so it will restart in 2 seconds.  The * * Alarm needs to be on obj_game as the player alarm would be destroyed with the player
+
+Go back to **obj_player: Step** event and add after the previous condition.
+
+![Deal with game over condition when subtradting lives](images/EndOfGameAlarm.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
