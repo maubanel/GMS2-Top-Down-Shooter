@@ -23,7 +23,9 @@ Pick some free music that you think might be appropriate for the game. I used Th
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Pick the music you have downloaded.
+
+![Press three dots and select song you just downloaded](images/PIckSong.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
