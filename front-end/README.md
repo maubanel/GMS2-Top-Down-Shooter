@@ -49,7 +49,11 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	T
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+*Download* [spr_press_space.png](../Assets/Sprites/spr_press_space.png).
+
+*Create* a new **Sprite** and <kbd>Import</kbd> spr_press_space.png and call it `spr_press_space`. 
+
+![Add spr_press_space and import sprite of same name from the TutorialResources/Sprite folder](images/SprPressSpaceToStart.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
