@@ -120,7 +120,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. W
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-This happens because it is looking for a variable in the room that is stored in **obj_gamepad**.  We need to add the **obj_gamepad** to **rm_front_end** and remove it from **rm_level_1**. We want the controller to work for the whole game so we mark the **obj_gamepad** as **Persistent**, so it goes from level to level.
+This happens because it is looking for a variable in the room that is stored in **obj_gamepad**.  We need to add the **obj_gamepad** to **rm_front_end** and remove it from **rm_level_1**. We want the controller to work for the whole game so we mark the **obj_gamepad** as **Persistent**, so it goes from level to level. We need the **obj_gamepad** in every level that uses a gamepad!
 
 
 ![Remove obj_gamepad from rm_lvl_1](images/AddGamepadToRoom.png)
@@ -129,7 +129,9 @@ This happens because it is looking for a variable in the room that is stored in 
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Test the game and you should now be able to press space and you can go to the game screen.
+
+![Play game and we should now be able to go from front end to in game](images/FEToGame.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
