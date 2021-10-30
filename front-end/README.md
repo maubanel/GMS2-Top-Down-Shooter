@@ -83,7 +83,9 @@ Run the game and now you should see the front end that still does nothing but ha
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Lets make the press space call to action *flash* to attract the users attention. Open up **obj_press_space**. Press the <kbd>Add Event</kbd> and select a **Step | Step** event.
+
+![Add step event to obj_press_space and add flashing logic](images/FlashLogoTitleScreen.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
