@@ -65,13 +65,13 @@ Add the enemy explosion to **obj_player_bullet: Collision | obj_enemy_parent** e
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and shoot enemies ot hear the sounds played!
 
-
-
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Repeat the process for [snd_player_explode.wav](../Assets/Sounds/snd_player_explode.wav), [snd_player_shoot.wav](../Assets/Sounds/snd_player_shoot.wav) and [snd_enemy_shoot.wav](../Assets/Sounds/snd_enemy_shoot.wav) . Name the files the same as the downloads and link audio files with the appropriate name. 
+
+![three more audio files](images/LastThreeSounds.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
