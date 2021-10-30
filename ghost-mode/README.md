@@ -150,6 +150,8 @@ Open up the **obj_ghost_player: Step** event and add to the bottom.
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0. Now you switch back to playing the game after a certain amount of time:
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
