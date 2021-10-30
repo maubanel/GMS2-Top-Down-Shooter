@@ -114,13 +114,19 @@ Finally *open* up **obj_enemy_shoot: Step**.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and listen to all the sounds.  
 
-![alt_text](images/.png)
+ADD AUDIO RECORDING ON PC
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+The audio gets repetitive really quickly.  Lets look at a way of tricking the ear to get more out of a single sound.  Lets alter the pitch with **[audio_sound_pitch(index, pitch)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Audio/audio_sound_pitch.htm)**. The pitch is a value less than 1 is lower in pitch (0 would be none) and 2 would be an ocatve higher.
+
+Lets alter the volume (gain) with **[audio_sound_gain(index, volume, time)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Audio/audio_sound_gain.htm)**. The volume argument is between `0` (quiet) to `1` (full volume).  We will set the time argument to `0` as we don't want it to fade in or out we want it to apply right away.
+
+Here is an example of what it looks like in **obj_player: Step**.  Repeat this for all other sounds played.
+
+![Add a pitch and gain random shift in shooting sound](images/RandomizeGainPitchAllSounds.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
