@@ -33,11 +33,15 @@ Add to the bottom of **obj_game_controller: Draw GUI** event and draw the lives 
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we should see three planes representing our health being drawn on the HUD next to our health:
+
+![Lives drawn on hud when playing game](images/LivesDrawnOnGUI.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Now that we have added lives, we need to subtract one each time the player dies.  We only want to subtract a life if there are lives left. We don't want to go to ghost mode if the player has no lives left.  Open up obj_player: Step event and go to the end where we check if health is less or equal to `0`.  We add a check to see if there are any player lives left. Open up **obj_player: Step Event** and make the changes.
 
 ![alt_text](images/.png)
 
