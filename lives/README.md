@@ -91,6 +91,10 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 
 ![save, quit, commit and push to github](images/GitHub.png)
 
+| `animation.character`\|`THE END`| 
+| :--- |
+| **That's All Folks!** Thanks for sticking around. That is it for this tutorial but there is so much more that you can do with this game.  First you can start by adding more waves.  Have fun! |
+
 ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
