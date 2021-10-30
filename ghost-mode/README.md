@@ -136,9 +136,10 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 Now we need to switch back to game mode and back to obj_player once the player is close enough to its destination.  We use **distance_to_point(x, y)** to get the distance to target.  If it is less or equal to its speed then we switch back.  This requires a few steps:
 
+* Check to see that we are within one player movemvent of the target
 * set the image_alpha back to 1
 * Change the **obj_ghost_player** back to **obj_player**
-* Put the player's health back to 100</li>
+* Put the player's health back to 100
 * Move to the targets x and y position
 
 Open up the **obj_ghost_player: Step** event and add to the bottom.
