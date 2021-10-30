@@ -124,13 +124,16 @@ The audio gets repetitive really quickly.  Lets look at a way of tricking the ea
 
 Lets alter the volume (gain) with **[audio_sound_gain(index, volume, time)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Audio/audio_sound_gain.htm)**. The volume argument is between `0` (quiet) to `1` (full volume).  We will set the time argument to `0` as we don't want it to fade in or out we want it to apply right away.
 
-Here is an example of what it looks like in **obj_player: Step**.  Repeat this for all other sounds played.
+Here is an example of what it looks like in **obj_player: Step**.  Repeat this for all other sounds played (except for the music looping).
 
 ![Add a pitch and gain random shift in shooting sound](images/RandomizeGainPitchAllSounds.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and the sounds should alter a bit during playback. The only sound we forgot to put in was the sound playing when the player is hit directly by a plane.  I will let you figure this out on your own.
+
 
 ![alt_text](images/.png)
 
