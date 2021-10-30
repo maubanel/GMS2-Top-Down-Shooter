@@ -123,7 +123,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. W
 This happens because it is looking for a variable in the room that is stored in **obj_gamepad**.  We need to add the **obj_gamepad** to **rm_front_end** and remove it from **rm_level_1**. We want the controller to work for the whole game so we mark the **obj_gamepad** as **Persistent**, so it goes from level to level.
 
 
-![Remove obj_gamepad from rm_lvl_1](images/DeleteObjGamepadInRmLvl1.png)
+![Remove obj_gamepad from rm_lvl_1](images/AddGamepadToRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
