@@ -63,7 +63,9 @@ Go back to **obj_player: Step** event and add after the previous condition.
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *open* up **obj_game** and press the <kbd>Add Event</kbd> button to add an **Alarm | Alarm0** event and call the game restart function.
+
+![Alarm0 add game restart in obj_game_controller](images/Alarm0RestartGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
