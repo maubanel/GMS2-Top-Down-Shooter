@@ -33,7 +33,9 @@ Lets add the front end screen that comes up before the game starts. Download [sp
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now we are going to use the sprite as a background. Select the **Background Layer** and *click* on **no sprite**. Load the newly imported background. You should now have a screen that has our title page.
+
+![spr_title_page added to rm_lvl_front_end background](images/ChangeFrontEndBackGround.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
