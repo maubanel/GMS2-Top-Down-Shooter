@@ -87,7 +87,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Open up **obj_player: Step** and inside the shooting braces (`if ( (keyboard_check_pressed(vk_space)...`)
+*Open* up **obj_player: Step** and inside the shooting braces (`if ( (keyboard_check_pressed(vk_space)...`)
 
 ![Add shooting sound to where player hits the space bar](images/PlayerSoundPlayerSHoot.png)
 
@@ -95,7 +95,9 @@ Open up **obj_player: Step** and inside the shooting braces (`if ( (keyboard_che
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+*Open* up **obj_enemy_target: Step**.
+
+![Add shooting sound for enemy target](images/PlayerSoundEnemyTargetShoot.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
