@@ -59,7 +59,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	T
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+*Create* a new **Game Object** and bind the above sprite to it calling it `obj_press_space`. 
+
+![Create object obj_press_space and bind spr_press_space](images/ObjPressSpace.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
