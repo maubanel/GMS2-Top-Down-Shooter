@@ -47,7 +47,9 @@ https://user-images.githubusercontent.com/5504953/139530532-cb5d8513-7082-4fd4-a
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-![alt_text](images/.png)
+Download [snd_enemy_explode.wav](../Assets/Audio/snd_enemy_explode.wav) to your computer. Call this **Sound** file `snd_enemy_explode`.
+
+![Add a snd_enemy_explode sound resource and load file from TutorialResources/Sounds folder](images/AddEnemyExplodeSFX.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
