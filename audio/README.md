@@ -71,7 +71,7 @@ https://user-images.githubusercontent.com/5504953/139530785-5453222b-188a-47bc-9
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Repeat the process for [snd_player_explode.wav](../Assets/Sounds/snd_player_explode.wav), [snd_player_shoot.wav](../Assets/Sounds/snd_player_shoot.wav) and [snd_enemy_shoot.wav](../Assets/Sounds/snd_enemy_shoot.wav) . Name the files the same as the downloads and link audio files with the appropriate name. 
+Repeat the process for [snd_player_explode.wav](../Assets/Sounds/snd_player_explode.wav), [snd_player_shoot.wav](../Assets/Sounds/snd_player_shoot.wav) and [snd_enemy_shoot.wav](../Assets/Sounds/snd_enemy_shoot.wav). Name the files the same as the downloads and link audio files with the appropriate name. 
 
 ![three more audio files](images/LastThreeSounds.png)
 
