@@ -25,7 +25,9 @@ Lets add the front end screen that comes up before the game starts. Download [sp
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+*Create* a new **Room** and call it *rm_lvl_front_end*. Change the **Width** and **Height** to `1000` by `1536`. *Drag* this new room to the top of the list so it is the first room loaded.
+
+![Add new room called rm_lvl_front_end and drag to top of room list in resource folder](images/RmLevelFE.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
