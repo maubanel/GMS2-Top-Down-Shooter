@@ -87,7 +87,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Open up **obj_player: Step**.
+Open up **obj_player: Step** and inside the shooting braces (`if ( (keyboard_check_pressed(vk_space)...`)
 
 ![Add shooting sound to where player hits the space bar](images/PlayerSoundPlayerSHoot.png)
 
