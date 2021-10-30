@@ -25,7 +25,9 @@ Why don't we add this to the player object? The player object is destroyed at de
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Add to the bottom of **obj_game_controller: Draw GUI** event and draw the lives to the screen.
+
+![Draw lives on screen in game controller draw gui event](images/DrawPlayerLivesGUI.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
