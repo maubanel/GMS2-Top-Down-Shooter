@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Lets add some music and sound effects to the game.
 
 <br>
 
@@ -15,7 +15,9 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+Pick some free music that you think might be appropriate for the game. I used The *Spririt of Russian Love* by **Zinaida Troikai** for mine from the free music archive. Look for an MP4 or OGG format.  *Download* a song that you have permission to use and right click on **Sounds** and select **Create | Sound**.  Call it *snd_theme_music* and press the three periods (dots) next to the name to bring up an explorer menu to pick the music.
+
+![Download and pick theme music for the game and create a sound resource called snd_theme_music](images/AddNewSound.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
