@@ -43,7 +43,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 Now that we have added lives, we need to subtract one each time the player dies.  We only want to subtract a life if there are lives left. We don't want to go to ghost mode if the player has no lives left.  Open up obj_player: Step event and go to the end where we check if health is less or equal to `0`.  We add a check to see if there are any player lives left. Open up **obj_player: Step Event** and make the changes.
 
-![alt_text](images/.png)
+![add to obj_player step event a subtraction of life each time it diess](images/AddLivesCheckSubtractOneLife.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
