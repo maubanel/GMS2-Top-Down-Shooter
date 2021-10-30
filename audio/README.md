@@ -89,7 +89,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 Open up **obj_player: Step**.
 
-![Add shooting sound for enemy target](images/PlayerSoundEnemyTargetShoot.png)
+![Add shooting sound to where player hits the space bar](images/PlayerSoundPlayerSHoot.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
