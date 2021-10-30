@@ -93,7 +93,7 @@ Lets make the press space call to action *flash* to attract the users attention.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	The call to action should be flashing:
 
-![alt_text](images/.png)
+![Run game and now play button flashes](images/FlashingTitle.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
