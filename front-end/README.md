@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Lets add a title screen that invites the player to start the game.
 
 <br>
 
@@ -15,7 +15,11 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+Lets add the front end screen that comes up before the game starts. Download [spr_title_page.png](../Assets/Sprites/spr_title_page.png).
+
+*Create* a new **Sprite** and press the <kbd>Import</kbd> button. Call this sprite `spr_title_page` and leave the origin in the top left corner (do not alter it).
+
+![Add spr_title_page and import sprite of same name from the TutorialResources/Sprite folder](images/SpriTitlePage.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
