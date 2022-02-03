@@ -95,9 +95,9 @@ Navigate to the directory you cloned it in.  Double click on `TopDownShooter.yyp
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Now type `git push -u origin main` to push your work to **GitHub**.  The project is now set up and you will be able to use **GitHub** desktop without command line for the rest of the project.
+Now you have a blank project and you are ready to start!
 
-![alt_text](images/PushToGitHub.png)
+![empty gms2 project](images/blackProject.png)
 
 ___
 
