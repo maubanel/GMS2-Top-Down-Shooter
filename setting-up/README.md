@@ -23,19 +23,13 @@ Click on the **[GitHub Classroom Link](https://classroom.github.com/a/zDQ4NVnj)*
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
 You will now be sent to a message that says the repository is being configured.  Wait a few seconds then press the refresh button.
 
 ![press refresh to see repository](images/refreshForLink.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Eventually you will get a link to the repository that **GitHub Classroom** has created.  *Click* on the link to your new repository.
 
@@ -43,19 +37,26 @@ Eventually you will get a link to the repository that **GitHub Classroom** has c
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now I have created a projet for you to start with.  This is a **Blank GML** projet that is called `TopDownShooter`.  Notice that the **README.md** file is displayed on your repository front page.  We also have the folder and all the files for an empty project.
 
 ![empty repository](images/blankRepo.png)
 
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
 Press the **Pencil** icon next to the **README.md** file to edit this file.  Change it to your name and please add feedback to this as you go along.
 
 ![alt_text](images/editReadme.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
