@@ -63,9 +63,9 @@ I allow you to use all the assets and scritps that I have created over the years
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we want the project to be in the same folder as the `.yyp` project filename (in this case Top-Down-Shooter).  You then need to set the **name** the exact name of the folder that holds the project.  So in my case the folder that contained the project was **Documents | GitHub**.  So I use this as the **Local Path**.  For the **Name** I use the project folder `Top-Down-Shooter`. It has to be spelled EXACTLY the same way as the one that holds the **GameMaker** project. This way it will create a git repository in this folder without creating a new folder.
+This `.gitignore` file tells GitHub which files to not upload and sync with the project.  In this case the only file we do not need at the hidden `.DS_Store` files that macs create.  You can leave this file alone as it will not do anyting on a PC.
 
-![create git repository in project](images/SelectProjetFolder.png)
+![create git repository in project](images/gitignore.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
