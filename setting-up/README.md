@@ -79,9 +79,9 @@ Press the green <kbd>Code</kbd> button and select **Open With GitHub Desktop**.
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Press **Repository | Open in Terminal** on mac and **Repository | Open in ???** on PC.
+Select a directory to save the project to (DO NOT SAVE TO ONE DRIVE!).
 
-![create new repository in project folder](images/CreateNewRepository.png)
+![create new repository in project folder](images/pickDirectoryClone.png)
 
 Now the only way we know that it works properly is to turn on the ability to see hidden files and folders.  Go to [Microsoft Resources](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) for windows 10 instructions for turning on hidden files and folders.  Read this [article](https://www.macworld.co.uk/how-to/show-hidden-files-mac-3520878/) for instructions on the mac.
 
