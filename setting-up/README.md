@@ -71,9 +71,9 @@ This `.gitignore` file tells GitHub which files to not upload and sync with the 
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-When you see them there has to be a `.git` hidden folder in the **same** directory as the project file (in my case **Space-Rocks.yyp**).
+Press the green <kbd>Code</kbd> button and select **Open in GitHub desktop**.
 
-![.git folder in the same folder as project file](images/SpaceRocksGitDir.png)
+![open in github desktop](images/openInDesktop.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
