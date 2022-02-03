@@ -79,20 +79,17 @@ Press the green <kbd>Code</kbd> button and select **Open With GitHub Desktop**.
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select a directory to save the project to (DO NOT SAVE TO ONE DRIVE!).
+Select a directory to save the project to (DO NOT SAVE TO ONE DRIVE!). Press the <kbd>Clone</kbd> button when you are ready.
 
 ![create new repository in project folder](images/pickDirectoryClone.png)
-
-Now the only way we know that it works properly is to turn on the ability to see hidden files and folders.  Go to [Microsoft Resources](https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2) for windows 10 instructions for turning on hidden files and folders.  Read this [article](https://www.macworld.co.uk/how-to/show-hidden-files-mac-3520878/) for instructions on the mac.
-
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-You now need to connect this new repository to the one you created in the second step in this walk through.  Copy and paste the line that includes `git remote add origin`... and press enter.
+Navigate to the directory you cloned it in.  Double click on `
 
-![add origin for github repository](images/setRemoteGitHub.png)
+![navigate to directory](images/navigateToDirectory.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
