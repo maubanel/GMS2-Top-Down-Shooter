@@ -87,7 +87,7 @@ Select a directory to save the project to (DO NOT SAVE TO ONE DRIVE!). Press the
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Navigate to the directory you cloned it in.  Double click on `
+Navigate to the directory you cloned it in.  Double click on `TopDownShooter.yyp`.
 
 ![navigate to directory](images/navigateToDirectory.png)
 
