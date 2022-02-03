@@ -71,7 +71,7 @@ This `.gitignore` file tells GitHub which files to not upload and sync with the 
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Press the green <kbd>Code</kbd> button and select **Open in GitHub desktop**.
+Press the green <kbd>Code</kbd> button and select **Open With GitHub Desktop**.
 
 ![open in github desktop](images/openInDesktop.png)
 
