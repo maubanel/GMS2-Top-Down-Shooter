@@ -45,7 +45,7 @@ Eventually you will get a link to the repository that **GitHub Classroom** has c
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-You get to your empty repository on **GitHub**.
+Now I have created a projet for you to start with.  This is a **Blank GML** projet that is called `TopDownShooter`.  Notice that the **README.md** file is displayed on your repository front page.  We also have the folder and all the files for an empty project.
 
 ![empty repository](images/blankRepo.png)
 
