@@ -56,8 +56,9 @@ Press the **Pencil** icon next to the **README.md** file to edit this file.  Cha
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
+I allow you to use all the assets and scritps that I have created over the years to you own liking.  I publish them with the MIT open source license.  If you want to repricate you can leave this license alone.  This means that you are releasing your work as open source.  If you do not want this please change the LICENSE to one that you would like to use. More information can be found on [GitHub](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
 
-
+![view license file](images/LICENSE.png)
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
