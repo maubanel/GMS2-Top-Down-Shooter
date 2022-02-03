@@ -53,9 +53,9 @@ Now I have created a projet for you to start with.  This is a **Blank GML** proj
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Open up **GitHub Desktop** and select **File | New Repository** to create a **GitHub** repository inside the **Top-Down -Shooter** project you just created.
+Press the **Pencil** icon next to the **README.md** file to edit this file.  Change it to your name and please add feedback to this as you go along.
 
-![alt_text](images/fileNewRepository.png)
+![alt_text](images/editReadme.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
