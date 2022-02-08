@@ -93,7 +93,13 @@ Navigate to the directory you cloned it in.  Double click on `TopDownShooter.yyp
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+Add a new Instance layer called Game. Remove `obj__player` from room and add `obj_game` to room on Game instance layer. 
+
+![empty gms2 project](images/.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now you have a blank project and you are ready to start!
 
