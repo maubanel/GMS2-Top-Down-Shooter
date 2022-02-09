@@ -39,7 +39,7 @@ This brings up the **Convert to Frames** menu.  In this we need to make some adj
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Press play on the animation menu to see the speed of the animation.  It defaults to 15 Frames per Second and you can adjust the playback speed. I prefer 12.  We also want to center the sprite on the place so choose Middle Center for the Origin of the sprite.
+Press play on the animation menu to see the speed of the animation.  It defaults to `15` **Frames per Second** and you can adjust the playback speed. I prefer `12`.  We also want to center the sprite on the place so choose **Middle Center** for the **Origin** of the sprite.
 
 
 ![Center origin and change framerate of playback to 12](images/SpeedAndOriginPlayer.png)
@@ -78,15 +78,6 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 
 OK, now we don't want to place the player plane in the room. Since the player will die and have to reappear, we want to control the plane being added through scripting.
 
-	
-We need to have a **Game Object** that handles the common game issues from level to level. Create a new empty **Game Object** called `obj_game`. *Add* it to the room.  Since we don't have a sprite on it there will be nothing shown in the game but it will still run the object's script events.
-
-![Create new object called obj_game_controller and add it to the room](images/AddGameControllerToRoom.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
 *Double click* on **rm_lvl_1** and *delete* the **obj_player** to remove from the room.
 		
 Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are like **Photoshop** where the ones on top render first and the ones underneath render beneath it.  We want our player to be at the top of the layers.
@@ -95,7 +86,7 @@ Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Create Event** script and *spawn* the player in the bottom center of the game room.
 
@@ -105,8 +96,7 @@ Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Creat
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
 Add a new Instance layer called `Game`. Remove `obj_player` from room and add `obj_game` to room on **Game** instance layer. 
 
@@ -114,7 +104,8 @@ Add a new Instance layer called `Game`. Remove `obj_player` from room and add `o
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  
+
+##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure that you see the plane appears (only one, you should have deleted the old one) in the bottom center of the room.  We will soon be adding controls to move the ship with keyboard input.
 
@@ -122,8 +113,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
