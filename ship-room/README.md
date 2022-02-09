@@ -77,8 +77,6 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 OK, now we don't want to place the player plane in the room. Since the player will die and have to reappear, we want to control the plane being added through scripting.
-
-*Double click* on **rm_lvl_1** and *delete* the **obj_player** to remove from the room.
 		
 Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are like **Photoshop** where the ones on top render first and the ones underneath render beneath it.  We want our player to be at the top of the layers.
 
