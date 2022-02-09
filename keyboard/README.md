@@ -109,33 +109,32 @@ We need to adjust the speed when moving diagonally. We will use the `speed` buil
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfetly except the player can leave the level.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfectly except the player can leave the level.
 
 ![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
+Now since our **Origin** is at `64` by `64` in the middle of the sprite we don't want any of the ship to leave the play area so we need to go from `64` to `room_width - 65` or `sprite_width / 2` to `room_width - sprite_wdith /2 -1`.
+
+We want to restrict player to the bottom third of the screen and to not go off the bottom of the play area which would be `room_height - sprite_height / 2 - 1`.
+
+![restrict player to room boundaries](images/RoomBoundariesForPlayArea.png)
 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfetly except the player can leave the level.
 
-![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now since our **Origin** is at `64` by `64` in the middle of the sprite we don't want any of the ship to leave the play area so we need to go from `64` to `room_width - 65` or `sprite_width / 2` to `room_width - sprite_wdith /2 -1`.
 
-We want to restrict player to the bottom third of the screen and to not go off the bottom of the play area which would be `room_height - sprite_height / 2 - 1`.
-
-![restrict player to room boundaries](images/RoomBoundariesForPlayArea.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
