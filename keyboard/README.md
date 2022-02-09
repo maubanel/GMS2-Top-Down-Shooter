@@ -101,7 +101,7 @@ So when you move left and right you would move 1 unit (* player_speed) but if yo
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We need to clamp the speed when moving diagonally. We will use the `speed` built in variable to achieve this (it is the combination of the hspeed and vspeed and has a vector length representing both axis).  Lets use the keyboard input to process ONLY a diagonal direction (`if (h_input != 0 && v_input !- = 0`). You are only moving diagonally when both axis have a non-zero value.
+We need to adjust the speed when moving diagonally. We will use the `speed` built in variable to achieve this (it is the combination of the hspeed and vspeed and has a vector length representing both axis).  Lets use the keyboard input to process ONLY a diagonal direction (`if (h_input != 0 && v_input !- = 0`). You are only moving diagonally when both axis have a non-zero value.
 
 ![adjust speed of diagonals](images/normalizeDiagonals.png)
 
