@@ -110,7 +110,7 @@ Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Creat
 
 Add a new Instance layer called `Game`. Remove `obj_player` from room and add `obj_game` to room on **Game** instance layer. 
 
-![add obj gmae to room and remove obj_player](images/.png)
+![add obj gmae to room and remove obj_player](images/gameLayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
