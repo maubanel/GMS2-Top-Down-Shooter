@@ -127,7 +127,11 @@ We want to restrict player to the bottom third of the screen and to not go off t
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
+Open obj_player: Create event script and create 4 variables representing the top, Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
 
+Don't mind the yellow exclamation marks (∆).  That means these variables are **set** but never used.  We will do that in the next step and these marks will go away.  They are just there to remind you that it is unique, not used and could be a spelling error if we were using a variable that was already defined.
+
+![Add four variables for 4 bounds](images/boundVariables.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -140,11 +144,7 @@ We want to restrict player to the bottom third of the screen and to not go off t
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Open obj_player: Create event script and create 4 variables representing the top, Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
 
-Don't mind the yellow exclamation marks (∆).  That means these variables are **set** but never used.  We will do that in the next step and these marks will go away.  They are just there to remind you that it is unique, not used and could be a spelling error if we were using a variable that was already defined.
-
-![Add four variables for 4 bounds](images/boundVariables.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
