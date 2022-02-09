@@ -109,17 +109,14 @@ We need to adjust the speed when moving diagonally. We will use the `speed` buil
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now fly around and notice the diagonals are at the same speed.  So we fixed one problem and caused another.  Since we don't adjust speed every frame the ship still moves when you let go of the controller.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfetly except the player can leave the level.
 
-![play game and player speed is correct but still moves when you let go of controller](images/FlightWorksButDrifts.gif)
-
+![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Now if the controls `if` statement is false then the ship isn't moving.  So lets set the ship's speed in **obj_ship | Step** to `0`.
 
-![alt_text](images/sotpShipElse.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
