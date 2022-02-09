@@ -101,16 +101,9 @@ So when you move left and right you would move 1 unit (* player_speed) but if yo
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We need to separate the direction we are pointing in from the speed we are moving at. So we were just using `hspeed` and `vspeed` which breaks the magnitude and direction into two variables.  It is good for the cartesian coordinate system.  But lets instead use the polar by using a vector whichis a 2-D element that has a magnitude and direction. Lets use `speed` and `direction` built in variables.  Lets use the keyboard input to process ONLY a direction. We need to go from the cartesian to the polar coordinate system and there is a function that transposes it.
+We need to clamp the speed when moving diagonally. We will use the `speed` built in variable to achieve this (it is the combination of the hspeed and vspeed and has a vector length representing both axis).  Lets use the keyboard input to process ONLY a diagonal direction (`if (h_input != 0 && v_input !- = 0`). You are only moving diagonally when both axis have a non-zero value.
 
-We will check from point `(0,0)` to the `(h_input, v_input)` and use 
-**[direction = point_direction(x1, y1, x2, y2)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/point_direction.htm)** to get an angle back in degrees.
-
-> This function returns the direction of a vector formed by the specified components [x1,y1] and [x2,y2] in relation to the fixed x/y coordinates of the room. - GameMaker Manual
-
-So we will get an ansewr back in degrees for a keyboard of 0, 45, 90, 135, 180, 235, 270 or 315 degrees (the circumpherance of a cirlce with 45 degree increments).  We start by making sure that we only move if were are pressing one of the keys.  We are only going to move if one of the four keys is pressed.  So we first will add a check to see that either `h_input` or `v_input` are not equal to `0` (then we won't move the player at all).
-
-![get controller direction then adjust speed](images/directionSpeed.png)
+![adjust speed of diagonals](images/normalizeDiagonals.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
