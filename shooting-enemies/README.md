@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Now we have an enemy that is just a flying obstacle but does not attack the player.  Lets create an emeny type that shoots straight down the screen.
+Now we have an enemy that is just a flying obstacle but does not attack the player.  Lets create an enemy type that shoots straight down the screen.
 
 <br>
 
