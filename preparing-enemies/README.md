@@ -51,7 +51,7 @@ Make sure the origin is set to Middle Center on all three enemy sprites.
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Now we will use another parent object to hold our common behavior as well as act as our collision object that we will be checking when firing bullets. Create a new **Game Object** and call it *obj_enemy_parent*. Again, **DO NOT** assign a sprite to it.
+Now we will use another parent object to hold our common behavior as well as act as our collision object that we will be checking when firing bullets. Create a new **Game Object** and call it *obj_enemy_parent*. Again, as we did with `obj_island_parent` **DO NOT** assign a sprite to it. We will just be adding common logic to all planes to this object.
 
 ![Add a new game object with no sprite called obj_enemy_parent](images/EnemyParentObject.png)
 
