@@ -17,7 +17,7 @@ We will have three type of enemy planes. One that just flies, another that shoot
 
 The enemy sprites have 2 frames and they are 64 x 64 pixels. We will import them as a sprite sheet (or strip). Download [spr_enemy_basic_sprite_sheet.png](../Assets/Sprites/spr_enemy_basic_sprite_sheet.png).
 
-*Create* a new **Sprite** by clickng on by *right clicking* on the **Sprites** title and selecting **Create | Sprite**. Then press the <kbd>Edit Image</kbd> button. *Click* the **Image** menu item on the top and select **Import strip image**. Go to TutorialResources | Sprites | spr_enemy_basic_sprite_sheet.png. 
+*Create* a new **Sprite** by clickng on by *right clicking* on the **Sprites** title and selecting **Create | Sprite**. Then press the <kbd>Edit Image</kbd> button. *Click* the **Image** menu item on the top and select **Import strip image**. Download spr_enemy_basic_sprite_sheet.png. 
 
 Set the **Player Width** and **Player Height** to `64`.  Set the **Number of Frames** and the **Number per Row** to `2`. Press the <kbd>Convert</kbd> button.  Select the sprite and reduce the **Framerate** to `12` fps.
 
