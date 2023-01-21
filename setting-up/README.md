@@ -16,7 +16,7 @@ Lets get started with setting up version control and starting the project.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Pres the <kbd>New</kbd> then the <kbd>New Blank</kbd> to create a new blank project. Call the project `TopDownShooter`. Put it in the same folder that contains your **Perforce** repository. It should appear in the same folder as the first project **Getting Started**. Select this directory by pressing the <kbd>Open</kbd> button.
+Pres the <kbd>New</kbd> then the <kbd>New Blank</kbd> to create a new blank project. Call the project `TopDownShooter`. Put it in the same folder that contains your **Perforce** repository. It should appear in the same folder as the first project **Getting Started** and **Space Rocks**. Select this directory by pressing the <kbd>Open</kbd> button.
 
 ![start gamemaker studio 2 project called TopDownShooter](images/newProject.png)
 
