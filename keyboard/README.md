@@ -95,8 +95,8 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 Now the problem is that they are travelling 1 unit to on the horizontal axis and 1 unit on the vertical axis. So if we move 1 unit to the right and 1 unit to the left.  We can calculate the velocity with Pythagorean theorem.  If we take
 
 ```
-h = √a<sup>2</sup> * a<sup>2</sup> *  + b<sup>2</sup> * b<sup>2</sup> .
-h = √1sup>2</sup> * 1sup>2</sup> + 1sup>2</sup> * 1sup>2</sup>
+h = √a^2* a^2 *  + b^2 * b^2
+h = √1^2 * 1^2< + 1^2 * 1^2
 h = √1 + 1
 h = √2
 h = 1.4142
