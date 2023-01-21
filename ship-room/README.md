@@ -35,7 +35,7 @@ Lets start by importing the player.  *Right click* on **Sprites** in the Resourc
 
 Download [spr_player_sprite_sheet.png](../Assets/Sprites/spr_player_sprite_sheet.png). The player is 128 x 128 pixels large and there are two frames to its animation.  Both frames are included in a sprite sheet so we can't import the sprite directly.  We select **Image | Import Strip Image** from the top drop down menus.  Find the `spr_player_sprite_sheet` png that you downloaded.
 
-![Import strip image spr_player_sprite_sheet.png](images/ImportPlayerSpriteSheet.gif)
+![Import strip image spr_player_sprite_sheet.png](images/ImportPlayerSpriteSheet.png)
 
 ![](../images/line2.png)
 
