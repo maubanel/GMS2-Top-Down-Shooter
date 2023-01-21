@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Shooting
 
 <sub>[previous](../basic-timelines/README.md#user-content-basic-enemy-and-timelines) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../shooting-enemies/README.md#user-content-shooting-enemies)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Now there is not much to do without the ability for the player to shoot an enemy.  Lets add this.
 
@@ -21,7 +21,7 @@ Call it `spr_player_bullet` and change the **Origin** to `Bottom Center`.  We wa
 
 ![Add spr_play_bullet and adjust origin to bottom center](images/SprPlayerBullet.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -29,14 +29,14 @@ Create a new **Game Object** and call it `obj_player_bullet`. *Assign* the `spr_
 
 ![Add obj_player_bullet and bind spr_player_bullet to it](images/ObjPlayerBullet.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 Press the <kbd>Add Event</kbd> and select a **Create** event. Send the bullet upscreen fast!
 
 ![Add an obj_player_bullet: Create event and add some script](images/PlayerBulletCreateEvent.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -44,7 +44,7 @@ Open **rm_lvl_1** and add a new **Instance Layer** to the room and call it `Bull
 
 ![Add instance layer Bullets to rm_lvl_1](images/AddBulletLayerRm.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -52,7 +52,7 @@ Open the **obj_player: Create** event script for **obj_player** and add the rate
 
 ![Add an obj_player Create event and set a speed for it in script](images/PllayerShootingCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -62,7 +62,7 @@ We will add an offset horizontally to the bullet or it looks like it fires behin
 
 ![Add firing bullet spawning logic to obj_player step event](images/AddShottingToStep.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -70,7 +70,7 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ![Play game and press the space bar to fire bullets.  Notice that the bullets are fired but never destroyed.](images/BulletsFlyAndDontGetDestroyed.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -78,7 +78,7 @@ Now lets destroy the bullet if it leaves the room. We don't want the game to run
 
 ![Destroy bullet when it leaves room in obj_bullet outside room even](images/DestroyPlayerBulletLeaveRoom.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -86,7 +86,7 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ![Run game in debug mode and notice that bullets are now destroyed](images/BulletsFireAndGetDestroyed.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -110,7 +110,7 @@ with (other)
 
 ![Destroy objects when bullets and enemies collide](images/enemyBulletCollision.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -118,7 +118,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Run game and you should see the rock and bullet disappear](images/BulletKillsPlane.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
@@ -136,7 +136,7 @@ Press the <kbd>Convert</kbd> button then select <kbd>Yes</kbd> to confirm that y
 
 ![Add explosion animaton frames by setting size to 128 by 128, 5 frames per row and total number of frames](images/SprEnemyExplosion.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -144,7 +144,7 @@ Press the <kbd>Convert</kbd> button then select <kbd>Yes</kbd> to confirm that y
 
 ![Name sprite spr_enemy_explosion and adjust origin to middle center](images/SprEnemyExplosion.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -152,7 +152,7 @@ Create a new **Game Object** called `obj_enemy_explosion` and bind the explosion
 
 ![Create a new object called obj_enemy_explosion and bind spr_enemy_explosion](images/ObjEnemyExplosion.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
@@ -160,7 +160,7 @@ Now we will trigger the explosion animation in a collision event between the **o
 
 ![Add a obj_player_bullet collision script with enemy parent and destroy objects](images/ObjEnemyParentAddExplosion.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
@@ -168,7 +168,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Play game and fire at planes.  Notice that explosions do not disappear](images/ShotPlaneExplosionDontDissapear.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -176,7 +176,7 @@ There is an event that runs once an animation has finished playing.  That will b
 
 ![Destroy animation object at end of animation](images/DestroyExplosionAfterPlaying.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -184,7 +184,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Run game and fire at enemies and notice explosion only runs once](images/ExplosionGC.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -195,11 +195,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Shooting Enemies">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Shooting Enemies"> -->
+![next up - shooting enemies](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../basic-timelines/README.md#user-content-basic-enemy-and-timelines)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../shooting-enemies/README.md#user-content-shooting-enemies)|
 |---|---|---|

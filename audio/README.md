@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Audio
 
 <sub>[previous](../ghost-mode/README.md#user-content-ghost-mode) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../front-end/README.md#user-content-front-end)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Lets add some music and sound effects to the game.
 
@@ -19,7 +19,7 @@ Pick some free music that you think might be appropriate for the game. I used Th
 
 ![Download and pick theme music for the game and create a sound resource called snd_theme_music](images/AddNewSound.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ Pick the music you have downloaded.
 
 ![Press three dots and select song you just downloaded](images/PIckSong.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -35,7 +35,7 @@ Open **obj_game: Create** event script and at the bottom check to make sure the 
 
 ![Add to obj_game_controller a check to see if song is already playing and if not, then play song in an endless loop](images/PlayMusicGameControllerCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -43,7 +43,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 https://user-images.githubusercontent.com/5504953/139530532-cb5d8513-7082-4fd4-a452-d79599d7ed0d.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -51,7 +51,7 @@ Download [snd_enemy_explode.wav](../Assets/Sounds/snd_enemy_explode.wav) to your
 
 ![Add a snd_enemy_explode sound resource and load file from TutorialResources/Sounds folder](images/AddEnemyExplodeSFX.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -59,7 +59,7 @@ Add the enemy explosion to **obj_player_bullet: Collision | obj_enemy_parent** e
 
 ![Add logic to play sound on obj_bullet: Collision event at the bottom](images/EnemyExplodeSound.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -67,7 +67,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 https://user-images.githubusercontent.com/5504953/139530785-5453222b-188a-47bc-9d84-62f6948e6dc4.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -75,7 +75,7 @@ Repeat the process for [snd_player_explode.wav](../Assets/Sounds/snd_player_expl
 
 ![three more audio files](images/LastThreeSounds.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -83,7 +83,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ![Add player dying when enemy bullet hits it](images/PlaySoundPlayerExplode.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -91,7 +91,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ![Add shooting sound to where player hits the space bar](images/PlayerSoundPlayerSHoot.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -99,7 +99,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ![Add shooting sound for enemy target](images/PlayerSoundEnemyTargetShoot.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
@@ -108,7 +108,7 @@ Finally *open* up **obj_enemy_shoot: Step**.
 
 ![Add shooting sound for enemy shoot](images/PlayerSoundEnemyShootShoot.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -116,7 +116,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ADD AUDIO RECORDING ON PC
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -128,7 +128,7 @@ Here is an example of what it looks like in **obj_player: Step**.  Repeat this f
 
 ![Add a pitch and gain random shift in shooting sound](images/RandomizeGainPitchAllSounds.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
@@ -136,7 +136,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 https://user-images.githubusercontent.com/5504953/139531886-3c7525a8-9d0c-4a45-b42a-2e778ebd36e7.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond:
 
@@ -145,11 +145,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ![save, quit, commit and push to github](images/GitHub.png)
 ___
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Front End">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Front End"> -->
+![next up - front end](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../ghost-mode/README.md#user-content-ghost-mode)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../front-end/README.md#user-content-front-end)|
 |---|---|---|

@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Shooting Enemies
 
 <sub>[previous](../shooting/README.md#user-content-shooting) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../targeting-enemies/README.md#user-content-targeting-enemies)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Now we have an enemy that is just a flying obstacle but does not attack the player.  Lets create an enemy type that shoots straight down the screen.
 
@@ -19,7 +19,7 @@ Now we have an enemy that is just a flying obstacle but does not attack the play
 
 ![Add a second wave of enemy shooters at 220 frames into the game](images/SecondWaveTL.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Second wave of shooting planes that don't shoot](images/SecondWaveEnemyShooter.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -35,7 +35,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Add new sprite called spr_enemy_bullet and adjust the origin to top center](images/SprEnemyBullet.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -43,7 +43,7 @@ Create a new **Game Object**  and call it `obj_enemy_bullet` and bind the above 
 
 ![Create obj_enemy_bullet and assign spr_enemy_bullet](images/ObjEnemyBullet.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -51,7 +51,7 @@ Press the <kbd>Add Event</kbd> and select a **Create** event and make the bullet
 
 ![Create event for enemy bullet and script to make it move down screen](images/BulletCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -59,7 +59,7 @@ The one thing we have to be careful about inheriting parent scripts is to make s
 
 ![Greyed out step and create event](images/InheritedCreateAndStep.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -69,7 +69,7 @@ Our bullet is now set up. We will fire the bullet from the enemy plane that fire
 
 ![Add a Create event to obj_enemy_shoot and event_inherited from parent](images/EnemyCreateShootInherit.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -77,7 +77,7 @@ Add a `rate_of_fire` and `cooldown` to the shooting enemy just like we did in th
 
 ![Add a rate_of_fire and cooldown variable](images/RateOfFireCreateEnemy.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -85,7 +85,7 @@ Add to `obj_player_shoot` and add an overriding **Step | Step** event script on 
 
 ![Add event_inherited(); to newly created obj_player_shoot step event](images/StepEventEnemyShoot.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -93,7 +93,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Play game and enemies shoot bullets.  They do no damage to the player right now](images/ShootingEnemy.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -103,7 +103,7 @@ Open **obj_enemy_bullet**. *Create* a new event **Other | Outside Room** script 
 
 ![Add outside room event to obj_enemy_bullet and destroy oneself](images/DestroyEnemyBullet.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
@@ -112,7 +112,7 @@ Now *press* the <kbd>Debug Play</kbd> button in the top menu bar to launch the g
 
 ![make sure obj_enemy_bullets disappear when they leave room in debugger](images/RunDebugEverythingCleansUp.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -123,11 +123,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Targeting Enemies">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Targeting Enemies"> -->
+![next up - targeting enemies](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../shooting/README.md#user-content-shooting)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../targeting-enemies/README.md#user-content-targeting-enemies)|
 |---|---|---|

@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Setting Up
 
 <sub>[home](../README.md#user-content-gms2-top-down-shooter) • [next](../ship-room/README.md#user-content-getting-ship-in-room)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Lets get started with setting up version control and starting the project.
 
@@ -19,7 +19,7 @@ Click on the **[GitHub Classroom Link](https://classroom.github.com/a/zDQ4NVnj)*
 
 ![GitHub desktop accept assignemtn page](images/AcceptAssignment.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ You will now be sent to a message that says the repository is being configured. 
 
 ![press refresh to see repository](images/refreshForLink.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -35,7 +35,7 @@ Eventually you will get a link to the repository that **GitHub Classroom** has c
 
 ![press link to repository](images/linkToRepository.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -44,7 +44,7 @@ Now I have created a projet for you to start with.  This is a **Blank GML** proj
 ![empty repository](images/blankRepo.png)
 
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -52,14 +52,14 @@ Press the **Pencil** icon next to the **README.md** file to edit this file.  Cha
 
 ![alt_text](images/editReadme.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
 I allow you to use all the assets and scritps that I have created over the years to you own liking.  I publish them with the MIT open source license.  If you want to repricate you can leave this license alone.  This means that you are releasing your work as open source.  If you do not want this please change the LICENSE to one that you would like to use. More information can be found on [GitHub](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
 
 ![view license file](images/LICENSE.png)
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -67,7 +67,7 @@ This `.gitignore` file tells GitHub which files to not upload and sync with the 
 
 ![create git repository in project](images/gitignore.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -75,7 +75,7 @@ Press the green <kbd>Code</kbd> button and select **Open With GitHub Desktop**.
 
 ![open in github desktop](images/openInDesktop.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -83,7 +83,7 @@ Select a directory to save the project to (DO NOT SAVE TO ONE DRIVE!). Press the
 
 ![create new repository in project folder](images/pickDirectoryClone.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -92,7 +92,7 @@ Navigate to the directory you cloned it in.  Double click on `TopDownShooter.yyp
 ![navigate to directory](images/navigateToDirectory.png)
 
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond:
 
@@ -103,11 +103,12 @@ Now you have a blank project and you are ready to start!
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Getting Ship in Room">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Getting Ship in Room"> -->
+![next up - getting ship in room](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../ship-room/README.md#user-content-gms2-top-down-shooter)|
 |---|---|

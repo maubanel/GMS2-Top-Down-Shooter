@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Setting Up Three Enemy Types
 
 <sub>[previous](../scrolling-islands/README.md#user-content-scrolling-islands) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../basic-timelines/README.md#user-content-basic-enemy-and-timelines)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 We will have three type of enemy planes. One that just flies, another that shoots straight down and a third type that shoots in the direction of the player.  Lets get started.
 
@@ -23,7 +23,7 @@ Set the **Player Width** and **Player Height** to `64`.  Set the **Number of Fra
 
 ![Import enemy_basic_sprite_sheet.png as an Import strip image](images/ImportEnemyBasicSprite.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -31,7 +31,7 @@ Set the **Player Width** and **Player Height** to `64`.  Set the **Number of Fra
 
 ![Name the new sprite spr_enemy_basic](images/SprEnemyBasic.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -39,7 +39,7 @@ Repeat this by doing the same for [spr_enemy_shoot_sprite_sheet.png](../Assets/S
 
 ![Import two more sprites as a strip image called spr_enemy_shoot and spr_enemy_target](images/EnemyShootAndTarget.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -47,7 +47,7 @@ Make sure the origin is set to Middle Center on all three enemy sprites.
 
 ![Adjust all three enemy sprites origin to middle center](images/CenterOriginEnemy.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -55,7 +55,7 @@ Now we will use another parent object to hold our common behavior as well as act
 
 ![Add a new game object with no sprite called obj_enemy_parent](images/EnemyParentObject.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -63,7 +63,7 @@ Now *create* three new **Game Objects**: `obj_enemy_basic`, `obj_enemy_shoot` an
 
 ![Creaet three enemy objects](images/ObjEnemies.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -74,11 +74,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Basic Enemy and Timelines">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Basic Enemy and Timelines"> -->
+![next up - basic enemies and timelines](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../scrolling-islands/README.md#user-content-scrolling-islands)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../basic-timelines/README.md#user-content-basic-enemy-and-timelines)|
 |---|---|---|

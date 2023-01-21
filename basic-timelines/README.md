@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Basic Enemy and Timelines
 
 <sub>[previous](../preparing-enemies/README.md#user-content-setting-up-three-enemy-types) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../shooting/README.md#user-content-shooting)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 All three planes fly downwards at the same speed. One shoots straight down and the other shoots with targeting. We are looking for common behavior in the obj_enemy_parent.  Lets start by setting the common behavior for **all** planes which is flying down screen. The will also get removed when they leave the play area.
 
@@ -19,7 +19,7 @@ All three planes fly down at a constant speed. Make sure this speed isn't the sa
 
 ![Add a create event and give them a speed](images/EnemyParentCreateEvent.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ Now we need to create a **[Timeline](https://manual.yoyogames.com/The_Asset_Edit
 
 ![Create a Timeline called tl_lvl_1](images/tl_lvl_1.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -35,7 +35,7 @@ Add a new **Moment** to the timeline.  *Right click* on **moment 0** and select 
 
 ![Add a moment to tl_lvl_1 and set it to the 30th frame](images/SpawnThreeShipInTimeline.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -43,7 +43,7 @@ Each object has a timeline that is accessed through **timeline_index** but it de
 
 ![Assign the timeline index and start running the timeline in obj_game_controller Create event](images/StartTimelineController.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -51,7 +51,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Run game, first wave of ships appear after 1 second](images/FirstWaveBasicA.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -67,7 +67,7 @@ So what is the problem with the enemies as we have them currently? Try running t
 
 </details>
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -75,7 +75,7 @@ The enemy planes have not been dealt with and we need to do some housecleaning. 
 
 ![Add a loop that repeats 5 times and adds one to a variable](images/BottomOfLevelVariable.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -83,7 +83,7 @@ Go back to **obj_enemy_parent** and press the <kbd>Add Event</kbd> button for a 
 
 ![Add step event to delete planes when they go off screen](images/DestroyPlaneFlyingOffLevelStep.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -91,7 +91,7 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ![Run games now enemies disappear when they go off the bottom of the screen](images/PlanesGoAwayOffBottom.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -102,10 +102,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Shooting">
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Shooting"> -->
+![next up - shooting](images/banner.png)
+
+![](../images/line.png)
 
 | [previous](../preparing-enemies/README.md#user-content-setting-up-three-enemy-types)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../shooting/README.md#user-content-shooting)|
 |---|---|---|

@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Getting Ship in Room
 
 <sub>[previous](../setting-up/README.md#user-content-setting-up) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../keyboard/README.md#user-content-moving-ship-with-keyboard)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Lets get the world war 2 plane into the level.
 
@@ -19,7 +19,7 @@ Lets start by importing the player.  *Right click* on **Sprites** in the Resourc
 
 ![Create a new sprite and call it spr_player](images/CreateNewPlayerSprite.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ Download [spr_player_sprite_sheet.png](../Assets/Sprites/spr_player_sprite_sheet
 
 ![Import strip image spr_player_sprite_sheet.png](images/ImportPlayerSpriteSheet.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -35,7 +35,7 @@ This brings up the **Convert to Frames** menu.  In this we need to make some adj
 
 ![Import a 128 by 128 sprite with 2 frames per row with 2 number of framers then press the convert button](images/ConvertPlayerShipToFrames.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -44,7 +44,7 @@ Press play on the animation menu to see the speed of the animation.  It defaults
 
 ![Center origin and change framerate of playback to 12](images/SpeedAndOriginPlayer.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -52,7 +52,7 @@ Create a new **Game Object** by selecting **Objects | Create | Object** and call
 
 ![Create a new object called obj_player and assign the spr_player sprite](images/CreatePlayerObject.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -64,7 +64,7 @@ Now if you look at the video the game is in portrait mode. Lets set the room dim
 
 ![alt_teChange name of room to rm_lvl_1 and adjust the size to 1000 by 1536xt](images/ChangeDimensionsOfGameRoom.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -72,7 +72,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 
 ![Plane animating on background](images/PlaneNoLogicInGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -84,7 +84,7 @@ Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are
 
 ![Rename layer and make sure it is on top called Instance_Player](images/RenameRoomInstance.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -92,7 +92,7 @@ Create a new game object called `obj_game`.  Do not assign a sprite.  We will us
 
 ![create empty obj_game object](images/objGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -102,7 +102,7 @@ Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Creat
 
 ![Spawn player in obj_game_controller Create script](images/SpawnPlayerCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -110,7 +110,7 @@ Add a new Instance layer called `Game`. Remove `obj_player` from room and add `o
 
 ![add obj gmae to room and remove obj_player](images/gameLayer.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
@@ -119,7 +119,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 
 ![Run game and one plane shows up at bottom](images/ShipSpawnedInGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
@@ -130,11 +130,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Moving Ship with Keyboard">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Moving Ship with Keyboard"> -->
+![next up - moving ship with keyboard](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../setting-up/README.md#user-content-setting-up)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../keyboard/README.md#user-content-moving-ship-with-keyboard)|
 |---|---|---|

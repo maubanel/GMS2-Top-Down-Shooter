@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Ghost Mode
 
 <sub>[previous](../player-damage/README.md#user-content-player-taking-damage) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../audio/README.md#user-content-audio)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Now we want the plane when it runs out of health to go into ghost mode which is:
 
@@ -28,7 +28,7 @@ For a very simple state machine, Create a new **object** for each state. We alre
 
 ![New object with spr_player attached called obj_ghost_player](images/ObjGhostPlayer.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -40,7 +40,7 @@ We need to add to the **obj_player: Step** event script to switch the game objec
 
 ![Switch to ghost player when player dies in obj_player step event](images/GhostModeFromPlayerWithoutHealth.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -48,7 +48,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ![game controller crashes when playing as hud can't access player health](images/ErrorSwitchingToGhost.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -56,7 +56,7 @@ Open **obj_game_controller: Draw | Draw GUI** event and we need to remove the re
 
 ![Add a loop that repeats 5 times and adds one to a variable](images/CheckPlayerExistsDrawGui.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -64,7 +64,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ![Run game again, now there is a run time error on the shooting and targeting players who can't find the player"](images/SecondRunTimeErrorInShootingTargetEnemy.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -72,7 +72,7 @@ Open **obj_enemy_target: Step** event and we need to check if the player exists 
 
 ![In enemy target check that player exists before shooting](images/CheckIfPlayerExistsBeforeShootingAtItTarget.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -80,7 +80,7 @@ Repeat for **obj_enemy_shoot: Step**  vent and we need to check if the player ex
 
 ![In enemy shoot check that player exists before shooting](images/CheckIfPlayerExistsBeforeShootingAtItShoot.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -88,7 +88,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![Play game and player switches and can't be controlled, this can only be seen in the debugger](images/ChangeFromPlayerToGhost.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -96,7 +96,7 @@ Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Crea
 
 ![Add a create event and position center off bottom of screen](images/SendPlayerOffScreenGhostPlayerCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -104,7 +104,7 @@ Look at **obj_game_controller: Create** event and look at where the game spawns 
 
 ![Check out where we want to move plane back towards](images/XandYTarget.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -112,7 +112,7 @@ Lets add the location to go to, a speed of how fast to go back to starting point
 
 ![Add speed to player to return to starting point](images/SpeedTransulencyGhost.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
@@ -122,7 +122,7 @@ Press the <kbd>Add Event</kbd> and select a **Step | Step** event. We will use t
 
 ![Add step event to obj_ghost_player then use move_towards_point() to go back to starting point](images/GhostMoveToStartingStep.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -130,7 +130,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ![Play game and ghost now moves back to center of screen](images/GhostModeFirstPass.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -146,7 +146,7 @@ Open up the **obj_ghost_player: Step** event and add to the bottom.
 
 ![Add a loop that repeats 5 times and adds one to a variable](images/DistanceToPointCloseSwitchFromGhost.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
@@ -154,7 +154,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 https://user-images.githubusercontent.com/5504953/139529844-ea361e75-ad71-4853-854e-a0d2c21f37ad.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond:
 
@@ -165,11 +165,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Audio">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Audio"> -->
+![next up - audio](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../player-damage/README.md#user-content-player-taking-damage)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../audio/README.md#user-content-audio)|
 |---|---|---|

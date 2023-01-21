@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Player Taking Damage
 
 <sub>[previous](../player-health/README.md#user-content-player-health) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../ghost-mode/README.md#user-content-ghost-mode)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Lets add the animation for the player getting hit by bullet and subtract points from its health. We will reuse the animation for the enemy getting hit. 
 
@@ -19,7 +19,7 @@ Open **obj_enemy_bullet** and press the <kbd>Add Event</kbd> button and add a **
 
 ![Add a collision from obj_enemy_bullet to obj_player event](images/AddCollisionBulletPlayerEvent.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ Open **obj_enemy_bullet** and press the <kbd>Add Event</kbd> button and add a **
 
 ![Add to collision event to sap player's health when hit by bullet](images/AddBulletPlayerCollisionScript.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -35,7 +35,7 @@ Now for testing purposes I just want these three waves to continue for ever.  *A
 
 ![Make rocks spawn endlessly in obj_game_controller step event](images/DebugAddedToGameControllerStep.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -43,7 +43,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Y
 
 ![Enemies respawn, and health depletes when player is hit](images/FistPassPlayerHealth.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -51,7 +51,7 @@ I would like the explosion to be above the player and not behind him.  This is n
 
 ![Add Explosion layer at very top called Explosion](images/AddExplosionLayerToRoom.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -59,7 +59,7 @@ In **obj_enemy_bullet: Collision | obj_player player** script change the layer f
 
 ![Change layer animation spawns on in obj_enemy_bullet collision event with obj_player](images/ChangeScriptToExplosion.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -67,7 +67,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![Run game and now when player gets hit the explosion is on top of everything](images/ExplosionTopLayer.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -75,7 +75,7 @@ Now lets deal with enemy plane and player collision.  This will destroy the plan
 
 ![Change damage done in obj_enemy_parent collision with obj_player script](images/AddCollisionParentEvent.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -83,7 +83,7 @@ Add two explosions and take away triple health damage to bullets inside the **ob
 
 ![Add two explosions and take away triple health points](images/DamageToPlayerForPlaneCollision.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -91,7 +91,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![Play game and run into enemy](images/PlaneOnPlaneDeath.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -108,7 +108,7 @@ Now play test the game and adjust your **Collision Masks** on the player sprite 
 
 ![Adjust all sprite collision masks to your liking](images/BasicEnemyCollisionMask.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
@@ -117,7 +117,7 @@ Lets not have the targeting planes shoot backwards or the shooting planes shoot 
 
 ![Stop shooting up screen in obj_enemy_shoot object](images/AddCheckOnY.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -125,7 +125,7 @@ Do the same thing in **obj_enemy_target: Step Event**.
 
 ![Stop shooting up screen in obj_enemy_target object](images/AddCheckOnY2.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -133,7 +133,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![Run game and look to see that player's don't fire up screen](images/EnemiesDontShootUp.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
@@ -141,7 +141,7 @@ The other thing I want to adjust is to not have all the planes fire at exactly t
 
 ![Adjust enemy shoot timeline event in second wave by randomizing shoot timing](images/AdjustEnemyShootRateOfFire.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
@@ -149,7 +149,7 @@ Repeat this for the spawning scripts for obj_enemy_target
 
 ![Adjust enemy target timeline event in second wave by randomizing shoot timing](images/AdjustEnemyShootRateOfFire2.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -157,7 +157,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![Play game and notice time delay in firing](images/BulletTimingAltered.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -168,11 +168,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Ghost Mode">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Ghost Mode"> -->
+![next up - ghost mode](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../player-health/README.md#user-content-player-health)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../ghost-mode/README.md#user-content-ghost-mode)|
 |---|---|---|

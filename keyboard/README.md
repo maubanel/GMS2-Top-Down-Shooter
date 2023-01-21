@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Moving Ship with Keyboard
 
 <sub>[previous](../ship-room/README.md#user-content-getting-ship-in-room) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../joystick/README.md#user-content-moving-ship-with-joystick)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 We will be using different physics from the space rocks (Asteroids) game. Up, down, left and right will move the plane around the screen in 8 directions.  
 
@@ -19,7 +19,7 @@ We will be using different physics from the space rocks (Asteroids) game. Up, do
 
 ![Add Create Event to obj_player](images/AddCreateEventToPlayer.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -38,7 +38,7 @@ Open up **obj_player: Create** event.
 
 ![Add player_speed variable and set it to 120](images/PlayerSpeedPerFrame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -50,7 +50,7 @@ Open up **obj_player: Step** event.
 
 ![Illustration of computer science variable as a box](images/ControlsStepEventPlayerKeyboard.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -58,7 +58,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![Add a step event to obj player and add debug info to press the horizontal and vertical axis of motion](images/KeyboardAxisPrinting.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -73,7 +73,7 @@ Let me give an example.  Lets say we have a framerate of 2 frames per second.
 
 ![Add first pass at player movement to the obj_player step event](images/MovePlayerSinceLastFrame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -81,7 +81,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![Movement is implemented but diagonals move ship faster](images/MovingShipWithKeyboardDiagWrong.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -97,7 +97,7 @@ So when you move left and right you would move 1 unit (* player_speed) but if yo
 
 ![pythagorean theorem explains speed](images/diagonals.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -105,14 +105,14 @@ We need to adjust the speed when moving diagonally. We will use the `speed` buil
 
 ![adjust speed of diagonals](images/normalizeDiagonals.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfectly except the player can leave the level.
 
 ![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -123,7 +123,7 @@ We want to restrict player to the bottom third of the screen and to not go off t
 ![restrict player to room boundaries](images/RoomBoundariesForPlayArea.png)
 
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
@@ -133,7 +133,7 @@ Don't mind the yellow exclamation marks (∆).  That means these variables are *
 
 ![Add four variables for 4 bounds](images/boundVariables.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
@@ -142,7 +142,7 @@ We need to clamp the location.  Now since we are moving with speed the ship is i
 
 ![Clamp ship position so it stays on screen](images/ClampValueToBounds.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -150,7 +150,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![Run game and make sure ship cannot leave screen](images/ShipLimitedToBounds.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
@@ -161,11 +161,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Joystick Controls">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Joystick Controls"> -->
+![next up - joystick controls](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../ship-room/README.md#user-content-getting-ship-in-room)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../joystick/README.md#user-content-moving-ship-with-joystick)|
 |---|---|---|

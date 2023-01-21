@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Moving Ship with Joystick
 
 <sub>[previous](../keyboard/README.md#user-content-moving-ship-with-keyboard) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../scrolling-water/README.md#user-content-scrolling-water)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 If you do not have a controller to test with then skip to the next chapter [Scrolling Water](scrolling-water/README.md#user-content-scrolling-water).  Otherwise lets continue and add a controller.  First make sure that you controller is compatible with your PC or Mac.  The XBox controller is a good option for a PC and the Sony controller is natively supported on most macs.
 
@@ -21,7 +21,7 @@ First lets import the game object that holds the code for the joystick [joystick
 
 ![download joystick.mauby.games.yymps](images/downloadAsset.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -29,7 +29,7 @@ Select **Tools | Import Local Package** and selet the file you just downloaded `
 
 ![import local package for joystick](images/importLocalPackage.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -37,7 +37,7 @@ Select the **obj_gamepad** and press the <kbd>Add</kbd> button.  It should move 
 
 ![import obj_gamepad](images/importGamepad.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -45,7 +45,7 @@ Now in the **Objects** folder you should have an **obj_gamepad**.  Double click 
 
 ![obj_gamepad in game](images/objGamepad.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -53,7 +53,7 @@ Lets quickly look at two items in the obj_gamepad object.  Open it and look at t
 
 ![Look at gamepad obj_gamepad Create event initializing controllers](images/InititalizeGamepadsToNoone.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -65,7 +65,7 @@ The square brackets `[i]` after `global.gamepad` indicates that it is a list.  A
 
 ![async gamepad event](images/AsyncGamepad.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -75,7 +75,7 @@ We are using [gamepad_axis_value](https://manual.yoyogames.com/GameMaker_Languag
 
 ![add gamepad_axis_value to read gamepad](images/AddControllerToGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -89,7 +89,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game an
 
 ![move player in game with joystick](images/GameadControllingShip.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -97,15 +97,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 
 ![save, quit, commit and push to github](images/GitHub.png)
 
+![](../images/line.png)
 
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Scrolling Water"> -->
+![next up - scrolling water](images/banner.png)
 
-___
-
-
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
-
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Scrolling Water">
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../keyboard/README.md#user-content-moving-ship-with-keyboard)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../scrolling-water/README.md#user-content-scrolling-water)|
 |---|---|---|

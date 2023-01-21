@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Lives
 
 <sub>[previous](../front-end/README.md#user-content-front-end) • [home](../README.md#user-content-gms2-top-down-shooter)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 The final item left to do in the walk through is to add lives to the game.
 
@@ -21,7 +21,7 @@ Why don't we add this to the player object? The player object is destroyed at de
 
 ![Add player_1_lives to game controller step event](images/AddP1LivesToGameController.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -29,7 +29,7 @@ Add to the bottom of **obj_game_controller: Draw GUI** event and draw the lives 
 
 ![Draw lives on screen in game controller draw gui event](images/DrawPlayerLivesGUI.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -37,7 +37,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![Lives drawn on hud when playing game](images/LivesDrawnOnGUI.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -45,7 +45,7 @@ Now that we have added lives, we need to subtract one each time the player dies.
 
 ![add to obj_player step event a subtraction of life each time it diess](images/AddLivesCheckSubtractOneLife.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -59,7 +59,7 @@ Go back to **obj_player: Step** event and add after the previous condition.
 
 ![Deal with game over condition when subtradting lives](images/EndOfGameAlarm.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -67,7 +67,7 @@ Now *open* up **obj_game** and press the <kbd>Add Event</kbd> button to add an *
 
 ![Alarm0 add game restart in obj_game_controller](images/Alarm0RestartGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -75,7 +75,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![Play the game and die multiple times.  You should restart the game if you die a third time](images/FinalFlow.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -83,7 +83,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![Undo looping timeline in obj_game_controller step event](images/CommentOutLoopHack.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -97,11 +97,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 
 ___
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - The End!">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - The End!"> -->
+![next up - the end](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../front-end/README.md#user-content-front-end)| [home](../README.md#user-content-gms2-top-down-shooter) |
 |---|---|

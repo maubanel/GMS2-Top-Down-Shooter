@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Player Health
 
 <sub>[previous](../targeting-enemies/README.md#user-content-targeting-enemies) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../player-damage/README.md#user-content-player-taking-damage)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 We now want the planes to take on damage from being hit. Since the enemies currently have  no health and and are one hit kills, lets implement health on the player.  I will let you decide if you want to add health to the enemies on your own!
 
@@ -21,7 +21,7 @@ OK, so the easiest way to represent player health is through a health bar. We wi
 
 ![Add a new player health variable in obj_player](images/AddPlayerHealthToPlayerCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -29,7 +29,7 @@ Lets draw a health bar.  There is an event specifically made for GUI's where we 
 
 ![Draw gui event type to obj_game_controller](images/AddDrawGUIToGameController.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -39,7 +39,7 @@ Here are the settings I picked and added to the **obj_game | Draw | Draw Gui**.
 
 ![Add a Draw GUI event and add the code to draw the health bar](images/DrawPlayerHealthOnGUI.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -47,7 +47,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Y
 
 ![Run game and see health](images/HealthBarInGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -58,11 +58,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Taking Damage">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Taking Damage"> -->
+![next up - taking damage](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../targeting-enemies/README.md#user-content-targeting-enemies)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../player-damage/README.md#user-content-player-taking-damage)|
 |---|---|---|

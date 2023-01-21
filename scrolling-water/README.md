@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Scrolling Water
 
 <sub>[previous](../joystick/README.md#user-content-moving-ship-with-joystick) • [home](../README.md#user-content-gms2-top-down-shooter) • [next](../scrolling-islands/README.md#user-content-scrolling-islands)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 We are supposed to be in a plane over the high seas.  Lets get a texture and have it move to look like we are flying over water.
 
@@ -19,7 +19,7 @@ There are two ways I can think of to deal with the room (level). We could just m
 
 ![Illustration of a long level with all the islands and planes placed](images/LongLevelProto.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
@@ -27,7 +27,7 @@ The other option would be to have the room where the plane doesn't move but the 
 
 ![Illustration of three zone conveyor belt](images/ConveyorBelt.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -38,7 +38,7 @@ Download [spr_tile_water.png](../Assets/Sprites/spr_tile_water.png). *Right clic
 
 ![import spr_tile_water](images/ImportWaterSprite.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -52,7 +52,7 @@ Press the **Vertical Tile**  and **Horizontal Tile**  check boxes. Look at what 
 
 ![add spr_tile_water to background layer and tile vertically and horizontally](images/AddWaterToBackgroundTiling.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
@@ -64,7 +64,7 @@ Notice we do not use the assignment operator =.  It is a naming convention to us
 
 ![Assign macro BACKGROUNDSCROLLSPEED in obj_game_controller create event](images/BackgroundScrollSpeedMacro.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
@@ -72,7 +72,7 @@ Lets prove it is a constant.  Lets try resetting the macro to `6`.  Notice the g
 
 ![Try to change BACKGROUNDSCROLLSPEED macro and get error message](images/CANTCHANGEMACRO.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -80,7 +80,7 @@ Lets double check that it resolves the constant to the value 5 we have set.  *De
 
 ![print macro BACKGROUNDSCROLLSPEED](images/BackgroundSpeedDebug.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -88,7 +88,7 @@ Lets double check that it resolves the constant to the value 5 we have set.  *De
 
 ![Move background water using layer_vspeed](images/ScrollBackground.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
@@ -96,7 +96,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![Run game and water scrolls](images/PlainWaterScrolling.gif)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
@@ -107,11 +107,12 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Scrolling Islands">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Scrolling Islands"> -->
+![next up - scorlling islands](images/banner.png)
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
 | [previous](../joystick/README.md#user-content-moving-ship-with-joystick)| [home](../README.md#user-content-gms2-top-down-shooter) | [next](../scrolling-islands/README.md#user-content-scrolling-islands)|
 |---|---|---|
