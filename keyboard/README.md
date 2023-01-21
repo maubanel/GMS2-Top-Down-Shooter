@@ -110,18 +110,22 @@ So when you move left and right you would move 1 unit (* player_speed) but if yo
 
 ##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We need to adjust the speed when moving diagonally. We will use the `speed` built in variable to achieve this (it is the combination of the hspeed and vspeed and has a vector length representing both axis).  Lets use the keyboard input to process ONLY a diagonal direction (`if (h_input != 0 && v_input !- = 0`). You are only moving diagonally when both axis have a non-zero value.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfectly except the player can leave the level.
 
-![adjust speed of diagonals](images/normalizeDiagonals.png)
+![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
 
 ![](../images/line2.png)
 
 ##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfectly except the player can leave the level.
+Now since our **Origin** is at `64` by `64` in the middle of the sprite we don't want any of the ship to leave the play area so we need to go from `64` to `room_width - 65` or `sprite_width / 2` to `room_width - sprite_wdith /2 -1`.
 
-![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
+We want to restrict player to the bottom third of the screen and to not go off the bottom of the play area which would be `room_height - sprite_height / 2 - 1`.
+
+![restrict player to room boundaries](images/RoomBoundariesForPlayArea.png)
+
 ![](../images/line2.png)
+
 
 
 ##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
