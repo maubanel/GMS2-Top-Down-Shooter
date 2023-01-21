@@ -13,7 +13,7 @@ We will be using different physics from the space rocks (Asteroids) game. Up, do
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
 *Open* **obj_player** and press the **Add Event** button and select a **Create** event.
 
@@ -21,7 +21,7 @@ We will be using different physics from the space rocks (Asteroids) game. Up, do
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 Previously we have set the timing based on pixels per frame.  One of the problems with this is that we can change the framerate in the room which then changes the physics.  
 		
@@ -40,7 +40,7 @@ Open up **obj_player: Create** event.
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Press the **Add Event** button on **obj_player** and add a **Step | Step** event. Now we will look at **keyboard_check(key)** and will subtract the left key from the right key. Now if you remember **[keyboard_check(key)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Game_Input/Keyboard_Input/Keyboard_Input.htm)** returns a boolean which will be `1` if `true` and `0` if `false`. This means if right is pressed it will be 1-0. If left is pressed it will be 0-1. If both right and left are pressed it will be 1-1. So this gives us a range of -1 to 1 and a value of 0 if nothing or both are pressed (cancelling each other out).
 
@@ -52,7 +52,7 @@ Open up **obj_player: Step** event.
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press a combination of arrow buttons.  Look at the output window and see if it makes sense?
 
@@ -60,7 +60,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 If you get the correct debug message you can comment out this line or delete it as we will be adding movement instead below.
 
@@ -75,7 +75,7 @@ Let me give an example.  Lets say we have a framerate of 2 frames per second.
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press up down left and right.  Try diagonals.  Play careful attention to the speed and see if moving in diagonals is moving faster than moving laterally?
 
@@ -83,7 +83,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now the problem is that they are travelling 1 unit to on the horizontal axis and 1 unit on the vertical axis. So if we move 1 unit to the right and 1 unit to the left.  We can calculate the velocity with Pythagorean theorem.  If we take
 
@@ -99,7 +99,7 @@ So when you move left and right you would move 1 unit (* player_speed) but if yo
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We need to adjust the speed when moving diagonally. We will use the `speed` built in variable to achieve this (it is the combination of the hspeed and vspeed and has a vector length representing both axis).  Lets use the keyboard input to process ONLY a diagonal direction (`if (h_input != 0 && v_input !- = 0`). You are only moving diagonally when both axis have a non-zero value.
 
@@ -107,14 +107,14 @@ We need to adjust the speed when moving diagonally. We will use the `speed` buil
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the flight works perfectly except the player can leave the level.
 
 ![hit play and flight is fixed but player can leave the play area](images/FligthWorksButLeavesLevel.gif)
 ![](../images/line2.png)
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Now since our **Origin** is at `64` by `64` in the middle of the sprite we don't want any of the ship to leave the play area so we need to go from `64` to `room_width - 65` or `sprite_width / 2` to `room_width - sprite_wdith /2 -1`.
 
@@ -125,7 +125,7 @@ We want to restrict player to the bottom third of the screen and to not go off t
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 Open obj_player: Create event script and create 4 variables representing the top, Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
 
@@ -136,7 +136,7 @@ Don't mind the yellow exclamation marks (∆).  That means these variables are *
 ![](../images/line2.png)
 
 
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 We need to clamp the location.  Now since we are moving with speed the ship is in its new position between the ***Step** and **End Step** event. Press the <kbd>Add Event</kbd> and select a **Step | End Step** event. We can **[clamp(val, min, max)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Number_Functions/clamp.htm)** our **x** and **y** position of the ship to the bounds we just created.  Place this after we move the player (so the player will move out of bounds then the **clamp()** function will force it back on screen). 
 
@@ -144,7 +144,7 @@ We need to clamp the location.  Now since we are moving with speed the ship is i
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press a combination of buttons and try to leave the play area?  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). 
 
@@ -152,7 +152,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 

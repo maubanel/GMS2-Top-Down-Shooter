@@ -14,7 +14,7 @@ Now our final enemy type will target by shooting at the player's future location
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
 Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> button for another Moment at `600` (or 10 seconds in) with a V formation of seven enemy targeting shooters. 
 
@@ -22,7 +22,7 @@ Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> 
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  You should see a non-shooting third wave.
 
@@ -30,7 +30,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Lets add the behavior we want in the inheritted class.  Open **obj_enemy_target** and add a new **Create** event.
 
@@ -40,7 +40,7 @@ Please note: There are two events one for parent and one for current target obje
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add the same two variables we had in the shooter as well as inheriting the parents create event script.
 
@@ -48,7 +48,7 @@ Add the same two variables we had in the shooter as well as inheriting the paren
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 How do we make the enemies target? We need to calculate an angle between the enemy shooting and the future position of the player. We don't need to use any trig as there is a GameMaker function that does the work for us called **[point_direction(x1, y1, x2, y2)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Angles_And_Distance/point_direction.htm)**.
 	
@@ -60,7 +60,7 @@ This function returns an angle in degrees between the positions [x1, y1] and [x2
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Lets walk through this.  First we inherit the previous functionality from the the Step event's parent.  Then we store one of three lookups that will offset to a future potential position of the plane.  Then we spawn the bullet and save a reference to that intance.  We then alter its direction based on the offset from the enemy to the player's future position (we use the same math as we used in the player).  Then we set the angle to be the same as the direction. The rest is the same as the shooter enemy.
 
@@ -68,7 +68,7 @@ Lets walk through this.  First we inherit the previous functionality from the th
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now it doesn't crash but the angle of the bullets are all wrong.
 
@@ -77,7 +77,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Why is that?  This is because **GameMaker** defaults to `0` degrees pointing right.  Our bullets point down initially so we are off by 90 degrees.  Lets fix this.  Open **spr_enemy_bullet** and press the **Edit Image** button.  *Select* the **Image | Rotate All Frames (anit-clockwise 90)** to rotate sprite counter-clockwise.
 
@@ -85,7 +85,7 @@ Why is that?  This is because **GameMaker** defaults to `0` degrees pointing rig
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now the bullet is facing the correct starting angle to represent 0°.
 
@@ -93,7 +93,7 @@ Now the bullet is facing the correct starting angle to represent 0°.
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we have messed up the angle of the bullets on the shooting enemy.
 
@@ -101,7 +101,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 Open **obj_enemy_shoot | Step** event and we need to adjust the angle of the bullet.  Get a variable from the instance creation and adjust it's image angle by 90 degrees clockwise (or -90 in GameMaker).
 
@@ -110,7 +110,7 @@ Open **obj_enemy_shoot | Step** event and we need to adjust the angle of the bul
 ![](../images/line2.png)
 
 
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Notice that this one change I wanted to make with the targeting bullets caused a few bugs and required some code refactoring.  Be aware that all changes, no matter how small, can cause a lot of work and potential issues.
 
@@ -118,7 +118,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 

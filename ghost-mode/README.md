@@ -19,7 +19,7 @@ Now we want the plane when it runs out of health to go into ghost mode which is:
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
 Now to do this we will need to create a finite state machine. What is a finite state machine? It is the logical state of any object. So a door can have 4 states. It can be closed, open (to more or less of a degree) or is in the act of opening or closing. Our **obj_player** will have two states: *Active In Game*vand *Out of Life Ghost Mode*.
 
@@ -30,7 +30,7 @@ For a very simple state machine, Create a new **object** for each state. We alre
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 We need to switch the **obj_player** game object to **obj_ghost_player** when player health is less or equal to zero. GameMaker provides a function to do this for us called **[instance_change(obj, perf)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Instances/instance_change.htm)**.
 	 
@@ -42,7 +42,7 @@ We need to add to the **obj_player: Step** event script to switch the game objec
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0.  Woops, another run time error.  In this case it is the health bar that can't find the player object.
 
@@ -50,7 +50,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open **obj_game_controller: Draw | Draw GUI** event and we need to remove the reference to **obj_player.player_health** from the draw_healthbar() function.  Lets instead create a local variable hud_health and then reference the player only if it exists in the room (otherwise there is no plane so the health is 0):
 
@@ -58,7 +58,7 @@ Open **obj_game_controller: Draw | Draw GUI** event and we need to remove the re
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0.  Woops, yet another run time error.  It is in both the shooting and targeting player when it is checking to see if it is above it.
 
@@ -66,7 +66,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Open **obj_enemy_target: Step** event and we need to check if the player exists before firing a bullet.
 
@@ -74,7 +74,7 @@ Open **obj_enemy_target: Step** event and we need to check if the player exists 
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Repeat for **obj_enemy_shoot: Step**  vent and we need to check if the player exists before firing a bullet.
 
@@ -82,7 +82,7 @@ Repeat for **obj_enemy_shoot: Step**  vent and we need to check if the player ex
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player switches from **obj_player** to **obj_ghost_player**. This new ghost player cannot be controlled which is what we want!
 
@@ -90,7 +90,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Create** event. Put the player in the center horizontally off screen vertically.
 
@@ -98,7 +98,7 @@ Open up **obj_ghost_player**. Press the <kbd>Add Event</kbd> and select a **Crea
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Look at **obj_game_controller: Create** event and look at where the game spawns the player at the beginning.  We want to move it to this same spot before switching from ghost back to game mode.
 
@@ -106,7 +106,7 @@ Look at **obj_game_controller: Create** event and look at where the game spawns 
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 Lets add the location to go to, a speed of how fast to go back to starting point as well as making the sprite partially translucent. This is a common trick to let the player know that the player is invincible and not under player control. Open up the **obj_ghost_player: Create** event and add.
 
@@ -115,7 +115,7 @@ Lets add the location to go to, a speed of how fast to go back to starting point
 ![](../images/line2.png)
 
 
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Press the <kbd>Add Event</kbd> and select a **Step | Step** event. We will use the 
 **[move_towards_point(x, y, speed)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Movement_And_Collisions/Movement/move_towards_point.htm)** function to get to our destination.  Add this to the script.
@@ -124,7 +124,7 @@ Press the <kbd>Add Event</kbd> and select a **Step | Step** event. We will use t
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0. Notice that the player object changes, goes offscreen and comes back on screen:
 
@@ -132,7 +132,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now we need to switch back to game mode and back to obj_player once the player is close enough to its destination.  We use **distance_to_point(x, y)** to get the distance to target.  If it is less or equal to its speed then we switch back.  This requires a few steps:
 
@@ -148,7 +148,7 @@ Open up the **obj_ghost_player: Step** event and add to the bottom.
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Get shot on purpose and get your health to 0. Now you switch back to playing the game after a certain amount of time.
 
@@ -156,7 +156,7 @@ https://user-images.githubusercontent.com/5504953/139529844-ea361e75-ad71-4853-8
 
 ![](../images/line2.png)
 
-##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond:
+##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 

@@ -15,7 +15,7 @@ The original game and most shooters use a controller instead of the keyboard.  G
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
 First lets import the game object that holds the code for the joystick [joystick.mauby.games.yymps](../Assets/Objects/joystick.mauby.games.yymps).
 
@@ -23,7 +23,7 @@ First lets import the game object that holds the code for the joystick [joystick
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 Select **Tools | Import Local Package** and selet the file you just downloaded `download joystick.mauby.games.yymps` and press the <kbd>Open</kbd> button.
 
@@ -31,7 +31,7 @@ Select **Tools | Import Local Package** and selet the file you just downloaded `
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **obj_gamepad** and press the <kbd>Add</kbd> button.  It should move the item into **Resources to Import**.  Press the <kbd>Import</kbd> button.
 
@@ -39,7 +39,7 @@ Select the **obj_gamepad** and press the <kbd>Add</kbd> button.  It should move 
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now in the **Objects** folder you should have an **obj_gamepad**.  Double click to open it up. If you want to find out more about how this works, check out **GameMakers** excellent tutorial [Adding Gamepad Support GML](https://marketplace.yoyogames.com/assets/5785/adding-gamepad-support-gml).
 
@@ -47,7 +47,7 @@ Now in the **Objects** folder you should have an **obj_gamepad**.  Double click 
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Lets quickly look at two items in the obj_gamepad object.  Open it and look at the **obj_gamepad | Create** event.  Notice that we initialize the four gamepads to **[noone](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Instance_Keywords.htm)**.  This is a keyword that means that something is empty or not there.  We are basically saying in Gamemaker parlance that there is no controller plugged into any of the 4 gamepad slots.
 
@@ -55,7 +55,7 @@ Lets quickly look at two items in the obj_gamepad object.  Open it and look at t
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 The event where the magic happens is in the **Asynchronous | Async System** event.  Here we print debug messages if a controller is plugged in or unplugged as well as save a reference to the index number that we can use in the global.gamepad array. 
 
@@ -67,7 +67,7 @@ The square brackets `[i]` after `global.gamepad` indicates that it is a list.  A
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open **obj_player: Step** event and add controls after we check for keyboard. To stop cheating where players press both keyboard and joystick, we can add an if statement to ensure we are getting 0's for keyboard input (player is not pressing both at the same time).  Also, we don't have to compensate for diagonals because the controller returns a horizontal and vertical value with a **normalized** magnitude of 1.
 
@@ -77,13 +77,13 @@ We are using [gamepad_axis_value](https://manual.yoyogames.com/GameMaker_Languag
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up **rm_lvl_1** and add **obj_gamepad** to the **Instance_Player** level.
 
 ![add obj_gamepad to rm_lvl_1](images/addGamepadToLevel.png)
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game and try your controller out.  You should be able to move the player around at any angle.  Look I can turn the player in circles.  You also don't go faster if you press both arrow keys and the gamepad.  Test it out!
 
@@ -91,7 +91,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game an
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 

@@ -13,7 +13,17 @@ Lets add some music and sound effects to the game.
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDS`|:small_blue_diamond:
+
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 Pick some free music that you think might be appropriate for the game. I used The *Spririt of Russian Love* by **Zinaida Troikai** for mine from the free music archive. Look for an MP4 or OGG format.  *Download* a song that you have permission to use and right click on **Sounds** and select **Create | Sound**.  Call it *snd_theme_music* and press the three periods (dots) next to the name to bring up an explorer menu to pick the music.
 
@@ -21,7 +31,7 @@ Pick some free music that you think might be appropriate for the game. I used Th
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Pick the music you have downloaded.
 
@@ -29,7 +39,7 @@ Pick the music you have downloaded.
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open **obj_game: Create** event script and at the bottom check to make sure the song is not already playing, then play the song in an endless loop.
 
@@ -37,7 +47,7 @@ Open **obj_game: Create** event script and at the bottom check to make sure the 
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and notice that the music should play and go on forever.
 
@@ -45,7 +55,7 @@ https://user-images.githubusercontent.com/5504953/139530532-cb5d8513-7082-4fd4-a
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Download [snd_enemy_explode.wav](../Assets/Sounds/snd_enemy_explode.wav) to your computer. Call this **Sound** file `snd_enemy_explode`.
 
@@ -53,7 +63,7 @@ Download [snd_enemy_explode.wav](../Assets/Sounds/snd_enemy_explode.wav) to your
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add the enemy explosion to **obj_player_bullet: Collision | obj_enemy_parent** event and add the audio playback at the bottom of the script.
 
@@ -61,15 +71,14 @@ Add the enemy explosion to **obj_player_bullet: Collision | obj_enemy_parent** e
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
-
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and shoot enemies ot hear the sounds played!
 
 https://user-images.githubusercontent.com/5504953/139530785-5453222b-188a-47bc-9d84-62f6948e6dc4.mp4
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Repeat the process for [snd_player_explode.wav](../Assets/Sounds/snd_player_explode.wav), [snd_player_shoot.wav](../Assets/Sounds/snd_player_shoot.wav) and [snd_enemy_shoot.wav](../Assets/Sounds/snd_enemy_shoot.wav). Name the files the same as the downloads and link audio files with the appropriate name. 
 
@@ -77,7 +86,7 @@ Repeat the process for [snd_player_explode.wav](../Assets/Sounds/snd_player_expl
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_bullet | Collision | obj_player**.
 
@@ -85,7 +94,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 *Open* up **obj_player: Step** and inside the shooting braces (`if ( (keyboard_check_pressed(vk_space)...`)
 
@@ -93,7 +102,8 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 *Open* up **obj_enemy_target: Step**.
 
@@ -101,8 +111,7 @@ Lets play all of these sounds in their appropriate places.  Open up **obj_enemy_
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Finally *open* up **obj_enemy_shoot: Step**.
 
@@ -110,7 +119,7 @@ Finally *open* up **obj_enemy_shoot: Step**.
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and listen to all the sounds.  
 
@@ -118,7 +127,7 @@ ADD AUDIO RECORDING ON PC
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
 
 The audio gets repetitive really quickly.  Lets look at a way of tricking the ear to get more out of a single sound.  Lets alter the pitch with **[audio_sound_pitch(index, pitch)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Asset_Management/Audio/audio_sound_pitch.htm)**. The pitch is a value less than 1 is lower in pitch (0 would be none) and 2 would be an ocatve higher.
 
@@ -130,15 +139,13 @@ Here is an example of what it looks like in **obj_player: Step**.  Repeat this f
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and the sounds should alter a bit during playback. The only sound we forgot to put in was the sound playing when the player is hit directly by a plane.  I will let you figure this out on your own.
 
 https://user-images.githubusercontent.com/5504953/139531886-3c7525a8-9d0c-4a45-b42a-2e778ebd36e7.mp4
 
-![](../images/line2.png)
-
-##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond:
+##### `Step 17.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
