@@ -15,6 +15,13 @@ We are supposed to be in a plane over the high seas.  Lets get a texture and hav
 
 ##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+
 There are two ways I can think of to deal with the room (level). We could just make a very tall room and put all of our graphics and enemies in the room. We can move the plane up each frame so it scrolls through it. 
 
 ![Illustration of a long level with all the islands and planes placed](images/LongLevelProto.png)
@@ -100,12 +107,17 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![save, quit, commit and push to github](images/GitHub.png)
+![save then quit gamemaker](images/saveQuit.png)
 
-___
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
+![add new and changed files to p4v](images/add.png)
+
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
+
+![submit changelist to p4v](images/submit.png)
 
 ![](../images/line.png)
 
