@@ -130,21 +130,17 @@ We want to restrict player to the bottom third of the screen and to not go off t
 
 ##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
-Now since our **Origin** is at `64` by `64` in the middle of the sprite we don't want any of the ship to leave the play area so we need to go from `64` to `room_width - 65` or `sprite_width / 2` to `room_width - sprite_wdith /2 -1`.
-
-We want to restrict player to the bottom third of the screen and to not go off the bottom of the play area which would be `room_height - sprite_height / 2 - 1`.
-
-![restrict player to room boundaries](images/RoomBoundariesForPlayArea.png)
-
-![](../images/line2.png)
-
-##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
-
 Open obj_player: Create event script and create 4 variables representing the top, Open the **obj_player: Create** event script and create 4 new variables representing the top, bottom, left and right boundary of the game. We need to subtract by one to get the disance from 0 to room_width -1 (instead of 1 to room_width).
 
 Don't mind the yellow exclamation marks (∆).  That means these variables are **set** but never used.  We will do that in the next step and these marks will go away.  They are just there to remind you that it is unique, not used and could be a spelling error if we were using a variable that was already defined.
 
 ![Add four variables for 4 bounds](images/boundVariables.png)
+
+![](../images/line2.png)
+
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+
+
 
 ![](../images/line2.png)
 
