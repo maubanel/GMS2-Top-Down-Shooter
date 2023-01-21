@@ -24,7 +24,7 @@ Pres the <kbd>New</kbd> then the <kbd>New Blank</kbd> to create a new blank proj
 
 ##### `Step 2.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: 
 
-Now you should have an empty game with the defaul room!
+Now you should have an empty game with the defaul room! Change the room name to `rm_lvl_1`.
 
 ![empty project](images/blankProject.png)
 
@@ -32,9 +32,9 @@ Now you should have an empty game with the defaul room!
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now you should have an empty game with the defaul room!
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![empty project](images/blankProject.png)
+![save then quit gamemaker](images/saveQuit.png)
 
 ![](../images/blankProject.png)
 
