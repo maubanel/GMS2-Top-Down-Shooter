@@ -100,9 +100,9 @@ h = √1 + 1
 h = √2
 h = 1.4142
 
-So when you move left and right you would move 1 unit (* player_speed) but if you move diagonally, you would move by `.4142 * player_speed and move faster.
+So when you move left and right you would move 1 unit (* player_speed) but if you move diagonally, you would move by `1.4142 * player_speed and move faster. So lets clamp the value at the max speed so it goes the same speed as pure horizontal and vertical.
 
-![pythagorean theorem explains speed](images/diagonals.png)
+![clamp speed](images/diagonals.png)
 
 ![](../images/line2.png)
 
