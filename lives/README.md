@@ -21,6 +21,9 @@ Open up the project you are working on in **GameMaker**.
 
 ![checkout files and create new changelist](images/checkoutFiles.png)
 
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 *Open* the **obj_game | Create** event and add a new *variable* called `p1_lives`.  There is a built in GameMaker variable called `lives` that is global but there is only one.  We might want to add a second player to this game so we will create our own variable name for this. 
 		
@@ -30,7 +33,7 @@ Why don't we add this to the player object? The player object is destroyed at de
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add to the bottom of **obj_game_controller: Draw GUI** event and draw the lives to the screen.
 
@@ -38,7 +41,7 @@ Add to the bottom of **obj_game_controller: Draw GUI** event and draw the lives 
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we should see three planes representing our health being drawn on the HUD next to our health:
 
@@ -46,7 +49,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Now that we have added lives, we need to subtract one each time the player dies.  We only want to subtract a life if there are lives left. We don't want to go to ghost mode if the player has no lives left.  Open up obj_player: Step event and go to the end where we check if health is less or equal to `0`.  We add a check to see if there are any player lives left. Open up **obj_player: Step Event** and make the changes.
 
@@ -54,7 +57,7 @@ Now that we have added lives, we need to subtract one each time the player dies.
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDS`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 We need to now deal with a player who has run out of health but has no lives left after this one.  We would like to:
 
@@ -68,7 +71,7 @@ Go back to **obj_player: Step** event and add after the previous condition.
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *open* up **obj_game** and press the <kbd>Add Event</kbd> button to add an **Alarm | Alarm0** event and call the game restart function.
 
@@ -76,7 +79,7 @@ Now *open* up **obj_game** and press the <kbd>Add Event</kbd> button to add an *
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. This is sped up below but represents the final flow of the game:
 
@@ -84,7 +87,8 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
 
 *Undo* our looping timeline and make a few doze interesting waves and finish the level.  Comment out the loop in **obj_game_controller: Step** event.
 
@@ -92,15 +96,23 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
 ![save then quit gamemaker](images/saveQuit.png)
 
+![](../images/line2.png)
+
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
+
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
 ![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
