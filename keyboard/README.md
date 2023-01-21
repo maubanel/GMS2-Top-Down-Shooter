@@ -94,11 +94,13 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 Now the problem is that they are travelling 1 unit to on the horizontal axis and 1 unit on the vertical axis. So if we move 1 unit to the right and 1 unit to the left.  We can calculate the velocity with Pythagorean theorem.  If we take
 
+```
 h = √a<sup>2</sup> * a<sup>2</sup> *  + b<sup>2</sup> * b<sup>2</sup> .
 h = √1sup>2</sup> * 1sup>2</sup> + 1sup>2</sup> * 1sup>2</sup>
 h = √1 + 1
 h = √2
 h = 1.4142
+```
 
 So when you move left and right you would move 1 unit (* player_speed) but if you move diagonally, you would move by `1.4142 * player_speed and move faster. So lets clamp the value at the max speed so it goes the same speed as pure horizontal and vertical.
 
