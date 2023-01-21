@@ -147,9 +147,9 @@ https://user-images.githubusercontent.com/5504953/139531886-3c7525a8-9d0c-4a45-b
 
 ##### `Step 17.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![save, quit, commit and push to github](images/GitHub.png)
+![save then quit gamemaker](images/saveQuit.png)
 ___
 
 ![](../images/line.png)
