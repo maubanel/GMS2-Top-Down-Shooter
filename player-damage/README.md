@@ -21,6 +21,9 @@ Open up the project you are working on in **GameMaker**.
 
 ![checkout files and create new changelist](images/checkoutFiles.png)
 
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 Open **obj_enemy_bullet** and press the <kbd>Add Event</kbd> button and add a **Collision | obj_player** event.
 
@@ -28,7 +31,7 @@ Open **obj_enemy_bullet** and press the <kbd>Add Event</kbd> button and add a **
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 *Add* to this new script an instance of **obj_enemy_explosion** and *deduct* from the player's health `p1_health` and destroy the bullet.  We do not destroy the player as we only would do this if there is no health left. Let add this logic to the **obj_enemy_bullet: Collision obj_player** Event.
 
@@ -36,7 +39,7 @@ Open **obj_enemy_bullet** and press the <kbd>Add Event</kbd> button and add a **
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now for testing purposes I just want these three waves to continue for ever.  *Add* a **Step | Step** event script to **obj_game** and lets loop at `900` frames the timeline forever:
 
@@ -44,7 +47,7 @@ Now for testing purposes I just want these three waves to continue for ever.  *A
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. You should now see an explosion and the health should depleat to beyond 0. Also the enemies will just keep respawning.
 
@@ -52,7 +55,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Y
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDS`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 I would like the explosion to be above the player and not behind him.  This is not currenlty possible as our top most layer in the room is **Instance_Player**.  Lets open **rm_lvl_1** and add an instance layer to the top called Explosion:
 
@@ -60,7 +63,7 @@ I would like the explosion to be above the player and not behind him.  This is n
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 In **obj_enemy_bullet: Collision | obj_player player** script change the layer from `"Instance_Player"` to `"Explosion"`.
 
@@ -68,7 +71,7 @@ In **obj_enemy_bullet: Collision | obj_player player** script change the layer f
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now explosions should be on top of the player.
 
@@ -76,7 +79,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now lets deal with enemy plane and player collision.  This will destroy the plane and do triple damage of `30` points.  Lets try two explosions. Double click **obj_enemy_parent** and press <kbd>Add Event</kbd> button and select **Collision | obj_player**:
 
@@ -84,7 +87,7 @@ Now lets deal with enemy plane and player collision.  This will destroy the plan
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Add two explosions and take away triple health damage to bullets inside the **obj_enemy_parent Collision obj_player** event script.
 
@@ -92,7 +95,7 @@ Add two explosions and take away triple health damage to bullets inside the **ob
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDS`| :large_blue_diamond:
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now run into an enemy to see if it works.
 
@@ -100,7 +103,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now play test the game and adjust your **Collision Masks** on the player sprite and enemy sprites to your liking.  I like to have them a bit loose and not take the entire sprite.  Here are the settings that I liked, but choose your own, based on your preference.
 
@@ -117,8 +120,7 @@ Now play test the game and adjust your **Collision Masks** on the player sprite 
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Lets not have the targeting planes shoot backwards or the shooting planes shoot when they are below the player.  We will check to see if the player is in front of the enemy before firing.  Open **obj_enemy_shoot: Step** event and add a check for the player plane behind the enemy.
 
@@ -126,7 +128,7 @@ Lets not have the targeting planes shoot backwards or the shooting planes shoot 
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Do the same thing in **obj_enemy_target: Step Event**.
 
@@ -134,7 +136,7 @@ Do the same thing in **obj_enemy_target: Step Event**.
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the enemies shouldn't shoot before moving upwards.
 
@@ -142,7 +144,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 The other thing I want to adjust is to not have all the planes fire at exactly the same time. This makes them feel robotic and not very natural.  Lets adjust the **rate_of_fire** timing to be different. Open `tl_lvl_1` timeline and adjust the spawner for **obj_enemy_shoot**.  We need to get an instance reference then adjust the **rate_of_fire** and **cooldown** variables.
 
@@ -150,7 +152,7 @@ The other thing I want to adjust is to not have all the planes fire at exactly t
 
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 17.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Repeat this for the spawning scripts for obj_enemy_target
 
@@ -158,7 +160,7 @@ Repeat this for the spawning scripts for obj_enemy_target
 
 ![](../images/line2.png)
 
-##### `Step 17.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 18.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the timing seems more natural.  
 
@@ -166,15 +168,23 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ![](../images/line2.png)
 
-##### `Step 18.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
 ![save then quit gamemaker](images/saveQuit.png)
 
+![](../images/line2.png)
+
+##### `Step 20.`\|`TDS`| :large_blue_diamond: :large_blue_diamond:
+
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
 ![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 21.`\|`TDS`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
