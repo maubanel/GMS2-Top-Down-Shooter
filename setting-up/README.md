@@ -40,26 +40,24 @@ Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-All work we do in **Perforce** needs to be done when the project is no longer open.  An open **GameMaker** and an open **Perforce** could cause corruption issues with your project.  Select **GameMaker | Quit**.
+Create a text file in TextEdit (Mac) or NotePad (PC) and create a file called `README`.  In the file just write you name on the first line.  Save it in the directory that contains your **SpaceRocks.yyp** file in the route folder of the project.
 
-![quit gamemaker](images/quitGameMaker.png)
+![create and save README file with name in it](images/readmeFile.png)
 
 ![](../images/line2.png)
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Create a text file in TextEdit (Mac) or NotePad (PC) and create a file called `README`.  In the file just write you name on the first line.  Save it in the directory that contains your **SpaceRocks.yyp** file in the route folder of the project.
+Now we want to add all these new files to our **Perforce** server. Open up **P4V** and select the **SpaceRocks** folder.  Now to add all these new files to the server press the <kbd>Add</kbd> button.
 
-![create and save README file with name in it](images/readmeFile.png)
+![add new project folder to perforce](images/addFiles.png)
 
 
 ![](../images/line2.png)
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Now we want to add all these new files to our **Perforce** server. Open up **P4V** and select the **SpaceRocks** folder.  Now to add all these new files to the server press the <kbd>Add</kbd> button.
 
-![add new project folder to perforce](images/addFiles.png)
 
 ![](../images/line2.png)
 
