@@ -48,7 +48,7 @@ Create a text file in TextEdit (Mac) or NotePad (PC) and create a file called `R
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Now we want to add all these new files to our **Perforce** server. Open up **P4V** and select the **SpaceRocks** folder.  Now to add all these new files to the server press the <kbd>Add</kbd> button.
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
 ![add new project folder to perforce](images/addFiles.png)
 
@@ -57,23 +57,21 @@ Now we want to add all these new files to our **Perforce** server. Open up **P4V
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
+Press the <kbd>Submit</kbd> button and the changlist window comes up.  Press the <kbd>Submit</kbd> button on this pop up Window.
 
+![alt_text](images/submitToServer.png)
 
 ![](../images/line2.png)
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select a **New** changelist and an appropriate message describing what we did.  Press the <kbd>OK</kbd> button.
 
-![empty repository](images/newChangelist.png)
 
 ![](../images/line2.png)
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Press the <kbd>Submit</kbd> button and the changlist window comes up.  Press the <kbd>Submit</kbd> button on this pop up Window.
 
-![alt_text](images/submitToServer.png)
 
 ![](../images/line2.png)
 
