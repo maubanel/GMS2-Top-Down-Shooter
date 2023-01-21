@@ -123,7 +123,7 @@ Open up **P4V**.  Select the top folder and press the **Add** button.  We want t
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
-![submit changelist to p4v](images/add.png)
+![submit changelist to p4v](images/submit.png)
 
 ![](../images/line.png)
 

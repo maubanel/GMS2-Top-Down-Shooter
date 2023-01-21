@@ -15,6 +15,13 @@ The final item left to do in the walk through is to add lives to the game.
 
 ##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+
 *Open* the **obj_game | Create** event and add a new *variable* called `p1_lives`.  There is a built in GameMaker variable called `lives` that is global but there is only one.  We might want to add a second player to this game so we will create our own variable name for this. 
 		
 Why don't we add this to the player object? The player object is destroyed at death then restarted.  If we kept the varibale there it would get reset.  It is best to keep track of global game settings in an object that we will not alter during game.  Our **obj_game** was designed for this. 
@@ -91,11 +98,17 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 
 ![save, quit, commit and push to github](images/GitHub.png)
 
-| `animation.character`\|`THE END`| 
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
+
+![add new and changed files to p4v](images/add.png)
+
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
+
+![submit changelist to p4v](images/submit.png)
+
+| `top.down.shooter`\|`THE END`| 
 | :--- |
 | **That's All Folks!** Thanks for sticking around. That is it for this tutorial but there is so much more that you can do with this game.  First you can start by adding more waves.  Have fun! |
-
-___
 
 ![](../images/line.png)
 

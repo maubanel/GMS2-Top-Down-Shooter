@@ -15,13 +15,23 @@ Lets get the world war 2 plane into the level.
 
 ##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+
 Lets start by importing the player.  *Right click* on **Sprites** in the Resources tab and select **Create | Sprite**.  Name the new sprite `spr_player` and then press <kbd>Edit Image</kbd> button.
 
 ![Create a new sprite and call it spr_player](images/CreateNewPlayerSprite.gif)
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Download [spr_player_sprite_sheet.png](../Assets/Sprites/spr_player_sprite_sheet.png). The player is 128 x 128 pixels large and there are two frames to its animation.  Both frames are included in a sprite sheet so we can't import the sprite directly.  We select **Image | Import Strip Image** from the top drop down menus.  Find the `spr_player_sprite_sheet` png that you downloaded.
 
@@ -29,7 +39,7 @@ Download [spr_player_sprite_sheet.png](../Assets/Sprites/spr_player_sprite_sheet
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 This brings up the **Convert to Frames** menu.  In this we need to make some adjustments.  *Change* both the **Frame Width** and **Frame Height** to `128`.  There are two frames so ajust the **Number of Frames** to `2` and **Frames per Row** to `2`. *Press* the <kbd>Convert</kbd> button to import the new sprite.
 
@@ -37,16 +47,15 @@ This brings up the **Convert to Frames** menu.  In this we need to make some adj
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Press play on the animation menu to see the speed of the animation.  It defaults to `15` **Frames per Second** and you can adjust the playback speed. I prefer `12`.  We also want to center the sprite on the place so choose **Middle Center** for the **Origin** of the sprite.
-
 
 ![Center origin and change framerate of playback to 12](images/SpeedAndOriginPlayer.png)
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDS`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Create a new **Game Object** by selecting **Objects | Create | Object** and call it `obj_player`. Bind the spr_player you created above.
 
@@ -54,7 +63,7 @@ Create a new **Game Object** by selecting **Objects | Create | Object** and call
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 *Edit* the existing room by *renaming* it to `rm_lvl_1` (you can *right click* on the name and select **Rename**). 	
 
@@ -66,7 +75,7 @@ Now if you look at the video the game is in portrait mode. Lets set the room dim
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure that you see the plane in a dark background layer that should look like the below photo.
 
@@ -74,7 +83,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. M
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 OK, now we don't want to place the player plane in the room. Since the player will die and have to reappear, we want to control the plane being added through scripting.
 
@@ -86,7 +95,7 @@ Then, *rename* the layer **Instances** to **Instance_Player**.  These layers are
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Create a new game object called `obj_game`.  Do not assign a sprite.  We will use this as a game controller to store all game global variables.
 
@@ -94,7 +103,7 @@ Create a new game object called `obj_game`.  Do not assign a sprite.  We will us
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDS`| :large_blue_diamond:
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Create Event** script and *spawn* the player in the bottom center of the game room.
 
@@ -104,7 +113,8 @@ Open up **obj_game** and press the <kbd>Add Event</kbd> button and add a **Creat
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
+
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add a new Instance layer called `Game`. Remove `obj_player` from room and add `obj_game` to room on **Game** instance layer. 
 
@@ -112,20 +122,34 @@ Add a new Instance layer called `Game`. Remove `obj_player` from room and add `o
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure that you see the plane appears (only one, you should have deleted the old one) in the bottom center of the room.  We will soon be adding controls to move the ship with keyboard input.
 
 ![Run game and one plane shows up at bottom](images/ShipSpawnedInGame.png)
 
+
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
+
+![save then quit gamemaker](images/saveQuit.png)
+
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
-![save, quit, commit and push to github](images/GitHub.png)
+![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
+
+![submit changelist to p4v](images/submit.png)
 
 ___
 
