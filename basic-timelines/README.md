@@ -15,13 +15,18 @@ All three planes fly downwards at the same speed. One shoots straight down and t
 
 ##### `Step 1.`\|`TDS`|:small_blue_diamond:
 
+
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+
 All three planes fly down at a constant speed. Make sure this speed isn't the same as the water or it will look like the planes are floating on the water like a boat. *Double click* on **obj_enemy_parent** and press <kbd>Add Event</kbd> button and add a new **Create** event script then add a downward motion.
 
 ![Add a create event and give them a speed](images/EnemyParentCreateEvent.png)
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now we need to create a **[Timeline](https://manual.yoyogames.com/The_Asset_Editors/Timelines.htm)** to launch our enemy waves. Right click on **Timelines** and select **Create | Timeline** and call it `tl_lvl_1`.
 
@@ -29,7 +34,7 @@ Now we need to create a **[Timeline](https://manual.yoyogames.com/The_Asset_Edit
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add a new **Moment** to the timeline.  *Right click* on **moment 0** and select **Change Moment**.  We will change it to 1 second in, at the `60`th frame.  We will then add three basic enemies evenly spaced horizontally. 
 
@@ -37,7 +42,7 @@ Add a new **Moment** to the timeline.  *Right click* on **moment 0** and select 
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Each object has a timeline that is accessed through **timeline_index** but it defaults to `-1`.  We need to *assign* the newly created timeline and also start it.  Since it is unassigned it needs to be started.  Open **obj_game | Create event** and assign the timeline at the bottom of the script.
 
@@ -45,7 +50,7 @@ Each object has a timeline that is accessed through **timeline_index** but it de
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDS`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  Now after one second you should see three enemy ships move down screen:
 
@@ -53,7 +58,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We have a small problem with the enemies. It is small now, but if we spawn many more it will become an even bigger issue later. Can you figure it out? 
 
@@ -69,7 +74,7 @@ So what is the problem with the enemies as we have them currently? Try running t
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 The enemy planes have not been dealt with and we need to do some housecleaning. Open up the **obj_enemy_parent: Create** event script and add a variable to the bottom to represent the bottom of the screen.
 
@@ -77,7 +82,7 @@ The enemy planes have not been dealt with and we need to do some housecleaning. 
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Go back to **obj_enemy_parent** and press the <kbd>Add Event</kbd> button for a **Step | Step** event script and delete the planes when they go off the bottom of the screen.
 
@@ -85,7 +90,7 @@ Go back to **obj_enemy_parent** and press the <kbd>Add Event</kbd> button for a 
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game in debug mode (right to the left of the regular run game button). Check the **Instance** tab below.  Now the three planes should get removed once they are off the screen. Up next we will get back to the player for a bit and handle player shooting.
 
@@ -93,14 +98,27 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDS`| :large_blue_diamond:
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![save, quit, commit and push to github](images/GitHub.png)
+![save then quit gamemaker](images/saveQuit.png)
 
-___
+![](../images/line2.png)
 
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
+
+![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
+
+![submit changelist to p4v](images/add.png)
 
 ![](../images/line.png)
 
