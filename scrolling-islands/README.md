@@ -32,6 +32,9 @@ Open up the project you are working on in **GameMaker**.
 
 ![checkout files and create new changelist](images/checkoutFiles.png)
 
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 Lets start by downloading the 3 island sprites **[spr_island_1.png](../Assets/Sprites/spr_island_1.png)**, **[spr_island_2.png](../Assets/Sprites/spr_island_2.png)** and **[spr_island_3.png](../Assets/Sprites/spr_island_3.png)**. 
 
@@ -41,7 +44,7 @@ Lets start by downloading the 3 island sprites **[spr_island_1.png](../Assets/Sp
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Since we want the islands to all share the same behavior, we will create a **Game Object** that will act as a **Parent** that all the children will inherit from. This allows us to write the **Island** logic once and be able to debug and tune it but all islands will inherit the behavior.
 	
@@ -51,7 +54,7 @@ Since we want the islands to all share the same behavior, we will create a **Gam
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now create three new objects and assign the appropriate sprite and attach the `obj_island_parent` to the **Parent** selector. Call them `obj_island_1`, `obj_island_2` and `obj_island_3`:
 
@@ -59,7 +62,7 @@ Now create three new objects and assign the appropriate sprite and attach the `o
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
 Open **rm_lvl_1** and create a new **Instance** Layer and call it **Islands** and put it between the **Instance_Player** and the **Background** layer. We want the plane to be above the islands, and the islands to be in front of the water. The layers in **GameMaker** are like those in **Photoshop** in terms of rendering order.
 
@@ -67,7 +70,7 @@ Open **rm_lvl_1** and create a new **Instance** Layer and call it **Islands** an
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDS`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 We want to center all the sprites so open up **spr_island_1**,**spr_island_2** and **spr_island_3** and set the **Origin** to `Middle | Center`.
 
@@ -77,7 +80,7 @@ We want to center all the sprites so open up **spr_island_1**,**spr_island_2** a
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game and the background scrolls and islands stay put. 
 
@@ -85,7 +88,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game an
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We created a parent so that we just need to add scripts to it and all the children will inherit from it. *Double click* the **obj_island_parent**.  Press the <kbd>Add Event</kbd> and select a **Create** event. Adjust the object's `vspeed`.  We will use the **macro** we just created for this to ensure the islands move at the same speed as the water.
 
@@ -93,7 +96,7 @@ We created a parent so that we just need to add scripts to it and all the childr
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The background scrolls with islands disappear off screen. 
 
@@ -101,7 +104,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Double click **obj_island_parent**.   Press the <kbd>Add Event</kbd> and select a **Step | Step** event. Move the island back to the top of the screen when it goes off the bottom.  We will also randomize the angle by 0 to 360 degrees.
 
@@ -109,7 +112,7 @@ Double click **obj_island_parent**.   Press the <kbd>Add Event</kbd> and select 
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDS`| :large_blue_diamond:
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The background scrolls with islands now looping back onto the top of the screen.
 
@@ -117,7 +120,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now lets randomize the islands position along the X axis so that it looks like we are flying through new spaces rather than the same one over and over again. Since this is not affecting gameplay using a random number will just add to the realism of the game.  Edit the **obj_island_parent: Step** event script and add a single line to place the island randomly along the x axis.
 
@@ -125,8 +128,7 @@ Now lets randomize the islands position along the X axis so that it looks like w
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The background scrolls with islands now looping back onto the top of the screen and randomize on the x axis.  This looks good except for the occasional overlap when islands are on top of each other like so:
 
@@ -134,7 +136,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Lets try five times to position the island successfully.  If it can't do it within 5 tries then we will just live with this overlap.  We will use a **[repeat(real)](https://manual.yoyogames.com/GameMaker_Language/GML_Overview/Language_Features/repeat.htm)**. What we want to do is check each time if there is a collision and then stop the loop when we get no collision.
 
@@ -146,7 +148,7 @@ If it is we will stop the loop.  This is done with the **[break](https://manual.
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. We should have the islands working as well as we will need for this tutorial. Now reposition the islands so that the distribution is even vertically.  The room should look like the video.
 
@@ -154,15 +156,23 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. W
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
 ![save then quit gamemaker](images/saveQuit.png)
 
+![](../images/line2.png)
+
+##### `Step 17.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
 ![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 18.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
