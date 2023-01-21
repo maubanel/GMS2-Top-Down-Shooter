@@ -21,6 +21,9 @@ Open up the project you are working on in **GameMaker**.
 
 ![checkout files and create new changelist](images/checkoutFiles.png)
 
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
 OK, so the easiest way to represent player health is through a health bar. We will not use the globally available health variable that GameMaker gives us as we might add multiplayer in the future and need more than one.
 
@@ -30,7 +33,7 @@ OK, so the easiest way to represent player health is through a health bar. We wi
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Lets draw a health bar.  There is an event specifically made for GUI's where we don't have to worry about level layers in the room.  The **Draw GUI** event will always draw over game instances.  Press the <kbd>Add Event</kbd> button on **obj_game** and select **Draw | Draw GUI**.  This stays relative to camera space (instead of level space) and always renders in front of all other artwork regardless of the layer. 
 
@@ -38,33 +41,40 @@ Lets draw a health bar.  There is an event specifically made for GUI's where we 
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We will be using the **[draw_healthbar(x1, y1, x2, y2, amount, backcol, mincol, maxcol, direction, showback, showborder)]()**.  Now there are a lot of options here.  The **x1, y1, x2, y2** represent the top left corner and bottom right corner of the health bar.  **backcol** is the color behind the healthbar.  The **mincol** is when health is low (usually red) and the **maxcol** is when health is high, usually green.  The **direction** is the angle of the health bar.  **0** will represent left to right the most common representation. **showback** and **showborder** represents how you want to healthbar to look regrading a background and/or border.
 	
 Here are the settings I picked and added to the **obj_game | Draw | Draw Gui**.
 
-![Add a Draw GUI event and add the code to draw the health bar](images/DrawPlayerHealthOnGUI.png)
-
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
+![Add a Draw GUI event and add the code to draw the health bar](images/DrawPlayerHealthOnGUI.png)
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. You should see a healthbar that is green at 100%:
 
 ![Run game and see health](images/HealthBarInGame.png)
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDS`| :small_orange_diamond:
+##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
 ![save then quit gamemaker](images/saveQuit.png)
 
+![](../images/line2.png)
+
+##### `Step 7.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
 ![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
