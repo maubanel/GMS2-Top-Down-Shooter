@@ -69,7 +69,7 @@ Open up **rm_lvl_1**.
 
 Now if you look at the video the game is in portrait mode. Lets set the room dimensions to: 1000 x 1536. Go to the **Properties** tab in the **Room Editor** and expand it. Set the **Width** to `1000` and **Height** to `1536`.
 
-*Drag and drop* the `obj_player` into to the bottom of the room from the **Resources** menu.
+*Drag and drop* the `obj_player` into to the bottom of the room from the **Resources** menu. Make sure you are on the **Instances** layer.  Double click on the palne and change the **Rotation** to `90` so it points upwareds.
 
 ![alt_teChange name of room to rm_lvl_1 and adjust the size to 1000 by 1536xt](images/ChangeDimensionsOfGameRoom.png)
 
