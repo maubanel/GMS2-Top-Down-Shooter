@@ -43,7 +43,7 @@ Create a new **Game Object** and call it `obj_player_bullet`. *Assign* the `spr_
 
 ##### `Step 4.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Press the <kbd>Add Event</kbd> and select a **Create** event. Send the bullet upscreen fast!
+Press the <kbd>Add Event</kbd> and select a **Create** event. Send the bullet upscreen quickly.  Rotate the bullet so it points up. 
 
 ![Add an obj_player_bullet: Create event and add some script](images/PlayerBulletCreateEvent.png)
 
