@@ -101,7 +101,7 @@ Now *press* the <kbd>Debug</kbd> button in the top menu bar to launch the game i
 
 ##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
 
-Now lets deal with the bullet enemy collision. Create a new **Collision Event** script in **obj_bullet** with a **Collision | obj_enemy_parent**.  We collide with the parent as it allows us to get an event with one object as all the enemies inherit from the same parent.  This avoids having to check individually for the plane types.
+Now lets deal with the bullet enemy collision. Create a new **Collision Event** script in **obj_player_bullet** with a **Collision | obj_enemy_parent**.  We collide with the parent as it allows us to get an event with one object as all the enemies inherit from the same parent.  This avoids having to check individually for the plane types.
 	
 We destroy the bullet itself and use with (other) to access the object that the bullet is colliding with.
 
