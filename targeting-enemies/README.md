@@ -80,62 +80,22 @@ Lets walk through this.  First we inherit the previous functionality from the th
 
 ##### `Step 8.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now it doesn't crash but the angle of the bullets are all wrong.
-
-![Run game but targeting shooter bullet angles are wrong](images/AngleOfBulletMessedUp.png)
-
-![](../images/line2.png)
-
-##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-Why is that?  This is because **GameMaker** defaults to `0` degrees pointing right.  Our bullets point down initially so we are off by 90 degrees.  Lets fix this.  Open **spr_enemy_bullet** and press the **Edit Image** button.  *Select* the **Image | Rotate All Frames (anit-clockwise 90)** to rotate sprite counter-clockwise.
-
-![Rotate all spr_enemy_bullet frames clockwise 90 degrees](images/RotateBulletCounterClockwise.png)
-
-![](../images/line2.png)
-
-##### `Step 10.`\|`TDS`| :large_blue_diamond:
-
-Now the bullet is facing the correct starting angle to represent 0°.
-
-![Now bullet defaults to 0 degrees](images/FixedEnemyBulletAngle.png)
-
-![](../images/line2.png)
-
-##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
-
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we have messed up the angle of the bullets on the shooting enemy.
-
-![Play game and see that targeting enemy bullets are at wrong angle](images/BulletsWrongAngle.png)
-
-![](../images/line2.png)
-
-
-##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
-
-Open **obj_enemy_shoot | Step** event and we need to adjust the angle of the bullet.  Get a variable from the instance creation and adjust it's image angle by 90 degrees clockwise (or -90 in GameMaker).
-
-![Adjust enemy shoot angle by 90 degrees](images/RotateBulletClockwise90Degrees.png)
-
-![](../images/line2.png)
-
-##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
-
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Notice that this one change I wanted to make with the targeting bullets caused a few bugs and required some code refactoring.  Be aware that all changes, no matter how small, can cause a lot of work and potential issues.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the targeting enemy fires ahead of the player and the bullets point in the correct direction.
 
 ![Run the game and player shoots at correct angle](images/TargetingEnemyComplete.gif)
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 9.`\|`TDS`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
 ![save then quit gamemaker](images/saveQuit.png)
 
+
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 10.`\|`TDS`| :large_blue_diamond:
 
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
@@ -143,7 +103,8 @@ Open up **P4V**.  Select the top folder and press the **Add** button.  We want t
 
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 11.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: 
+
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![submit changelist to p4v](images/submit.png)
