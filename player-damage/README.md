@@ -110,14 +110,6 @@ Now play test the game and adjust your **Collision Masks** on the player sprite 
 ![Adjust all sprite collision masks to your liking](images/PlayerCollisionMast.png)
 
 
-![Adjust all sprite collision masks to your liking](images/EnemyShootCollisionMask.png)
-
-
-![Adjust all sprite collision masks to your liking](images/EnemyTargetCollisionMask.png)
-
-
-![Adjust all sprite collision masks to your liking](images/BasicEnemyCollisionMask.png)
-
 ![](../images/line2.png)
 
 ##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
