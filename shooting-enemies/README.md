@@ -24,7 +24,7 @@ Open up the project you are working on in **GameMaker**.
 
 ##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
-*Create* a wave of the new planes. Open **Timelines | tl_lvl_1**  and press the <kbd>Add</kbd> button to create a Moment at `240` (or 4 seconds in) with a V wave of four enemy shooters. Add to the script a wave for the shooting enemy type.
+*Create* a wave of the new planes. Open **Timelines | tml_lvl_1**  and press the <kbd>Add</kbd> button to create a Moment at `240` (or 4 seconds in) with a V wave of four enemy shooters. Add to the script a wave for the shooting enemy type.
 
 ![Add a second wave of enemy shooters at 220 frames into the game](images/SecondWaveTL.png)
 
