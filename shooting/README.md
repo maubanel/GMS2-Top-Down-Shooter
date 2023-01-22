@@ -51,7 +51,7 @@ Press the <kbd>Add Event</kbd> and select a **Create** event. Send the bullet up
 
 ##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
-Open **rm_lvl_1** and add a new **Instance Layer** to the room and call it `Bullets` and place it between **Instance_Player** and **Islands**.
+Open **rm_lvl_1** and add a new **Instance Layer** to the room and call it `Bullets` and place it between **Instance_Player** and **Game**.
 
 ![Add instance layer Bullets to rm_lvl_1](images/AddBulletLayerRm.png)
 
