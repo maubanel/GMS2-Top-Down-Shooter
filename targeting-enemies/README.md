@@ -26,7 +26,7 @@ Open up the project you are working on in **GameMaker**.
 
 ##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
-Create a wave of the new planes. Open **tl_lvl_1** and press the <kbd>Add</kbd> button for another Moment at `600` (or 10 seconds in) with a V formation of seven enemy targeting shooters. 
+Create a wave of the new planes. Open **tml_lvl_1** and press the <kbd>Add</kbd> button for another Moment at `600` (or 10 seconds in) with a V formation of seven enemy targeting shooters. 
 
 ![Add to tl_lvl_1 and add a Moment at 1200 frames and add a v formation of sevent enemy targeting shooters](images/ThirdWaveTimeline.png)
 
