@@ -140,19 +140,13 @@ Don't mind the yellow exclamation marks (∆).  That means these variables are *
 
 ##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-
-
-![](../images/line2.png)
-
-##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
-
 We need to clamp the location.  Now since we are moving with speed the ship is in its new position between the ***Step** and **End Step** event. Press the <kbd>Add Event</kbd> and select a **Step | End Step** event. We can **[clamp(val, min, max)](https://manual.yoyogames.com/GameMaker_Language/GML_Reference/Maths_And_Numbers/Number_Functions/clamp.htm)** our **x** and **y** position of the ship to the bounds we just created.  Place this after we move the player (so the player will move out of bounds then the **clamp()** function will force it back on screen). 
 
 ![Clamp ship position so it stays on screen](images/ClampValueToBounds.png)
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 13.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press a combination of buttons and try to leave the play area?  Now you should never leave the game screen no matter what you do with the arrow keys (or any other keys for that matter). 
 
@@ -160,7 +154,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. P
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 14.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
@@ -168,7 +162,7 @@ Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker
 
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 15.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: 
 
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session (in my case it was `Spaceship I portion of walkthrough`). Press the <kbd>OK</kbd> button.
 
@@ -176,7 +170,7 @@ Open up **P4V**.  Select the top folder and press the **Add** button.  We want t
 
 ![](../images/line2.png)
 
-##### `Step 17.`\|`TDS`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 16.`\|`TDS`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
