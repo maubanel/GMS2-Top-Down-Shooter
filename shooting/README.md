@@ -27,7 +27,7 @@ Open up the project you are working on in **GameMaker**.
 
 Now we should add shooting and collision between bullets and enemies. Download a bullet sprite [spr_player_bullet.png](../Assets/Sprites/spr_player_bullet.png). Create a new **Sprite**, press the **Import** button and add the downloaded file.
 
-Call it `spr_player_bullet` and change the **Origin** to `Bottom Center`.  We want the bullet to spawn at the front of the plane so it is best to have the origin at the bottom of the sprite so it spawns in front of the plane.
+Call it `spr_player_bullet` and change the **Origin** to `Middle Left`.  We want the bullet to spawn at the front of the plane so it is best to have the origin at the bottom of the sprite so it spawns in front of the plane.
 
 ![Add spr_play_bullet and adjust origin to bottom center](images/SprPlayerBullet.png)
 
