@@ -25,7 +25,7 @@ Open up the project you are working on in **GameMaker**.
 
 ##### `Step 2.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: 
 
-All three planes fly down at a constant speed. Make sure this speed isn't the same as the water or it will look like the planes are floating on the water like a boat. *Double click* on **obj_enemy_parent** and press <kbd>Add Event</kbd> button and add a new **Create** event script then add a downward motion.
+All three planes fly down at a constant speed. Make sure this speed isn't the same as the water or it will look like the planes are floating on the water like a boat. *Double click* on **obj_enemy_parent** and press <kbd>Add Event</kbd> button and add a new **Create** event script then add a downward motion. Point the ship downwards by altering the `image_angle`.
 
 ![Add a create event and give them a speed](images/EnemyParentCreateEvent.png)
 
