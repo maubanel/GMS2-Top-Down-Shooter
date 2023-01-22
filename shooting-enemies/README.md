@@ -56,7 +56,7 @@ Create a new **Game Object**  and call it `obj_enemy_bullet` and bind the above 
 
 ##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
-Press the <kbd>Add Event</kbd> and select a **Create** event and make the bullet move downwards:
+Press the <kbd>Add Event</kbd> and select a **Create** event and make the bullet move downwards and point bullet in the same direction.
 
 ![Create event for enemy bullet and script to make it move down screen](images/BulletCreate.png)
 
