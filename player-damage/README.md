@@ -105,7 +105,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 12.`\|`TDS`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now play test the game and adjust your **Collision Masks** on the player sprite and enemy sprites to your liking.  I like to have them a bit loose and not take the entire sprite.  Here are the settings that I liked, but choose your own, based on your preference.
+Now play test the game and adjust your **Collision Masks** on the player sprite and the three enemy sprites to your liking.  I like to have them a bit loose and not taking the entire sprite.  I set it to **Manual**, left the shape as a rectangle and brought the collisoin volumes in on all four sprites. Here are the settings that I liked, but choose your own, based on your preference.
 
 ![Adjust all sprite collision masks to your liking](images/PlayerCollisionMast.png)
 
