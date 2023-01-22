@@ -33,7 +33,7 @@ All three planes fly down at a constant speed. Make sure this speed isn't the sa
 
 ##### `Step 3.`\|`TDS`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we need to create a **[Timeline](https://manual.yoyogames.com/The_Asset_Editors/Timelines.htm)** to launch our enemy waves. Right click on **Timelines** and select **Create | Timeline** and call it `tl_lvl_1`.
+Now we need to create a **[Timeline](https://manual.yoyogames.com/The_Asset_Editors/Timelines.htm)** to launch our enemy waves. Right click on **Timelines** and select **Create | Timeline** and call it `tml_lvl_1`.
 
 ![Create a Timeline called tl_lvl_1](images/tl_lvl_1.png)
 
