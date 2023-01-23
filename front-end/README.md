@@ -55,13 +55,11 @@ Drag **rm_front_end** to the top of **Room Order** so it loads up. Now *press* t
 
 ![Run game and game should start in front end with a static background](images/WW2ShooterGameDoesNothing.png)
 
-*Download* [spr_press_space.png](../Assets/Sprites/spr_press_space.png).
-
 ![](../images/line2.png)
 
 ##### `Step 6.`\|`TDS`| :small_orange_diamond: :small_blue_diamond:
 
-*Create* a new **Sprite** and <kbd>Import</kbd> spr_press_space.png and call it `spr_press_space`. 
+*Download* [spr_press_space.png](../Assets/Sprites/spr_press_space.png).*Create* a new **Sprite** and <kbd>Import</kbd> spr_press_space.png and call it `spr_press_space`. 
 
 ![Add spr_press_space and import sprite of same name from the TutorialResources/Sprite folder](images/SprPressSpaceToStart.png)
 
