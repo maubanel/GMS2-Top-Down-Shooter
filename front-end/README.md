@@ -51,7 +51,7 @@ Now we are going to use the sprite as a background. Select the **Background Laye
 
 ##### `Step 5.`\|`TDS`| :small_orange_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	The room should now have a title screen!
+Drag **rm_front_end** to the top of **Room Order** so it loads up. Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.	The room should now have a title screen!
 
 ![Run game and game should start in front end with a static background](images/WW2ShooterGameDoesNothing.png)
 
