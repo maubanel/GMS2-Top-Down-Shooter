@@ -123,7 +123,7 @@ Finally *open* up **obj_enemy_shoot: Step**.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Play it and listen to all the sounds.  
 
-ADD AUDIO RECORDING ON PC
+https://user-images.githubusercontent.com/5504953/214035969-09e67698-38a0-4a8e-9ba9-e7cf402fa89d.mp4
 
 ![](../images/line2.png)
 
